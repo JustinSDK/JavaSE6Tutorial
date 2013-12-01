@@ -1,7 +1,7 @@
 Java SE 6 技術手冊
 ==================
 
-《Java SE 6 技術手冊》（以及它先前的版本）是以 [我的網站](openhome.cc) 中早期學習 Java 的筆記為基礎，記錄著我學習 Java 的一些心得。
+《Java SE 6 技術手冊》（以及它先前的版本）是以 [我的網站](http://openhome.cc) 中早期學習 Java 的筆記為基礎，記錄著我學習 Java 的一些心得。
 
 在 JDK7 問世之後，由於累積不少 Java 教學經驗與想法，為了有一本可以符合我教學所需的教材，因而在為 JDK7 撰寫 Java 書籍時，並不是改版《Java SE 6 技術手冊》，而是重新撰寫了一本 [《Java SE 7 技術手冊》](http://books.gotop.com.tw/bookdetails.aspx?bn=ACL034000)。
 
