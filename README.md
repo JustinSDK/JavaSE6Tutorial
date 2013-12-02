@@ -24,4 +24,8 @@ Java SE 6 技術手冊
 - [第 2 章 入門準備](docs/CH02.md#%E7%AC%AC-2-%E7%AB%A0-%E5%85%A5%E9%96%80%E6%BA%96%E5%82%99)
  - [2.1 下載、安裝、瞭解 JDK](docs/CH02.md#21-%E4%B8%8B%E8%BC%89%E5%AE%89%E8%A3%9D%E7%9E%AD%E8%A7%A3-jdk)
  - [2.2 設定 Path 與 Classpath](docs/CH02.md#22-%E8%A8%AD%E5%AE%9A-path-%E8%88%87-classpath)
- - 待續 ...
+ - [2.3 第一個 Java 程式](docs/CH02.md#23-%E7%AC%AC%E4%B8%80%E5%80%8B-java-%E7%A8%8B%E5%BC%8F)
+ - [2.4 選擇開發工具](docs/CH02.md#24-%E9%81%B8%E6%93%87%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7)
+ - [2.5 接下來的主題](docs/CH02.md#25-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
+ 
+- 第 3 章待續 
