@@ -1,0 +1,4 @@
+Manifest-Version: 1.0 
+Created-By: caterpillar
+Main-Class: onlyfun.caterpillar.HelloWorld
+Class-Path: HelloWorld.jar

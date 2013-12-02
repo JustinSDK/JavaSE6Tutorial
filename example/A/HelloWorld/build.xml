@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<project name="example" default="run"> 
+
+    <property name="src.dir" value="src"/> 
+    <property name="classes.dir" value="classes"/>  
+    <property name="bak.dir" value="bak"/>     
+
+    <target name="help" description="Type ant help for detail.">
+        <echo message="Help information!!"/>
+        <echo>Usage:</echo>
+        <echo><![CDATA[
+build:
+    ant
+    ant build.xml
+    
+    
+produce jar:
+    ant jar -DlibDir=lib -DjarFile=HelloWorld.jar
+    
+    You must produce META-INF/MANIFEST.MF. ex:
+    ******************************************
+    Manifest-Version: 1.0 
+    Created-By: caterpillar
+    Main-Class: onlyfun.caterpillar.HelloWorld
+    Class-Path: HelloWorld.jar
+    ******************************************
+       ]]></echo>
+    </target>
+
+    <target name="jar"> 
+        <mkdir dir="${libDir}"/>     
+        <jar jarfile="${libDir}/${jarFile}" 
+             manifest="META-INF/MANIFEST.MF" 
+             basedir="${classes.dir}"/> 
+    </target> 
+
+    <target name="prepare"> 
+        <mkdir dir="${classes.dir}"/>      
+        <mkdir dir="${bak.dir}"/> 
+        <copy todir="${bak.dir}"> 
+            <fileset dir="${classes.dir}"/> 
+        </copy> 
+    </target> 
+
+    <target name="compile" depends="prepare"> 
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"/> 
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="onlyfun.caterpillar.HelloWorld">
+            <classpath path="${classes.dir}"/>
+        </java>
+    </target>
+
+</project>

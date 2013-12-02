@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="autoBuildTest" default="report"> 
+    <target name="setProperties"> 
+        <property name="src.dir" value="src"/> 
+        <property name="classes.dir" value="classes"/> 
+        <property name="report.dir" value="report"/>        
+    </target> 
+
+    <target name="prepareDir" depends="setProperties"> 
+        <delete dir="${report.dir}"/> 
+        <delete dir="${classes.dir}"/> 
+        <mkdir dir="${report.dir}"/> 
+        <mkdir dir="${classes.dir}"/> 
+    </target> 
+
+    <target name="compile" depends="prepareDir"> 
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"/> 
+    </target>  
+
+    <target name="test" depends="compile"> 
+        <junit printsummary="yes"> 
+            <formatter type="xml"/>
+            <test 
+               name="test.onlyfun.caterpillar.MathToolUnitTest"/> 
+            <classpath> 
+                <pathelement location="${classes.dir}"/> 
+            </classpath> 
+        </junit> 
+    </target>
+    
+    <target name="report" depends="test"> 
+        <junitreport todir="${report.dir}"> 
+            <fileset dir="${report.dir}"> 
+                <include name="TEST-*.xml"/> 
+            </fileset> 
+            <report 
+                format="frames" todir="${report.dir}/html"/> 
+        </junitreport> 
+    </target>    
+</project>
