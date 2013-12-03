@@ -30,4 +30,5 @@ Java SE 6 技術手冊
  
 - [第 3 章 語法入門](docs/CH03.md#%E7%AC%AC-3-%E7%AB%A0-%E8%AA%9E%E6%B3%95%E5%85%A5%E9%96%80)
  - [3.1 第一個 Java 程式](docs/CH03.md#31-%E7%AC%AC%E4%B8%80%E5%80%8B-java-%E7%A8%8B%E5%BC%8F)
+ - [3.2 在文字模式下與程式互動](docs/CH03.md#32-%E5%9C%A8%E6%96%87%E5%AD%97%E6%A8%A1%E5%BC%8F%E4%B8%8B%E8%88%87%E7%A8%8B%E5%BC%8F%E4%BA%92%E5%8B%95)
  - 待續 ...
