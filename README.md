@@ -35,9 +35,14 @@ Java SE 6 技術手冊
  - [3.4 流程控制](docs/CH03.md#34-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6)
  - [3.5 接下來的主題](docs/CH03.md#35-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 4 章 從 autoboxing、unboxing 認識物件
- - 4.1 關於物件
- - 4.2 自動裝箱、拆箱
- - 4.3 接下來的主題
+- [第 4 章 從 autoboxing、unboxing 認識物件](docs/CH04.md#%E7%AC%AC-4-%E7%AB%A0-%E5%BE%9E-autoboxingunboxing-%E8%AA%8D%E8%AD%98%E7%89%A9%E4%BB%B6)
+ - [4.1 關於物件](docs/CH04.md#41-%E9%97%9C%E6%96%BC%E7%89%A9%E4%BB%B6)
+ - [4.2 自動裝箱、拆箱](docs/CH04.md#42-%E8%87%AA%E5%8B%95%E8%A3%9D%E7%AE%B1%E6%8B%86%E7%AE%B1)
+ - [4.3 接下來的主題](docs/CH04.md#43-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
+ 
+- 第 5 章 陣列
+ - 5.1 一維陣列、二維陣列
+ - 5.2 進階陣列觀念
+ - 5.3 接下來的主題
  
 待續 ...
