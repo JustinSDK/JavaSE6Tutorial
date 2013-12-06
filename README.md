@@ -50,8 +50,8 @@ Java SE 6 技術手冊
  - [6.2 字串進階運用](docs/CH06.md#62-%E5%AD%97%E4%B8%B2%E9%80%B2%E9%9A%8E%E9%81%8B%E7%94%A8)
  - [6.3 接下來的主題](docs/CH06.md#63-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 7 章 封裝（Encapsulation）
- - 7.1 定義類別（Class）
+- [第 7 章 封裝（Encapsulation）](docs/CH07.md#%E7%AC%AC-7-%E7%AB%A0-%E5%B0%81%E8%A3%9Dencapsulation)
+ - [7.1 定義類別（Class）](docs/CH07.md#71-%E5%AE%9A%E7%BE%A9%E9%A1%9E%E5%88%A5class)
  - 7.2 關於方法
  - 7.3 接下來的主題
  
