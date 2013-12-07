@@ -55,8 +55,8 @@ Java SE 6 技術手冊
  - [7.2 關於方法](docs/CH07.md#72-%E9%97%9C%E6%96%BC%E6%96%B9%E6%B3%95)
  - [7.3 接下來的主題](docs/CH07.md#73-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 8 章 繼承（Inheritance）、多型（Polymorphism） 
- - 8.1 繼承
+- [第 8 章 繼承（Inheritance）、多型（Polymorphism）](docs/CH08.md#%E7%AC%AC-8-%E7%AB%A0-%E7%B9%BC%E6%89%BFinheritance%E5%A4%9A%E5%9E%8Bpolymorphism)
+ - [8.1 繼承](docs/CH08.md#81-%E7%B9%BC%E6%89%BF)
  - 8.2 多型（Polymorphism）
  - 8.3 接下來的主題
  
