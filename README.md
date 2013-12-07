@@ -52,7 +52,12 @@ Java SE 6 技術手冊
  
 - [第 7 章 封裝（Encapsulation）](docs/CH07.md#%E7%AC%AC-7-%E7%AB%A0-%E5%B0%81%E8%A3%9Dencapsulation)
  - [7.1 定義類別（Class）](docs/CH07.md#71-%E5%AE%9A%E7%BE%A9%E9%A1%9E%E5%88%A5class)
- - 7.2 關於方法
- - 7.3 接下來的主題
+ - [7.2 關於方法](docs/CH07.md#72-%E9%97%9C%E6%96%BC%E6%96%B9%E6%B3%95)
+ - [7.3 接下來的主題](docs/CH07.md#73-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
+ 
+- 第 8 章 繼承（Inheritance）、多型（Polymorphism） 
+ - 8.1 繼承
+ - 8.2 多型（Polymorphism）
+ - 8.3 接下來的主題
  
 待續 ...
