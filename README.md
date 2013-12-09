@@ -74,10 +74,15 @@ Java SE 6 技術手冊
  - [10.5 斷言（Assertion）](docs/CH10.md#105-%E6%96%B7%E8%A8%80assertion)
  - [10.6 接下來的主題](docs/CH10.md#106-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 11 章 列舉型態（Enumerated Types）
- - 11.1 常數設置與列舉型態
- - 11.2 定義列舉型態
- - 11.3 接下來的主題
+- [第 11 章 列舉型態（Enumerated Types）](docs/CH11.md#%E7%AC%AC-11-%E7%AB%A0-%E5%88%97%E8%88%89%E5%9E%8B%E6%85%8Benumerated-types)
+ - [11.1 常數設置與列舉型態](docs/CH11.md#111-%E5%B8%B8%E6%95%B8%E8%A8%AD%E7%BD%AE%E8%88%87%E5%88%97%E8%88%89%E5%9E%8B%E6%85%8B)
+ - [11.2 定義列舉型態](docs/CH11.md#112-%E5%AE%9A%E7%BE%A9%E5%88%97%E8%88%89%E5%9E%8B%E6%85%8B)
+ - [11.3 接下來的主題](docs/CH11.md#113-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
+ 
+- 泛型（Generics）
+- 12.1 泛型入門
+- 12.2 泛型進階語法
+- 12.3 接下來的主題
  
  
 待續 ...
