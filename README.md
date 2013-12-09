@@ -60,9 +60,18 @@ Java SE 6 技術手冊
  - [8.2 多型（Polymorphism）](docs/CH08.md#82-%E5%A4%9A%E5%9E%8Bpolymorphism)
  - [8.3 接下來的主題](docs/CH08.md#83-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 9 章 管理類別檔案
- - 9.1 內部類別
- - 9.2 package 與 import
- - 9.3 接下來的主題
+- [第 9 章 管理類別檔案](docs/CH09.md#%E7%AC%AC-9-%E7%AB%A0-%E7%AE%A1%E7%90%86%E9%A1%9E%E5%88%A5%E6%AA%94%E6%A1%88)
+ - [9.1 內部類別](docs/CH09.md#91-%E5%85%A7%E9%83%A8%E9%A1%9E%E5%88%A5)
+ - [9.2 package 與 import](docs/CH09.md#92-package-%E8%88%87-import)
+ - [9.3 接下來的主題](docs/CH09.md#93-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
+ 
+- 第 10 章 例外處理（Exception Handling）
+ - 10.1 例外處理入門
+ - 10.2 受檢例外（Checked Exception）、執行時期例外
+（Runtime Exception）
+ - 10.3 throw、throws
+ - 10.4 例外的繼承架構
+ - 10.5 斷言（Assertion）
+ - 10.6 接下來的主題
  
 待續 ...
