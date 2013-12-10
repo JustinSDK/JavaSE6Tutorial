@@ -125,10 +125,10 @@ Java SE 6 技術手冊
  - [19.5 Executable Jar 的製作](docs/CH19.md#195-executable-jar-%E7%9A%84%E8%A3%BD%E4%BD%9C)
  - [19.6 接下來的主題](docs/CH19.md#196-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 20 章 JDBC 入門
- - 20.1 使用 JDBC 連接資料庫
- - 20.2 使用 JDBC 進行資料操作
- - 20.3 接下來的主題
+- [第 20 章 JDBC 入門](docs/CH20.md#%E7%AC%AC-20-%E7%AB%A0-jdbc-%E5%85%A5%E9%96%80)
+ - [20.1 使用 JDBC 連接資料庫](docs/CH20.md#201-%E4%BD%BF%E7%94%A8-jdbc-%E9%80%A3%E6%8E%A5%E8%B3%87%E6%96%99%E5%BA%AB)
+ - [20.2 使用 JDBC 進行資料操作](docs/CH20.md#202-%E4%BD%BF%E7%94%A8-jdbc-%E9%80%B2%E8%A1%8C%E8%B3%87%E6%96%99%E6%93%8D%E4%BD%9C)
+ - [20.3 接下來的主題](docs/CH20.md#203-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
 - 第 21 章 Java SE 6 新功能簡介
  - 21.1 Java SE 6 基本新功能
