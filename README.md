@@ -122,7 +122,7 @@ Java SE 6 技術手冊
  - [19.2 Swing 入門](docs/CH19.md#192-swing-%E5%85%A5%E9%96%80)
  - [19.3 事件處理](docs/CH19.md#193-%E4%BA%8B%E4%BB%B6%E8%99%95%E7%90%86)
  - [19.4 文字編輯與儲存](docs/CH19.md#194-%E6%96%87%E5%AD%97%E7%B7%A8%E8%BC%AF%E8%88%87%E5%84%B2%E5%AD%98)
- - [19.5 Executable Jar 的製作](docs/CH19.md#195-executable-jar%E7%9A%84%E8%A3%BD%E4%BD%9C)
+ - [19.5 Executable Jar 的製作](docs/CH19.md#195-executable-jar-%E7%9A%84%E8%A3%BD%E4%BD%9C)
  - [19.6 接下來的主題](docs/CH19.md#196-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
 - 第 20 章 JDBC 入門
