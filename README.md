@@ -106,10 +106,10 @@ Java SE 6 技術手冊
  - [16.2 使用反射生成與操作物件](docs/CH16.md#162-%E4%BD%BF%E7%94%A8%E5%8F%8D%E5%B0%84%E7%94%9F%E6%88%90%E8%88%87%E6%93%8D%E4%BD%9C%E7%89%A9%E4%BB%B6)
  - [16.3 接下來的主題](docs/CH16.md#163-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 17 章 Annotation
- - 17.1 Annotation
- - 17.2 meta-annotation
- - 17.3 接下來的主題
+- [第 17 章 Annotation(docs/CH17.md#%E7%AC%AC-17-%E7%AB%A0-annotation)
+ - [17.1 Annotation(docs/CH17.md#171-annotation)
+ - [17.2 meta-annotation(docs/CH17.md#172-meta-annotation)
+ - [17.3 接下來的主題](docs/CH17.md#173-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
 - 第 18 章 捨遺補缺
  - 18.1 日期、時間
