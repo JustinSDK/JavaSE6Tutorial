@@ -111,19 +111,19 @@ Java SE 6 技術手冊
  - [17.2 meta-annotation](docs/CH17.md#172-meta-annotation)
  - [17.3 接下來的主題](docs/CH17.md#173-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 18 章 捨遺補缺
- - 18.1 日期、時間
- - 18.2 日誌（Logging）
- - 18.3 訊息綁定
- - 18.4 接下來的主題
+- [第 18 章 捨遺補缺](docs/CH18.md#%E7%AC%AC-18-%E7%AB%A0-%E6%8D%A8%E9%81%BA%E8%A3%9C%E7%BC%BA)
+ - [18.1 日期、時間](docs/CH18.md#181-%E6%97%A5%E6%9C%9F%E6%99%82%E9%96%93)
+ - [18.2 日誌（Logging）](docs/CH18.md#182-%E6%97%A5%E8%AA%8Clogging)
+ - [18.3 訊息綁定](docs/CH18.md#183-%E8%A8%8A%E6%81%AF%E7%B6%81%E5%AE%9A)
+ - [18.4 接下來的主題](docs/CH18.md#184-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
 
-- 第 19 章 專題製作 - 文字編輯器
- - 19.1 產品生命週期
- - 19.2 Swing 入門
- - 19.3 事件處理
- - 19.4 文字編輯與儲存
- - 19.5 Executable Jar 的製作
- - 19.6 接下來的主題
+- [第 19 章 專題製作 - 文字編輯器](docs/CH19.md#%E7%AC%AC-19-%E7%AB%A0-%E5%B0%88%E9%A1%8C%E8%A3%BD%E4%BD%9C---%E6%96%87%E5%AD%97%E7%B7%A8%E8%BC%AF%E5%99%A8)
+ - [19.1 產品生命週期](docs/CH19.md#191-%E7%94%A2%E5%93%81%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F)
+ - [19.2 Swing 入門](docs/CH19.md#192-swing-%E5%85%A5%E9%96%80)
+ - [19.3 事件處理](docs/CH19.md#193-%E4%BA%8B%E4%BB%B6%E8%99%95%E7%90%86)
+ - [19.4 文字編輯與儲存](docs/CH19.md#194-%E6%96%87%E5%AD%97%E7%B7%A8%E8%BC%AF%E8%88%87%E5%84%B2%E5%AD%98)
+ - [19.5 Executable Jar 的製作](docs/CH19.md#195-executable-jar%E7%9A%84%E8%A3%BD%E4%BD%9C)
+ - [19.6 接下來的主題](docs/CH19.md#196-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
 - 第 20 章 JDBC 入門
  - 20.1 使用 JDBC 連接資料庫
