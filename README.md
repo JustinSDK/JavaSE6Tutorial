@@ -101,10 +101,10 @@ Java SE 6 技術手冊
  - [15.3 concurrent 套件新增類別](docs/CH15.md#153-concurrent-%E5%A5%97%E4%BB%B6%E6%96%B0%E5%A2%9E%E9%A1%9E%E5%88%A5)
  - [15.4 接下來的主題](docs/CH15.md#154-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 16 章 反射（Reflection）
- - 16.1 類別載入與檢視
- - 16.2 使用反射生成與操作物件
- - 16.3 接下來的主題
+- [第 16 章 反射（Reflection）](docs/CH16.md#%E7%AC%AC-16-%E7%AB%A0-%E5%8F%8D%E5%B0%84reflection)
+ - [16.1 類別載入與檢視](docs/CH16.md#161-%E9%A1%9E%E5%88%A5%E8%BC%89%E5%85%A5%E8%88%87%E6%AA%A2%E8%A6%96)
+ - [16.2 使用反射生成與操作物件](docs/CH16.md#162-%E4%BD%BF%E7%94%A8%E5%8F%8D%E5%B0%84%E7%94%9F%E6%88%90%E8%88%87%E6%93%8D%E4%BD%9C%E7%89%A9%E4%BB%B6)
+ - [16.3 接下來的主題](docs/CH16.md#163-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
 - 第 17 章 Annotation
  - 17.1 Annotation
