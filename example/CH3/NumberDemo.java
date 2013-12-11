@@ -1,12 +1,12 @@
 public class NumberDemo {
     public static void main(String[] args) {
-        // ¤Q¶i¦ì 19 Âà¦¨¤G¶i¦ì 10011
+        // åé€²ä½ 19 è½‰æˆäºŒé€²ä½ 10011
         System.out.println(Integer.toBinaryString(19));
 
-        // ¤Q¶i¦ì 19 Âà¦¨¤Q¤»¶i¦ì 13
+        // åé€²ä½ 19 è½‰æˆåå…­é€²ä½ 13
         System.out.println(Integer.toHexString(19));
 
-        // ¤Q¶i¦ì 19 Âà¦¨¤K¶i¦ì 23
+        // åé€²ä½ 19 è½‰æˆå…«é€²ä½ 23
         System.out.println(Integer.toOctalString(19));
     }
 }

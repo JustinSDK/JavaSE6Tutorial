@@ -6,8 +6,8 @@ public class BufferedReaderDemo {
                           new BufferedReader(
                              new InputStreamReader(System.in)); 
 
-        System.out.print("½Ğ¿é¤J¤@¦C¤å¦r¡A¥i¥]¬AªÅ¥Õ: "); 
+        System.out.print("è«‹è¼¸å…¥ä¸€åˆ—æ–‡å­—ï¼Œå¯åŒ…æ‹¬ç©ºç™½: "); 
         String text = bufferedReader.readLine(); 
-        System.out.println("±z¿é¤Jªº¤å¦r: " + text); 
+        System.out.println("æ‚¨è¼¸å…¥çš„æ–‡å­—: " + text); 
     } 
 }

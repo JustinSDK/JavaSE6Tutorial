@@ -4,7 +4,7 @@ public class VariableDemo {
         double scoreOfStudent = 80.0; 
         char levelOfStudent = 'B'; 
 
-        System.out.println("¦~¯Å\t ±o¤À\t µ¥¯Å"); 
+        System.out.println("å¹´ç´š\t å¾—åˆ†\t ç­‰ç´š"); 
         System.out.printf("%4d\t %4.1f\t %4c", 
             ageOfStudent, scoreOfStudent, levelOfStudent); 
     } 

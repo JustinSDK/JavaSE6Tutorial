@@ -4,26 +4,26 @@ public class ScoreLevel2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
  
-        System.out.print("½Ğ¿é¤J¤À¼Æ: "); 
+        System.out.print("è«‹è¼¸å…¥åˆ†æ•¸: "); 
         int score = scanner.nextInt();
         int level = (int) score/10; 
  
         switch(level) { 
             case 10: 
             case 9: 
-                System.out.println("±oA"); 
+                System.out.println("å¾—A"); 
                 break; 
             case 8: 
-                System.out.println("±oB"); 
+                System.out.println("å¾—B"); 
                 break; 
             case 7: 
-                System.out.println("±oC"); 
+                System.out.println("å¾—C"); 
                 break; 
             case 6: 
-                System.out.println("±oD"); 
+                System.out.println("å¾—D"); 
                 break; 
             default: 
-                System.out.println("±oE(¤£¤Î®æ)"); 
+                System.out.println("å¾—E(ä¸åŠæ ¼)"); 
         }
     }
 }

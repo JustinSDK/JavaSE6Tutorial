@@ -1,12 +1,12 @@
 public class XorCode { 
     public static void main(String[] args) { 
         char ch = 'A'; 
-        System.out.println("½s½X«e¡G" + ch); 
+        System.out.println("ç·¨ç¢¼å‰ï¼š" + ch); 
 
         ch = (char)(ch^7); 
-        System.out.println("½s½X«á¡G" + ch); 
+        System.out.println("ç·¨ç¢¼å¾Œï¼š" + ch); 
 
         ch = (char)(ch^7); 
-        System.out.println("¸Ñ½X¡G" + ch); 
+        System.out.println("è§£ç¢¼ï¼š" + ch); 
     } 
 } 

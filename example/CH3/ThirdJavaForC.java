@@ -1,6 +1,6 @@
 public class ThirdJavaForC {
     public static void main(String[] args) {
-        System.out.printf("%s¡I ³o¬O±zªº²Ä %d ­ÓJavaµ{¦¡¡I\n", 
-                          "C»y¨¥Fan", 3);
+        System.out.printf("%sï¼ é€™æ˜¯æ‚¨çš„ç¬¬ %d å€‹Javaç¨‹å¼ï¼\n", 
+                          "Cèªè¨€Fan", 3);
     }
 }

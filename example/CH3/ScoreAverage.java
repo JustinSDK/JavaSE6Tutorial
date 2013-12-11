@@ -10,10 +10,10 @@ public class ScoreAverage {
         while(score != -1) { 
             count++; 
             sum += score; 
-            System.out.print("¿é¤J¤À¼Æ(-1µ²§ô)¡G"); 
+            System.out.print("è¼¸å…¥åˆ†æ•¸(-1çµæŸ)ï¼š"); 
             score = scanner.nextInt();
         } 
  
-        System.out.println("¥­§¡¡G" + (double) sum/count); 
+        System.out.println("å¹³å‡ï¼š" + (double) sum/count); 
     } 
 }

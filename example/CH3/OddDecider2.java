@@ -4,9 +4,9 @@ public class OddDecider2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("½Ğ¿é¤J¼Æ¦r: "); 
+        System.out.print("è«‹è¼¸å…¥æ•¸å­—: "); 
         int number = scanner.nextInt(); 
-        System.out.println("¬O§_¬°©_¼Æ? " + 
-                  ((number&1) != 0 ? '¬O' : '§_')); 
+        System.out.println("æ˜¯å¦ç‚ºå¥‡æ•¸? " + 
+                  ((number&1) != 0 ? 'æ˜¯' : 'å¦')); 
     }
 }
