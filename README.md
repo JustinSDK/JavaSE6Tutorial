@@ -130,8 +130,8 @@ Java SE 6 技術手冊
  - [20.2 使用 JDBC 進行資料操作](docs/CH20.md#202-%E4%BD%BF%E7%94%A8-jdbc-%E9%80%B2%E8%A1%8C%E8%B3%87%E6%96%99%E6%93%8D%E4%BD%9C)
  - [20.3 接下來的主題](docs/CH20.md#203-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
-- 第 21 章 Java SE 6 新功能簡介
- - 21.1 Java SE 6 基本新功能
- - 21.2 Apache Derby、JDBC 4.0
- - 21.3 接下來的主題
+- [第 21 章 Java SE 6 新功能簡介](docs/CH21.md#java-se-6-%E6%96%B0%E5%8A%9F%E8%83%BD%E7%B0%A1%E4%BB%8B)
+ - [21.1 Java SE 6 基本新功能](docs/CH21.md#211-java-se-6-%E5%9F%BA%E6%9C%AC%E6%96%B0%E5%8A%9F%E8%83%BD)
+ - [21.2 Apache Derby、JDBC 4.0](docs/CH21.md#2121-%E4%BD%BF%E7%94%A8-apache-derby)
+ - [21.3 接下來的主題](docs/CH21.md#213-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
  
