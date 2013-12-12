@@ -3,10 +3,10 @@ public class AutoBoxDemo {
         Integer data1 = 10;
         Integer data2 = 20;
         
-        // Âà¬°double­È¦A°£¥H3
+        // è½‰ç‚ºdoubleå€¼å†é™¤ä»¥3
         System.out.println(data1.doubleValue() / 3);
 
-        // ¶i¦æ¨â­Ó­Èªº¤ñ¸û
+        // é€²è¡Œå…©å€‹å€¼çš„æ¯”è¼ƒ
         System.out.println(data1.compareTo(data2));
     }
 }

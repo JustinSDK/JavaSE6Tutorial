@@ -6,6 +6,6 @@ public class WelcomeRequest implements IRequest {
     }
  
     public void execute() {
-        System.out.printf("Åwªï¨Ó¨ì %s¡I%n", place);
+        System.out.printf("æ­¡è¿ä¾†åˆ° %sï¼%n", place);
     }
 }

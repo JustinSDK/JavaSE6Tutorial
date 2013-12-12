@@ -6,12 +6,12 @@ public class LoggingLevelDemo {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger("loggingLevelDemo");
         
-        logger.severe("ÄY­«°T®§");
-        logger.warning("Äµ¥Ü°T®§");
-        logger.info("¤@¯ë°T®§");
-        logger.config("³]©w¤è­±ªº°T®§");
-        logger.fine("²Ó·Lªº°T®§");
-        logger.finer("§ó²Ó·Lªº°T®§");
-        logger.finest("³Ì²Ó·Lªº°T®§");
+        logger.severe("åš´é‡è¨Šæ¯");
+        logger.warning("è­¦ç¤ºè¨Šæ¯");
+        logger.info("ä¸€èˆ¬è¨Šæ¯");
+        logger.config("è¨­å®šæ–¹é¢çš„è¨Šæ¯");
+        logger.fine("ç´°å¾®çš„è¨Šæ¯");
+        logger.finer("æ›´ç´°å¾®çš„è¨Šæ¯");
+        logger.finest("æœ€ç´°å¾®çš„è¨Šæ¯");
     }
 }

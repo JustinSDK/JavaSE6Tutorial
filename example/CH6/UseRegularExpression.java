@@ -14,30 +14,30 @@ public class UseRegularExpression {
         String emailEL = "^[_a-z0-9-]+(.[_a-z0-9-]+)*" + 
                          "@[a-z0-9-]+(.[a-z0-9-]+)*$";
 
-        System.out.print("¿é¤J¤â¾÷¸¹½X: "); 
+        System.out.print("è¼¸å…¥æ‰‹æ©Ÿè™Ÿç¢¼: "); 
         String input = reader.readLine();
  
         if(input.matches(phoneEL)) 
-            System.out.println("®æ¦¡¥¿½T"); 
+            System.out.println("æ ¼å¼æ­£ç¢º"); 
         else 
-            System.out.println("®æ¦¡¿ù»~");
+            System.out.println("æ ¼å¼éŒ¯èª¤");
  
-        System.out.print("¿é¤Jhref¼ĞÅÒ: "); 
+        System.out.print("è¼¸å…¥hrefæ¨™ç±¤: "); 
         input = reader.readLine();
  
-        // ÅçÃÒhref¼ĞÅÒ 
+        // é©—è­‰hrefæ¨™ç±¤ 
         if(input.matches(urlEL))
-            System.out.println("®æ¦¡¥¿½T"); 
+            System.out.println("æ ¼å¼æ­£ç¢º"); 
         else
-            System.out.println("®æ¦¡¿ù»~");
+            System.out.println("æ ¼å¼éŒ¯èª¤");
  
-        System.out.print("¿é¤J¹q¤l¶l¥ó: "); 
+        System.out.print("è¼¸å…¥é›»å­éƒµä»¶: "); 
         input = reader.readLine();
  
-        // ÅçÃÒ¹q¤l¶l¥ó®æ¦¡ 
+        // é©—è­‰é›»å­éƒµä»¶æ ¼å¼ 
         if(input.matches(emailEL))
-            System.out.println("®æ¦¡¥¿½T"); 
+            System.out.println("æ ¼å¼æ­£ç¢º"); 
         else
-            System.out.println("®æ¦¡¿ù»~"); 
+            System.out.println("æ ¼å¼éŒ¯èª¤"); 
     } 
 }

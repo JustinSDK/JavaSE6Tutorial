@@ -7,18 +7,18 @@ public class StreamReaderWriterDemo {
         try { 
             FileInputStream fileInputStream = 
                 new FileInputStream(args[0]); 
-            // ¬°FileInputStream¥[¤W¦r¤¸³B²z¥\¯à
+            // ç‚ºFileInputStreamåŠ ä¸Šå­—å…ƒè™•ç†åŠŸèƒ½
             InputStreamReader inputStreamReader = 
                 new InputStreamReader(fileInputStream); 
 
             FileOutputStream fileOutputStream = 
                 new FileOutputStream("backup_" + args[0]); 
-            // ¬°FileOutputStream¥[¤W¦r¤¸³B²z¥\¯à
+            // ç‚ºFileOutputStreamåŠ ä¸Šå­—å…ƒè™•ç†åŠŸèƒ½
             OutputStreamWriter outputStreamWriter = 
                 new OutputStreamWriter(fileOutputStream); 
             
             int ch = 0; 
-            // ¥H¦r¤¸¤è¦¡Åã¥ÜÀÉ®×¤º®e 
+            // ä»¥å­—å…ƒæ–¹å¼é¡¯ç¤ºæª”æ¡ˆå…§å®¹ 
             while((ch = inputStreamReader.read()) != -1) { 
                 System.out.print((char) ch); 
                 outputStreamWriter.write(ch); 
@@ -29,7 +29,7 @@ public class StreamReaderWriterDemo {
             outputStreamWriter.close(); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
-            System.out.println("¨S¦³«ü©wÀÉ®×");
+            System.out.println("æ²’æœ‰æŒ‡å®šæª”æ¡ˆ");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 

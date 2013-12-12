@@ -13,7 +13,7 @@ public class EraserThread extends Thread {
         mask = "\010" + maskChar;
     }
 
-    // °±¤î°õ¦æºü®É³]©w¬°false
+    // åœæ­¢åŸ·è¡Œç·’æ™‚è¨­å®šç‚ºfalse
     public void setActive(boolean active) {
         this.active = active;
     }
@@ -22,12 +22,12 @@ public class EraserThread extends Thread {
         return active;
     }
 
-    // ­«·s©w¸qrun()¤èªk
+    // é‡æ–°å®šç¾©run()æ–¹æ³•
     public void run () {
         while(isActive()) {
             System.out.print(mask);
 	     try {
-                // ¼È°±¥Ø«eªº°õ¦æºü50²@¬í
+                // æš«åœç›®å‰çš„åŸ·è¡Œç·’50æ¯«ç§’
 	        Thread.currentThread().sleep(50);
              } 
              catch(InterruptedException e) {

@@ -4,7 +4,7 @@ public class EnumCompareTo {
     }
  
     public static void compareToAction(Action inputAction) {
-        System.out.println("¿é¤J¡G" + inputAction);
+        System.out.println("è¼¸å…¥ï¼š" + inputAction);
         for(Action action: Action.values()) {
             System.out.println(action.compareTo(inputAction));
         }

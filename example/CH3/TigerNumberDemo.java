@@ -1,12 +1,12 @@
 public class TigerNumberDemo {
     public static void main(String[] args) {
-        // ¿é¥X 19 ªº¤Q¶i¦ìªí¥Ü
+        // è¼¸å‡º 19 çš„åé€²ä½è¡¨ç¤º
         System.out.printf("%d%n", 19);
 
-        // ¿é¥X 19 ªº¤K¶i¦ìªí¥Ü
+        // è¼¸å‡º 19 çš„å…«é€²ä½è¡¨ç¤º
         System.out.printf("%o%n", 19);
 
-        // ¿é¥X 19 ªº¤Q¤»¶i¦ìªí¥Ü
+        // è¼¸å‡º 19 çš„åå…­é€²ä½è¡¨ç¤º
         System.out.printf("%x%n", 19); 
     }
 }

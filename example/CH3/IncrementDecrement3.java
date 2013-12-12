@@ -3,9 +3,9 @@ public class IncrementDecrement3 {
         int i = 0; 
         int number = 0; 
 
-        number = i++;    // ¬Û·í©ónumber = i; i = i + 1; 
+        number = i++;    // ç›¸ç•¶æ–¼number = i; i = i + 1; 
         System.out.println(number); 
-        number = i--;     // ¬Û·í©ó number = i; i = i - 1; 
+        number = i--;     // ç›¸ç•¶æ–¼ number = i; i = i - 1; 
         System.out.println(number); 
     }
 }

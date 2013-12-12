@@ -4,23 +4,23 @@ import java.io.*;
  
 public class ThreadGroupDemo2 {
     public static void main(String[] args) {
-        // «Ø¥ß¨Ò¥~³B²zªÌ
+        // å»ºç«‹ä¾‹å¤–è™•ç†è€…
         ThreadExceptionHandler handler = 
                  new ThreadExceptionHandler();
         ThreadGroup threadGroup1 = new ThreadGroup("group1");
         
-        // ³o¬O°Î¦WÃş§O¼gªk
+        // é€™æ˜¯åŒ¿åé¡åˆ¥å¯«æ³•
         Thread thread1 = 
-            // ³o­Ó°õ¦æºü¬OthreadGroup1ªº¤@­û
+            // é€™å€‹åŸ·è¡Œç·’æ˜¯threadGroup1çš„ä¸€å“¡
             new Thread(threadGroup1,
               new Runnable() {
                 public void run() {
-                    // ¥á¥Xunchecked¨Ò¥~
-                    throw new RuntimeException("´ú¸Õ¨Ò¥~");
+                    // ä¸Ÿå‡ºuncheckedä¾‹å¤–
+                    throw new RuntimeException("æ¸¬è©¦ä¾‹å¤–");
                 }
             }); 
 
-        // ³]©w¨Ò¥~³B²zªÌ
+        // è¨­å®šä¾‹å¤–è™•ç†è€…
         thread1.setUncaughtExceptionHandler(handler);     
         thread1.start();
     }

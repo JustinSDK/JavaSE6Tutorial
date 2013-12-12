@@ -19,7 +19,7 @@ public class PrimeCallable implements Callable<int[]> {
         for(int i = 2; i <= max; i++) 
             prime[i] = 1; 
 
-        for(int i = 2; i*i <= max; i++) { // ³oÃä¥i¥H§ï¶i 
+        for(int i = 2; i*i <= max; i++) { // é€™é‚Šå¯ä»¥æ”¹é€² 
             if(prime[i] == 1) { 
                 for(int j = 2*i; j <= max; j++) { 
                     if(j % i == 0) 

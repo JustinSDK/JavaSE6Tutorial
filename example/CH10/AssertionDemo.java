@@ -5,7 +5,7 @@ public class AssertionDemo {
         }
         else {
             assert args.length == 0;
-            System.out.println("¨S¦³¿é¤J¤Þ¼Æ");
+            System.out.println("æ²’æœ‰è¼¸å…¥å¼•æ•¸");
         }
     }
 }

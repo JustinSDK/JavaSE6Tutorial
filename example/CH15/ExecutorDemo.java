@@ -25,6 +25,6 @@ public class ExecutorDemo {
             service.submit(runnable);
         }
 		
-        service.shutdown(); // ³Ì«á°O±oÃö³¬Thread pool
+        service.shutdown(); // æœ€å¾Œè¨˜å¾—é—œé–‰Thread pool
     }
 }

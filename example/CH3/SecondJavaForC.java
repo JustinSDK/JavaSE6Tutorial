@@ -1,6 +1,6 @@
 public class SecondJavaForC {
     public static void main(String[] args) {
-        System.out.printf("%s¡I ³o¬O±zªº²Ä¤@­ÓJavaµ{¦¡¡I", 
-                          "C»y¨¥Fan").println();
+        System.out.printf("%sï¼ é€™æ˜¯æ‚¨çš„ç¬¬ä¸€å€‹Javaç¨‹å¼ï¼", 
+                          "Cèªè¨€Fan").println();
     }
 }

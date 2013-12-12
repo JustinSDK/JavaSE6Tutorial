@@ -1,5 +1,5 @@
 public class Rectangle { 
-    // ¨ü«OÅ@ªºmember 
+    // å—ä¿è­·çš„member 
     protected int x;
     protected int y;
     protected int width;

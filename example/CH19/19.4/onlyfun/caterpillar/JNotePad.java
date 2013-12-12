@@ -56,7 +56,7 @@ public class JNotePad extends JFrame {
     private JFileChooser fileChooser;
     
     public JNotePad() {
-        super("·s¼W¤å¦rÀÉ®×");
+        super("æ–°å¢æ–‡å­—æª”æ¡ˆ");
         setUpUIComponent();
         setUpEventListener();
         setVisible(true);
@@ -65,48 +65,48 @@ public class JNotePad extends JFrame {
     private void setUpUIComponent() {
         setSize(640, 480);
         
-        // ¿ï³æ¦C
+        // é¸å–®åˆ—
         JMenuBar menuBar = new JMenuBar();
         
-        // ³]¸m¡uÀÉ®×¡v¿ï³æ
-        JMenu fileMenu = new JMenu("ÀÉ®×");
-        menuOpen = new JMenuItem("¶}±ÒÂÂÀÉ");
-        // §Ö³tÁä³]¸m
+        // è¨­ç½®ã€Œæª”æ¡ˆã€é¸å–®
+        JMenu fileMenu = new JMenu("æª”æ¡ˆ");
+        menuOpen = new JMenuItem("é–‹å•ŸèˆŠæª”");
+        // å¿«é€Ÿéµè¨­ç½®
         menuOpen.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_O, 
                             InputEvent.CTRL_MASK));
-        menuSave = new JMenuItem("Àx¦sÀÉ®×");
+        menuSave = new JMenuItem("å„²å­˜æª”æ¡ˆ");
         menuSave.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_S, 
                             InputEvent.CTRL_MASK));
-        menuSaveAs = new JMenuItem("¥t¦s·sÀÉ");
+        menuSaveAs = new JMenuItem("å¦å­˜æ–°æª”");
 
-        menuClose = new JMenuItem("Ãö³¬");
+        menuClose = new JMenuItem("é—œé–‰");
         menuClose.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_Q, 
                             InputEvent.CTRL_MASK));
         
         fileMenu.add(menuOpen);
-        fileMenu.addSeparator(); // ¤À¹j½u
+        fileMenu.addSeparator(); // åˆ†éš”ç·š
         fileMenu.add(menuSave);
         fileMenu.add(menuSaveAs);        
-        fileMenu.addSeparator(); // ¤À¹j½u
+        fileMenu.addSeparator(); // åˆ†éš”ç·š
         fileMenu.add(menuClose);
         
-        // ³]¸m¡u½s¿è¡v¿ï³æ        
-        editMenu = new JMenu("½s¿è");
-        menuCut = new JMenuItem("°Å¤U");
+        // è¨­ç½®ã€Œç·¨è¼¯ã€é¸å–®        
+        editMenu = new JMenu("ç·¨è¼¯");
+        menuCut = new JMenuItem("å‰ªä¸‹");
         menuCut.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_X, 
                             InputEvent.CTRL_MASK));
-        menuCopy = new JMenuItem("½Æ»s");
+        menuCopy = new JMenuItem("è¤‡è£½");
         menuCopy.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_C, 
                             InputEvent.CTRL_MASK));
-        menuPaste = new JMenuItem("¶K¤W");
+        menuPaste = new JMenuItem("è²¼ä¸Š");
         menuPaste.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_V, 
                             InputEvent.CTRL_MASK));
@@ -114,9 +114,9 @@ public class JNotePad extends JFrame {
         editMenu.add(menuCopy);
         editMenu.add(menuPaste);
         
-        // ³]¸m¡uÃö©ó¡v¿ï³æ        
-        JMenu aboutMenu = new JMenu("Ãö©ó");
-        menuAbout = new JMenuItem("Ãö©óJNotePad");
+        // è¨­ç½®ã€Œé—œæ–¼ã€é¸å–®        
+        JMenu aboutMenu = new JMenu("é—œæ–¼");
+        menuAbout = new JMenuItem("é—œæ–¼JNotePad");
         aboutMenu.add(menuAbout);
         
         menuBar.add(fileMenu);
@@ -125,9 +125,9 @@ public class JNotePad extends JFrame {
         
         setJMenuBar(menuBar);
         
-        // ¤å¦r½s¿è°Ï°ì
+        // æ–‡å­—ç·¨è¼¯å€åŸŸ
         textArea = new JTextArea();
-        textArea.setFont(new Font("²Ó©úÅé", Font.PLAIN, 16));
+        textArea.setFont(new Font("ç´°æ˜é«”", Font.PLAIN, 16));
         textArea.setLineWrap(true);
         JScrollPane panel = new JScrollPane(textArea,
           ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
@@ -136,8 +136,8 @@ public class JNotePad extends JFrame {
         Container contentPane = getContentPane();
         contentPane.add(panel, BorderLayout.CENTER);  
         
-        // ª¬ºA¦C
-        stateBar = new JLabel("¥¼­×§ï");
+        // ç‹€æ…‹åˆ—
+        stateBar = new JLabel("æœªä¿®æ”¹");
         stateBar.setHorizontalAlignment(SwingConstants.LEFT); 
         stateBar.setBorder(
                 BorderFactory.createEtchedBorder());
@@ -149,7 +149,7 @@ public class JNotePad extends JFrame {
     }
     
     private void setUpEventListener() {
-        // «ö¤Uµøµ¡Ãö³¬¶s¨Æ¥ó³B²z
+        // æŒ‰ä¸‹è¦–çª—é—œé–‰éˆ•äº‹ä»¶è™•ç†
         addWindowListener(
             new WindowAdapter() {
                 public void windowClosing(WindowEvent e) { 
@@ -158,7 +158,7 @@ public class JNotePad extends JFrame {
             }
         );
         
-        // ¿ï³æ - ¶}±ÒÂÂÀÉ
+        // é¸å–® - é–‹å•ŸèˆŠæª”
         menuOpen.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -167,7 +167,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ¿ï³æ - Àx¦sÀÉ®×
+        // é¸å–® - å„²å­˜æª”æ¡ˆ
         menuSave.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -176,7 +176,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ¿ï³æ - ¥t¦s·sÀÉ
+        // é¸å–® - å¦å­˜æ–°æª”
         menuSaveAs.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -185,7 +185,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ¿ï³æ - Ãö³¬ÀÉ®×
+        // é¸å–® - é—œé–‰æª”æ¡ˆ
         menuClose.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -194,7 +194,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ¿ï³æ - °Å¤U
+        // é¸å–® - å‰ªä¸‹
         menuCut.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -203,7 +203,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ¿ï³æ - ½Æ»s
+        // é¸å–® - è¤‡è£½
         menuCopy.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -212,7 +212,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ¿ï³æ - ¶K¤W
+        // é¸å–® - è²¼ä¸Š
         menuPaste.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -221,19 +221,19 @@ public class JNotePad extends JFrame {
             }
         );
         
-        // ¿ï³æ - Ãö©ó
+        // é¸å–® - é—œæ–¼
         menuAbout.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    // Åã¥Ü¹ï¸Ü¤è¶ô
+                    // é¡¯ç¤ºå°è©±æ–¹å¡Š
                     JOptionPane.showOptionDialog(null, 
-                        "µ{¦¡¦WºÙ:\n    JNotePad \n" + 
-                        "µ{¦¡³]­p:\n    ¨}¸¯®æ\n" + 
-                        "Â²¤¶:\n    ¤@­ÓÂ²³æªº¤å¦r½s¿è¾¹\n" + 
-                        "    ¥i§@¬°Åç¦¬Javaªº¹ê§@¹ï¶H\n" +
-                        "    Åwªïºô¤Í¤U¸ü¬ã¨s¥æ¬y\n\n" +
+                        "ç¨‹å¼åç¨±:\n    JNotePad \n" + 
+                        "ç¨‹å¼è¨­è¨ˆ:\n    è‰¯è‘›æ ¼\n" + 
+                        "ç°¡ä»‹:\n    ä¸€å€‹ç°¡å–®çš„æ–‡å­—ç·¨è¼¯å™¨\n" + 
+                        "    å¯ä½œç‚ºé©—æ”¶Javaçš„å¯¦ä½œå°è±¡\n" +
+                        "    æ­¡è¿ç¶²å‹ä¸‹è¼‰ç ”ç©¶äº¤æµ\n\n" +
                         "http://caterpillar.onlyfun.net/",
-                        "Ãö©óJNotePad",
+                        "é—œæ–¼JNotePad",
                         JOptionPane.DEFAULT_OPTION,
                         JOptionPane.INFORMATION_MESSAGE,
                         null, null, null);
@@ -241,7 +241,7 @@ public class JNotePad extends JFrame {
             }
         );      
         
-        // ½s¿è°ÏÁä½L¨Æ¥ó
+        // ç·¨è¼¯å€éµç›¤äº‹ä»¶
         textArea.addKeyListener(
             new KeyAdapter() {
                 public void keyTyped(KeyEvent e) {
@@ -250,7 +250,7 @@ public class JNotePad extends JFrame {
             }
         );
 
-        // ½s¿è°Ï·Æ¹«¨Æ¥ó
+        // ç·¨è¼¯å€æ»‘é¼ äº‹ä»¶
         textArea.addMouseListener(
             new MouseAdapter() {
                 public void mouseReleased(MouseEvent e) {
@@ -267,21 +267,21 @@ public class JNotePad extends JFrame {
     }
 
     private void openFile() {
-        if(isCurrentFileSaved()) { // ¤å¥ó¬O§_¬°Àx¦sª¬ºA
-            open(); // ¶}±ÒÂÂÀÉ
+        if(isCurrentFileSaved()) { // æ–‡ä»¶æ˜¯å¦ç‚ºå„²å­˜ç‹€æ…‹
+            open(); // é–‹å•ŸèˆŠæª”
         }
         else {
-            // Åã¥Ü¹ï¸Ü¤è¶ô
+            // é¡¯ç¤ºå°è©±æ–¹å¡Š
             int option = JOptionPane.showConfirmDialog(
-                    null, "ÀÉ®×¤w­×§ï¡A¬O§_Àx¦s¡H",
-                    "Àx¦sÀÉ®×¡H", JOptionPane.YES_NO_OPTION, 
+                    null, "æª”æ¡ˆå·²ä¿®æ”¹ï¼Œæ˜¯å¦å„²å­˜ï¼Ÿ",
+                    "å„²å­˜æª”æ¡ˆï¼Ÿ", JOptionPane.YES_NO_OPTION, 
                     JOptionPane.WARNING_MESSAGE, null);
             switch(option) { 
-                // ½T»{ÀÉ®×Àx¦s
+                // ç¢ºèªæª”æ¡ˆå„²å­˜
                 case JOptionPane.YES_OPTION:
-                    saveFile(); // Àx¦sÀÉ®×
+                    saveFile(); // å„²å­˜æª”æ¡ˆ
                      break;
-               // ©ñ±óÀÉ®×Àx¦s
+               // æ”¾æ£„æª”æ¡ˆå„²å­˜
                 case JOptionPane.NO_OPTION:
                     open();
                     break;
@@ -290,28 +290,28 @@ public class JNotePad extends JFrame {
     }
 
     private void open() {
-        // fileChooser ¬O JFileChooser ªº¹ê¨Ò
-        // Åã¥ÜÀÉ®×¿ï¨úªº¹ï¸Ü¤è¶ô
+        // fileChooser æ˜¯ JFileChooser çš„å¯¦ä¾‹
+        // é¡¯ç¤ºæª”æ¡ˆé¸å–çš„å°è©±æ–¹å¡Š
         int option = fileChooser.showDialog(null, null);
         
-        // ¨Ï¥ÎªÌ«ö¤U½T»{Áä
+        // ä½¿ç”¨è€…æŒ‰ä¸‹ç¢ºèªéµ
         if(option == JFileChooser.APPROVE_OPTION) {
             try {
-                // ¶}±Ò¿ï¨úªºÀÉ®×
+                // é–‹å•Ÿé¸å–çš„æª”æ¡ˆ
                 BufferedReader buf = 
                     new BufferedReader(
                        new FileReader(
                          fileChooser.getSelectedFile()));
 
-                // ³]©w¤å¥ó¼ĞÃD
+                // è¨­å®šæ–‡ä»¶æ¨™é¡Œ
                 setTitle(fileChooser.getSelectedFile().toString());
-                // ²M°£«e¤@¦¸¤å¥ó
+                // æ¸…é™¤å‰ä¸€æ¬¡æ–‡ä»¶
                 textArea.setText("");
-                // ³]©wª¬ºA¦C
-                stateBar.setText("¥¼­×§ï");
-                // ¨ú±o¨t²Î¬Û¨Ìªº´«¦æ¦r¤¸
+                // è¨­å®šç‹€æ…‹åˆ—
+                stateBar.setText("æœªä¿®æ”¹");
+                // å–å¾—ç³»çµ±ç›¸ä¾çš„æ›è¡Œå­—å…ƒ
                 String lineSeparator = System.getProperty("line.separator");
-                // Åª¨úÀÉ®×¨Ãªş¥[¦Ü¤å¦r½s¿è°Ï
+                // è®€å–æª”æ¡ˆä¸¦é™„åŠ è‡³æ–‡å­—ç·¨è¼¯å€
                 String text;
                 while((text = buf.readLine()) != null) {
                     textArea.append(text);
@@ -322,13 +322,13 @@ public class JNotePad extends JFrame {
             }   
             catch(IOException e) {
                 JOptionPane.showMessageDialog(null, e.toString(),
-                            "¶}±ÒÀÉ®×¥¢±Ñ", JOptionPane.ERROR_MESSAGE);
+                            "é–‹å•Ÿæª”æ¡ˆå¤±æ•—", JOptionPane.ERROR_MESSAGE);
             }
         }        
     }
 
     private boolean isCurrentFileSaved() {
-        if(stateBar.getText().equals("¤w­×§ï")) {
+        if(stateBar.getText().equals("å·²ä¿®æ”¹")) {
             return false;
         }
         else {
@@ -337,68 +337,68 @@ public class JNotePad extends JFrame {
     }
 
     private void saveFile() {
-        // ±q¼ĞÃD¦C¨ú±oÀÉ®×¦WºÙ
+        // å¾æ¨™é¡Œåˆ—å–å¾—æª”æ¡ˆåç¨±
         File file = new File(getTitle());
 
-        // ­Y«ü©wªºÀÉ®×¤£¦s¦b
+        // è‹¥æŒ‡å®šçš„æª”æ¡ˆä¸å­˜åœ¨
         if(!file.exists()) {
-            // °õ¦æ¥t¦s·sÀÉ
+            // åŸ·è¡Œå¦å­˜æ–°æª”
             saveFileAs();
         }
         else {
             try {
-                // ¶}±Ò«ü©wªºÀÉ®×
+                // é–‹å•ŸæŒ‡å®šçš„æª”æ¡ˆ
                 BufferedWriter buf = 
                     new BufferedWriter(
                             new FileWriter(file));
-                // ±N¤å¦r½s¿è°Ïªº¤å¦r¼g¤JÀÉ®×
+                // å°‡æ–‡å­—ç·¨è¼¯å€çš„æ–‡å­—å¯«å…¥æª”æ¡ˆ
                 buf.write(textArea.getText());
                 buf.close();
-                // ³]©wª¬ºA¦C¬°¥¼­×§ï
-                stateBar.setText("¥¼­×§ï");
+                // è¨­å®šç‹€æ…‹åˆ—ç‚ºæœªä¿®æ”¹
+                stateBar.setText("æœªä¿®æ”¹");
             }
             catch(IOException e) {
                 JOptionPane.showMessageDialog(null, e.toString(),
-                                "¼g¤JÀÉ®×¥¢±Ñ", JOptionPane.ERROR_MESSAGE);
+                                "å¯«å…¥æª”æ¡ˆå¤±æ•—", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
 
     private void saveFileAs() {
-        // Åã¥ÜÀÉ®×¹ï¸Ü¤è¶ô
+        // é¡¯ç¤ºæª”æ¡ˆå°è©±æ–¹å¡Š
         int option = fileChooser.showDialog(null, null);
 
-        // ¦pªG½T»{¿ï¨úÀÉ®×
+        // å¦‚æœç¢ºèªé¸å–æª”æ¡ˆ
         if(option == JFileChooser.APPROVE_OPTION) {
-            // ¨ú±o¿ï¾ÜªºÀÉ®×
+            // å–å¾—é¸æ“‡çš„æª”æ¡ˆ
             File file = fileChooser.getSelectedFile();
             
-            // ¦b¼ĞÃD¦C¤W³]©wÀÉ®×¦WºÙ
+            // åœ¨æ¨™é¡Œåˆ—ä¸Šè¨­å®šæª”æ¡ˆåç¨±
             setTitle(file.toString());
             
             try {
-                // «Ø¥ßÀÉ®×
+                // å»ºç«‹æª”æ¡ˆ
                 file.createNewFile();
-                // ¶i¦æÀÉ®×Àx¦s
+                // é€²è¡Œæª”æ¡ˆå„²å­˜
                 saveFile();
             }
             catch(IOException e) {
                 JOptionPane.showMessageDialog(null, e.toString(),
-                            "µLªk«Ø¥ß·sÀÉ", JOptionPane.ERROR_MESSAGE);
+                            "ç„¡æ³•å»ºç«‹æ–°æª”", JOptionPane.ERROR_MESSAGE);
             }
         }   
     }
     
     private void closeFile() {
-        // ¬O§_¤wÀx¦s¤å¥ó
+        // æ˜¯å¦å·²å„²å­˜æ–‡ä»¶
         if(isCurrentFileSaved()) {
-            // ÄÀ©ñµøµ¡¸ê·½¡A¦Ó«áÃö³¬µ{¦¡
+            // é‡‹æ”¾è¦–çª—è³‡æºï¼Œè€Œå¾Œé—œé–‰ç¨‹å¼
             dispose();
         }
         else {
             int option = JOptionPane.showConfirmDialog(
-                    null, "ÀÉ®×¤w­×§ï¡A¬O§_Àx¦s¡H",
-                    "Àx¦sÀÉ®×¡H", JOptionPane.YES_NO_OPTION, 
+                    null, "æª”æ¡ˆå·²ä¿®æ”¹ï¼Œæ˜¯å¦å„²å­˜ï¼Ÿ",
+                    "å„²å­˜æª”æ¡ˆï¼Ÿ", JOptionPane.YES_NO_OPTION, 
                     JOptionPane.WARNING_MESSAGE, null);
 
             switch(option) {
@@ -413,7 +413,7 @@ public class JNotePad extends JFrame {
     
     private void cut() {
         textArea.cut();
-        stateBar.setText("¤w­×§ï");
+        stateBar.setText("å·²ä¿®æ”¹");
         popUpMenu.setVisible(false);
     }
 
@@ -424,12 +424,12 @@ public class JNotePad extends JFrame {
 
     private void paste() {
         textArea.paste();
-        stateBar.setText("¤w­×§ï");
+        stateBar.setText("å·²ä¿®æ”¹");
         popUpMenu.setVisible(false);
     }
 
     private void processTextArea() {
-        stateBar.setText("¤w­×§ï");
+        stateBar.setText("å·²ä¿®æ”¹");
     }
     
     public static void main(String[] args) {

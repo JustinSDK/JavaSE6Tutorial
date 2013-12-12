@@ -8,7 +8,7 @@ public class IteratorDemo {
         
         List<String> list = new ArrayList<String>();
         
-        System.out.println("¿é¤J¦WºÙ(¿é¤Jquitµ²§ô)"); 
+        System.out.println("è¼¸å…¥åç¨±(è¼¸å…¥quitçµæŸ)"); 
         while(true) { 
             System.out.print("# "); 
             String input = scanner.next(); 
@@ -18,10 +18,10 @@ public class IteratorDemo {
             list.add(input); 
         }
 
-        // ¨Ï¥Î Iterator ¨ú±o¤¸¯À
+        // ä½¿ç”¨ Iterator å–å¾—å…ƒç´ 
         Iterator iterator = list.iterator();        
-        while(iterator.hasNext()) { // ÁÙ¦³¤U¤@­Ó¤¸¯À¶Ü¡H
-            // ¨Ï¥Î next() ¨ú±o¤U¤@­Ó¤¸¯À
+        while(iterator.hasNext()) { // é‚„æœ‰ä¸‹ä¸€å€‹å…ƒç´ å—ï¼Ÿ
+            // ä½¿ç”¨ next() å–å¾—ä¸‹ä¸€å€‹å…ƒç´ 
             System.out.print(iterator.next() + " ");
         }
         

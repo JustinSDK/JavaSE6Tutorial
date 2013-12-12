@@ -2,9 +2,9 @@ public class ThrowDemo {
     public static void main(String[] args) { 
         try {
             double data = 100 / 0.0;
-            System.out.println("¯BÂI¼Æ°£¥H¹s¡G" + data); 
+            System.out.println("æµ®é»žæ•¸é™¤ä»¥é›¶ï¼š" + data); 
             if(String.valueOf(data).equals("Infinity")) 
-                throw new ArithmeticException("°£¹s¨Ò¥~");
+                throw new ArithmeticException("é™¤é›¶ä¾‹å¤–");
         } 
         catch(ArithmeticException e) { 
             System.out.println(e); 

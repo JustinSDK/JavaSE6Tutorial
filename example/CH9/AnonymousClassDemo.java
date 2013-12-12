@@ -2,8 +2,8 @@ public class AnonymousClassDemo {
     public static void main(String[] args) { 
         Object obj = 
             new Object() { 
-                public String toString() { // ­«·s©w¸qtoString()
-                    return "°Î¦WÃş§Oª«¥ó"; 
+                public String toString() { // é‡æ–°å®šç¾©toString()
+                    return "åŒ¿åé¡åˆ¥ç‰©ä»¶"; 
                 } 
             }; 
 

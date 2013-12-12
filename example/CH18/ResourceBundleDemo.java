@@ -4,10 +4,10 @@ import java.util.ResourceBundle;
 
 public class ResourceBundleDemo {
     public static void main(String[] args) {
-        // ¸j©wmessages.properties
+        // ç¶å®šmessages.properties
         ResourceBundle resource = 
                   ResourceBundle.getBundle("messages");
-        // ¨ú±o¹ïÀ³°T®§
+        // å–å¾—å°æ‡‰è¨Šæ¯
         System.out.print(resource.getString(
                       "onlyfun.caterpillar.welcome") + "!");
         System.out.println(resource.getString(

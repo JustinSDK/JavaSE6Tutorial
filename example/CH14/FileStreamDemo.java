@@ -7,21 +7,21 @@ public class FileStreamDemo {
         try { 
             byte[] buffer = new byte[1024]; 
 
-            // ¨Ó·½ÀÉ®×
+            // ä¾†æºæª”æ¡ˆ
             FileInputStream fileInputStream = 
                 new FileInputStream(new File(args[0])); 
-            // ¥ØªºÀÉ®×
+            // ç›®çš„æª”æ¡ˆ
             FileOutputStream fileOutputStream = 
                 new FileOutputStream(new File(args[1])); 
 
-            // available()¥i¨ú±o¥¼Åª¨úªº¸ê®Æªø«×
-            System.out.println("½Æ»sÀÉ®×¡G" + 
-                    fileInputStream.available() + "¦ì¤¸²Õ"); 
+            // available()å¯å–å¾—æœªè®€å–çš„è³‡æ–™é•·åº¦
+            System.out.println("è¤‡è£½æª”æ¡ˆï¼š" + 
+                    fileInputStream.available() + "ä½å…ƒçµ„"); 
             
             while(true) { 
                 if(fileInputStream.available() < 1024) { 
-                    // ³Ñ¾lªº¸ê®Æ¤ñ1024¦ì¤¸²Õ¤Ö
-                    // ¤@¦ì¤¸¤@¦ì¤¸Åª¥X¦A¼g¤J¥ØªºÀÉ®×
+                    // å‰©é¤˜çš„è³‡æ–™æ¯”1024ä½å…ƒçµ„å°‘
+                    // ä¸€ä½å…ƒä¸€ä½å…ƒè®€å‡ºå†å¯«å…¥ç›®çš„æª”æ¡ˆ
                     int remain = -1; 
                     while((remain = fileInputStream.read())
                                            != -1) {
@@ -30,18 +30,18 @@ public class FileStreamDemo {
                     break; 
                 } 
                 else { 
-                    // ±q¨Ó·½ÀÉ®×Åª¨ú¸ê®Æ¦Ü½w½Ä°Ï 
+                    // å¾ä¾†æºæª”æ¡ˆè®€å–è³‡æ–™è‡³ç·©è¡å€ 
                     fileInputStream.read(buffer); 
-                    // ±N°}¦C¸ê®Æ¼g¤J¥ØªºÀÉ®× 
+                    // å°‡é™£åˆ—è³‡æ–™å¯«å…¥ç›®çš„æª”æ¡ˆ 
                     fileOutputStream.write(buffer); 
                 } 
             } 
 
-            // Ãö³¬¦ê¬y 
+            // é—œé–‰ä¸²æµ 
             fileInputStream.close(); 
             fileOutputStream.close(); 
 
-            System.out.println("½Æ»s§¹¦¨"); 
+            System.out.println("è¤‡è£½å®Œæˆ"); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
             System.out.println(

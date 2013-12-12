@@ -13,38 +13,38 @@ public class RandomAccessFileDemo {
         
         try {
             File file = new File(args[0]);
-            // «Ø¥ßRandomAccessFile¹ê¨Ò¨Ã¥HÅª¼g¼Ò¦¡¶}±ÒÀÉ®×
+            // å»ºç«‹RandomAccessFileå¯¦ä¾‹ä¸¦ä»¥è®€å¯«æ¨¡å¼é–‹å•Ÿæª”æ¡ˆ
             RandomAccessFile randomAccessFile = 
                     new RandomAccessFile(file, "rw"); 
             
             for(int i = 0; i < students.length; i++) { 
-              // ¨Ï¥Î¹ïÀ³ªºwrite¤èªk¼g¤J¸ê®Æ
+              // ä½¿ç”¨å°æ‡‰çš„writeæ–¹æ³•å¯«å…¥è³‡æ–™
               randomAccessFile.writeChars(students[i].getName());
               randomAccessFile.writeInt(students[i].getScore()); 
             }
  
             Scanner scanner = new Scanner(System.in);
  
-            System.out.print("Åª¨ú²Ä´Xµ§¸ê®Æ¡H"); 
+            System.out.print("è®€å–ç¬¬å¹¾ç­†è³‡æ–™ï¼Ÿ"); 
             
             int num = scanner.nextInt(); 
             
-            // ¨Ï¥Îseek()¤èªk¾Ş§@¦s¨ú¦ì¸m
+            // ä½¿ç”¨seek()æ–¹æ³•æ“ä½œå­˜å–ä½ç½®
             randomAccessFile.seek((num-1) * Student.size()); 
             Student student = new Student(); 
 
-            // ¨Ï¥Î¹ïÀ³ªºread¤èªkÅª¥X¸ê®Æ
+            // ä½¿ç”¨å°æ‡‰çš„readæ–¹æ³•è®€å‡ºè³‡æ–™
             student.setName(readName(randomAccessFile));
             student.setScore(randomAccessFile.readInt());
 
-            System.out.println("©m¦W¡G" + student.getName());
-            System.out.println("¤À¼Æ¡G" + student.getScore());
+            System.out.println("å§“åï¼š" + student.getName());
+            System.out.println("åˆ†æ•¸ï¼š" + student.getScore());
  
-            // ³]©wÃö³¬ÀÉ®×
+            // è¨­å®šé—œé–‰æª”æ¡ˆ
             randomAccessFile.close(); 
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("½Ğ«ü©wÀÉ®×¦WºÙ");
+            System.out.println("è«‹æŒ‡å®šæª”æ¡ˆåç¨±");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 
@@ -59,7 +59,7 @@ public class RandomAccessFileDemo {
         for(int i = 0; i < name.length; i++) 
             name[i] = randomAccessfile.readChar(); 
 
-        // ±NªÅ¦r¤¸¨ú¥N¬°ªÅ¥Õ¦r¤¸¨Ã¶Ç¦^
+        // å°‡ç©ºå­—å…ƒå–ä»£ç‚ºç©ºç™½å­—å…ƒä¸¦å‚³å›
         return new String(name).replace('\0', ' '); 
     } 
 }

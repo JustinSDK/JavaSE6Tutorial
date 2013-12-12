@@ -9,7 +9,7 @@ public class Bird {
     }
 
     public void walk() {
-        System.out.println("¨«¸ô");
+        System.out.println("èµ°è·¯");
     }
 
     public String getName() {

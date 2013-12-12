@@ -2,13 +2,13 @@ public class StringDemo {
     public static void main(String[] args) { 
         String text = "hello"; 
  
-        System.out.println("¦r¦ê¤º®e: " + text); 
-        System.out.println("¦r¦êªø«×: " + text.length()); 
-        System.out.println("µ¥©óhello? " + 
+        System.out.println("å­—ä¸²å…§å®¹: " + text); 
+        System.out.println("å­—ä¸²é•·åº¦: " + text.length()); 
+        System.out.println("ç­‰æ–¼hello? " + 
                                  text.equals("hello")); 
-        System.out.println("Âà¬°¤j¼g: " + 
+        System.out.println("è½‰ç‚ºå¤§å¯«: " + 
                                  text.toUpperCase()); 
-        System.out.println("Âà¬°¤p¼g: " + 
+        System.out.println("è½‰ç‚ºå°å¯«: " + 
                                  text.toLowerCase()); 
     } 
 } 

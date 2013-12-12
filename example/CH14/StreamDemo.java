@@ -5,8 +5,8 @@ import java.io.*;
 public class StreamDemo { 
     public static void main(String[] args) { 
         try { 
-            System.out.print("¿é¤J¦r¤¸: "); 
-            System.out.println("¿é¤J¦r¤¸¤Q¶i¦ìªí¥Ü: " + 
+            System.out.print("è¼¸å…¥å­—å…ƒ: "); 
+            System.out.println("è¼¸å…¥å­—å…ƒåé€²ä½è¡¨ç¤º: " + 
                                     System.in.read()); 
         } 
         catch(IOException e) { 

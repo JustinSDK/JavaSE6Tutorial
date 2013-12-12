@@ -8,10 +8,10 @@ public class BinarySearchDemo {
         int result = Arrays.binarySearch(arr1, 6, 9, 85);
 
         if(result > -1) {
-            System.out.printf("¯Á¤Ş %d ³B§ä¨ì¸ê®Æ%n", result);
+            System.out.printf("ç´¢å¼• %d è™•æ‰¾åˆ°è³‡æ–™%n", result);
         }
         else {
-            System.out.printf("´¡¤JÂI %d %n", (result + 1) * -1);
+            System.out.printf("æ’å…¥é» %d %n", (result + 1) * -1);
         }
     }
 }

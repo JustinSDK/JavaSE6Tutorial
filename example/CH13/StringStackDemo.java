@@ -8,7 +8,7 @@ public class StringStackDemo {
          
         StringStack stack = new StringStack();
         
-        System.out.println("¿é¤J¦WºÙ(¨Ï¥Îquitµ²§ô)"); 
+        System.out.println("è¼¸å…¥åç¨±(ä½¿ç”¨quitçµæŸ)"); 
 
         while(true) { 
             System.out.print("# "); 
@@ -19,7 +19,7 @@ public class StringStackDemo {
             stack.push(input); 
         }
         
-        System.out.print("Åã¥Ü¿é¤J: ");
+        System.out.print("é¡¯ç¤ºè¼¸å…¥: ");
         while(!stack.isEmpty()) {
             System.out.print(stack.pop() + " ");
         }

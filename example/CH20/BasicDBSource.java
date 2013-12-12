@@ -14,7 +14,7 @@ public class BasicDBSource implements DBSource {
     private String url;
     private String user;
     private String passwd;
-    private int max; // ³s±µ¦À¤¤³Ì¤jConnection¼Æ¥Ø
+    private int max; // é€£æŽ¥æ± ä¸­æœ€å¤§Connectionæ•¸ç›®
     private List<Connection> connections;
 
     public BasicDBSource() throws IOException, ClassNotFoundException {

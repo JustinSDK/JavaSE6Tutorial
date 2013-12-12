@@ -3,8 +3,8 @@ public class SimpleCollectionDemo {
         SimpleCollection simpleCollection = 
                             new SimpleCollection(); 
  
-        simpleCollection.add(new Foo1("¤@¸¹ Foo1")); 
-        simpleCollection.add(new Foo2("¤@¸¹ Foo2")); 
+        simpleCollection.add(new Foo1("ä¸€è™Ÿ Foo1")); 
+        simpleCollection.add(new Foo2("ä¸€è™Ÿ Foo2")); 
  
         Foo1 f1 = (Foo1) simpleCollection.get(0); 
         f1.showName();

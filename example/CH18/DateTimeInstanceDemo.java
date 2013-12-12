@@ -5,33 +5,33 @@ import java.util.Date;
 
 public class DateTimeInstanceDemo {
     public static void main(String[] args) {
-        // ¨ú±o¥Ø«e®É¶¡
+        // å–å¾—ç›®å‰æ™‚é–“
         Date date = new Date(); 
 
-        // Â²µu¸ê°T®æ¦¡
+        // ç°¡çŸ­è³‡è¨Šæ ¼å¼
         DateFormat shortFormat = 
             DateFormat.getDateTimeInstance( 
                 DateFormat.SHORT, DateFormat.SHORT); 
-        // ¤¤µ¥¸ê°T®æ¦¡
+        // ä¸­ç­‰è³‡è¨Šæ ¼å¼
         DateFormat mediumFormat = 
             DateFormat.getDateTimeInstance( 
                 DateFormat.MEDIUM, DateFormat.MEDIUM); 
-        // ªø¸ê°T®æ¦¡
+        // é•·è³‡è¨Šæ ¼å¼
         DateFormat longFormat = 
             DateFormat.getDateTimeInstance( 
                 DateFormat.LONG, DateFormat.LONG); 
-        // ¸Ô²Ó¸ê°T®æ¦¡
+        // è©³ç´°è³‡è¨Šæ ¼å¼
         DateFormat fullFormat = 
             DateFormat.getDateTimeInstance( 
                 DateFormat.FULL, DateFormat.FULL); 
 
-        System.out.println("Â²µu¸ê°T®æ¦¡¡G" + 
+        System.out.println("ç°¡çŸ­è³‡è¨Šæ ¼å¼ï¼š" + 
                       shortFormat.format(date)); 
-        System.out.println("¤¤µ¥¸ê°T®æ¦¡¡G" + 
+        System.out.println("ä¸­ç­‰è³‡è¨Šæ ¼å¼ï¼š" + 
                       mediumFormat.format(date)); 
-        System.out.println("ªø¸ê°T®æ¦¡¡G" + 
+        System.out.println("é•·è³‡è¨Šæ ¼å¼ï¼š" + 
                       longFormat.format(date)); 
-        System.out.println("¸Ô²Ó¸ê°T®æ¦¡¡G" + 
+        System.out.println("è©³ç´°è³‡è¨Šæ ¼å¼ï¼š" + 
                       fullFormat.format(date)); 
     }
 }

@@ -4,10 +4,10 @@ public class OverloadTest {
     }
  
     public static void someMethod(int i) {
-        System.out.println("int ª©¥»³Q©I¥s");
+        System.out.println("int ç‰ˆæœ¬è¢«å‘¼å«");
     }
  
     public static void someMethod(Integer integer) {
-        System.out.println("Integer ª©¥»³Q©I¥s");
+        System.out.println("Integer ç‰ˆæœ¬è¢«å‘¼å«");
     }
 }

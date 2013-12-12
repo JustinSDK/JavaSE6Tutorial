@@ -1,22 +1,22 @@
 public enum MoreAction implements IDescription {
     TURN_LEFT {
-        // ¹ê§@¤¶­±¤Wªº¤èªk
+        // å¯¦ä½œä»‹é¢ä¸Šçš„æ–¹æ³•
         public String getDescription() {
-            return "¦V¥ªÂà";
+            return "å‘å·¦è½‰";
         }
-    },  // °O±o³oÃäªº¦CÁ|­È¤À¹j¨Ï¥Î ,
+    },  // è¨˜å¾—é€™é‚Šçš„åˆ—èˆ‰å€¼åˆ†éš”ä½¿ç”¨ ,
  
     TURN_RIGHT {
-        // ¹ê§@¤¶­±¤Wªº¤èªk
+        // å¯¦ä½œä»‹é¢ä¸Šçš„æ–¹æ³•
         public String getDescription() {
-            return "¦V¥kÂà";
+            return "å‘å³è½‰";
         }
-    }, // °O±o³oÃäªº¦CÁ|­È¤À¹j¨Ï¥Î ,
+    }, // è¨˜å¾—é€™é‚Šçš„åˆ—èˆ‰å€¼åˆ†éš”ä½¿ç”¨ ,
  
     SHOOT {
-        // ¹ê§@¤¶­±¤Wªº¤èªk
+        // å¯¦ä½œä»‹é¢ä¸Šçš„æ–¹æ³•
         public String getDescription() {
-            return "®gÀ»";
+            return "å°„æ“Š";
         }
-    }; // °O±o³oÃäªº¦CÁ|­Èµ²§ô¨Ï¥Î ;
+    }; // è¨˜å¾—é€™é‚Šçš„åˆ—èˆ‰å€¼çµæŸä½¿ç”¨ ;
 }

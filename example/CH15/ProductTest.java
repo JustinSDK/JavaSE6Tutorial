@@ -4,11 +4,11 @@ public class ProductTest {
     public static void main(String[] args) {
         Clerk clerk = new Clerk(); 
  
-        // ¥Í²£ªÌ°õ¦æºü
+        // ç”Ÿç”¢è€…åŸ·è¡Œç·’
         Thread producerThread = 
             new Thread(
                 new Producer(clerk)); 
-        // ®ø¶OªÌ°õ¦æºü
+        // æ¶ˆè²»è€…åŸ·è¡Œç·’
         Thread consumerThread = 
             new Thread(
                 new Consumer(clerk)); 

@@ -20,7 +20,7 @@ public class Cubic extends Rectangle {
     public int getLength() { return length; } 
 
     public int getVolumn() { 
-        // ¥i¥Hª½±µ¨Ï¥Î¤÷Ãş§O¤¤ªºwidth¡Bheight¦¨­û
+        // å¯ä»¥ç›´æ¥ä½¿ç”¨çˆ¶é¡åˆ¥ä¸­çš„widthã€heightæˆå“¡
         return length*width*height; 
     } 
 }

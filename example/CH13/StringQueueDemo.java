@@ -8,7 +8,7 @@ public class StringQueueDemo {
          
         StringQueue queue = new StringQueue();
         
-        System.out.println("¿é¤J¦WºÙ(¨Ï¥Îquitµ²§ô)"); 
+        System.out.println("è¼¸å…¥åç¨±(ä½¿ç”¨quitçµæŸ)"); 
 
         while(true) { 
             System.out.print("# "); 
@@ -19,7 +19,7 @@ public class StringQueueDemo {
             queue.put(input); 
         }
         
-        System.out.print("Åã¥Ü¿é¤J: ");
+        System.out.print("é¡¯ç¤ºè¼¸å…¥: ");
         while(!queue.isEmpty()) {
             System.out.print(queue.get() + " ");
         }

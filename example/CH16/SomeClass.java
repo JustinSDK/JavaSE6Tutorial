@@ -2,16 +2,16 @@ package onlyfun.caterpillar;
 
 public class SomeClass {
     public static void main(String[] args) {
-        // «Ø¥ßSomeClass¹ê¨Ò
+        // å»ºç«‹SomeClasså¯¦ä¾‹
         SomeClass some = new SomeClass();
-        // ¨ú±oSomeClassªºClass¹ê¨Ò
+        // å–å¾—SomeClassçš„Classå¯¦ä¾‹
         Class c = some.getClass();
-        // ¨ú±oClassLoader
+        // å–å¾—ClassLoader
         ClassLoader loader = c.getClassLoader();
         System.out.println(loader);
-        // ¨ú±o¤÷ClassLoader
+        // å–å¾—çˆ¶ClassLoader
         System.out.println(loader.getParent());
-        // ¦A¨ú±o¤÷ClassLoader
+        // å†å–å¾—çˆ¶ClassLoader
         System.out.println(loader.getParent().getParent());
     }
 }

@@ -2,21 +2,21 @@ public class StringDemo {
     public static void main(String[] args) {
         String text = "Have a nice day!! :)";
 		
-        System.out.println("­ì¤å¡G" + text);
+        System.out.println("åŸæ–‡ï¼š" + text);
         
-        // ¶Ç¦^¥ş¬°¤j¼gªº¦r¦ê¤º®e
-        System.out.println("¤j¼g¡G" + text.toUpperCase());
+        // å‚³å›å…¨ç‚ºå¤§å¯«çš„å­—ä¸²å…§å®¹
+        System.out.println("å¤§å¯«ï¼š" + text.toUpperCase());
 
-        // Âà¦^¥ş¬°¤p¼gªº¦r¦ê¤º®e
-        System.out.println("¤p¼g¡G" + text.toLowerCase());
+        // è½‰å›å…¨ç‚ºå°å¯«çš„å­—ä¸²å…§å®¹
+        System.out.println("å°å¯«ï¼š" + text.toLowerCase());
 
-        // ­pºâ¦r¦êªø«×
-        System.out.println("ªø«×¡G" + text.length());
+        // è¨ˆç®—å­—ä¸²é•·åº¦
+        System.out.println("é•·åº¦ï¼š" + text.length());
 
-        // ¶Ç¦^¨ú¥N¤å¦r«áªº¦r¦ê
-        System.out.println("¨ú¥N¡G" + text.replaceAll("nice", "good"));
+        // å‚³å›å–ä»£æ–‡å­—å¾Œçš„å­—ä¸²
+        System.out.println("å–ä»£ï¼š" + text.replaceAll("nice", "good"));
 
-        // ¶Ç¦^«ü©w¦ì¸m«áªº¤l¦r¦ê
-        System.out.println("¤l¦r¦ê¡G" + text.substring(5));
+        // å‚³å›æŒ‡å®šä½ç½®å¾Œçš„å­å­—ä¸²
+        System.out.println("å­å­—ä¸²ï¼š" + text.substring(5));
     }
 }

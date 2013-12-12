@@ -4,24 +4,24 @@ public class AverageInput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
  
-        System.out.print("½Ğ¿é¤J¾Ç¥Í¤H¼Æ: "); 
+        System.out.print("è«‹è¼¸å…¥å­¸ç”Ÿäººæ•¸: "); 
  
         int length = scanner.nextInt();
-        float[] score = new float[length];  // °ÊºA°t¸mªø«× 
+        float[] score = new float[length];  // å‹•æ…‹é…ç½®é•·åº¦ 
  
         for(int i = 0; i < score.length; i++) {
-            System.out.print("¿é¤J¤À¼Æ¡G");
+            System.out.print("è¼¸å…¥åˆ†æ•¸ï¼š");
             float input = scanner.nextFloat();
             score[i] = input;
         }
 
-        System.out.print("\n¤À¼Æ¡G");
+        System.out.print("\nåˆ†æ•¸ï¼š");
         float total = 0;
         for(int i = 0; i < score.length; i++) {
             total = total + score[i];
             System.out.print(score[i] + " ");
         }
 
-        System.out.printf("\n¥­§¡¡G%.2f", total / score.length);
+        System.out.printf("\nå¹³å‡ï¼š%.2f", total / score.length);
     }
 }

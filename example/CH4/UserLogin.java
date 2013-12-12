@@ -4,20 +4,20 @@ public class UserLogin {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("¨Ï¥ÎªÌ¦WºÙ¡G");
+        System.out.print("ä½¿ç”¨è€…åç¨±ï¼š");
         String username = scanner.next();
 
-        System.out.print("¨Ï¥ÎªÌ±K½X¡G");
+        System.out.print("ä½¿ç”¨è€…å¯†ç¢¼ï¼š");
         String password = scanner.next();
 
         if("caterpillar".equals(username) 
                   && "1975".equals(password)) {
 
-            System.out.println("¯µ±K¸ê°T¦b¦¹¡I");
+            System.out.println("ç§˜å¯†è³‡è¨Šåœ¨æ­¤ï¼");
         }
         else {
             System.out.println(username + 
-                    " ±z¦n¡A¿é¤Jªºµn¤J¸ê®Æ¦³»~¡A½Ğ­«·s¿é¤J¡I");
+                    " æ‚¨å¥½ï¼Œè¼¸å…¥çš„ç™»å…¥è³‡æ–™æœ‰èª¤ï¼Œè«‹é‡æ–°è¼¸å…¥ï¼");
         }
     }
 }

@@ -7,18 +7,18 @@ import java.net.URLClassLoader;
 public class ClassLoaderDemo {
     public static void main(String[] args) {
         try {
-            // ´ú¸Õ¸ô®|
+            // æ¸¬è©¦è·¯å¾‘
             String classPath = args[0];
-            // ´ú¸ÕÃş§O
+            // æ¸¬è©¦é¡åˆ¥
             String className = args[1];
 
             URL url1 = new URL(classPath);
-            // «Ø¥ßClassLoader
+            // å»ºç«‹ClassLoader
             ClassLoader loader1 = 
                       new URLClassLoader(new URL[] {url1});
-            // ¸ü¤J«ü©wÃş§O
+            // è¼‰å…¥æŒ‡å®šé¡åˆ¥
             Class c1 = loader1.loadClass(className);
-            // Åã¥ÜÃş§O´y­z
+            // é¡¯ç¤ºé¡åˆ¥æè¿°
             System.out.println(c1);
         
             URL url2 = new URL(classPath);
@@ -28,17 +28,17 @@ public class ClassLoaderDemo {
         
             System.out.println(c2);
         
-            System.out.println("c1 »P c1 ¬°¦P¤@¹ê¨Ò¡H" 
+            System.out.println("c1 èˆ‡ c1 ç‚ºåŒä¸€å¯¦ä¾‹ï¼Ÿ" 
                                      + (c1 == c2));
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©wÃş§O¸ü¤J¸ô®|»P¦WºÙ");
+            System.out.println("æ²’æœ‰æŒ‡å®šé¡åˆ¥è¼‰å…¥è·¯å¾‘èˆ‡åç¨±");
         }
         catch(MalformedURLException e) {
-            System.out.println("¸ü¤J¸ô®|¿ù»~");
+            System.out.println("è¼‰å…¥è·¯å¾‘éŒ¯èª¤");
         }
         catch(ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wªºÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„é¡åˆ¥");
         }
     }
 }

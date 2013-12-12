@@ -4,13 +4,13 @@ public class OddDecider3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
  
-        System.out.print("½Ğ¿é¤J¼Æ¦r: "); 
+        System.out.print("è«‹è¼¸å…¥æ•¸å­—: "); 
         int input = scanner.nextInt();
-        int remain = input % 2; // ¨D°£ 2 ªº¾l¼Æ
+        int remain = input % 2; // æ±‚é™¤ 2 çš„é¤˜æ•¸
  
-        if(remain == 1) // ¦pªG¾l¼Æ¬°1
-            System.out.println(input + "¬°©_¼Æ"); 
+        if(remain == 1) // å¦‚æœé¤˜æ•¸ç‚º1
+            System.out.println(input + "ç‚ºå¥‡æ•¸"); 
         else 
-            System.out.println(input + "¬°°¸¼Æ"); 
+            System.out.println(input + "ç‚ºå¶æ•¸"); 
     }
 }

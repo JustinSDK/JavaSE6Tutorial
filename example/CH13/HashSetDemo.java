@@ -9,10 +9,10 @@ public class HashSetDemo {
         set.add("caterpillar");
         set.add("momor");
         set.add("bush");
-        // ¬G·N¥[¤J­«ΒΠªΊª«¥σ
+        // ζ•…ζ„ε ε…¥ι‡θ¦†η„η‰©δ»¶
         set.add("caterpillar");
         
-        // ¨Ο¥Ξ Iterator Εγ¥άª«¥σ
+        // δ½Ώη”¨ Iterator ι΅―η¤Ίη‰©δ»¶
         Iterator iterator = set.iterator();
         while(iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
@@ -20,7 +20,7 @@ public class HashSetDemo {
         System.out.println(); 
 
         set.remove("bush");
-        // ¨Ο¥Ξ enhanced for loop Εγ¥άª«¥σ
+        // δ½Ώη”¨ enhanced for loop ι΅―η¤Ίη‰©δ»¶
         for(String name : set) {
             System.out.print(name + " ");
         }

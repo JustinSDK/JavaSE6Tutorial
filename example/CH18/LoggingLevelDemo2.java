@@ -5,21 +5,21 @@ import java.util.logging.*;
 public class LoggingLevelDemo2 {
     public static void main(String[] args) {
         Logger logger = Logger.getLogger("loggingLevelDemo2");
-        // Åã¥Ü©Ò¦³µ¥¯Åªº°T®§
+        // é¡¯ç¤ºæ‰€æœ‰ç­‰ç´šçš„è¨Šæ¯
         logger.setLevel(Level.ALL);
         
         ConsoleHandler consoleHandler = new ConsoleHandler();
-        // Åã¥Ü©Ò¦³µ¥¯Åªº°T®§
+        // é¡¯ç¤ºæ‰€æœ‰ç­‰ç´šçš„è¨Šæ¯
         consoleHandler.setLevel(Level.ALL);
-        // ³]©w³B²zªÌ¬°ConsoleHandler
+        // è¨­å®šè™•ç†è€…ç‚ºConsoleHandler
         logger.addHandler(consoleHandler);
         
-        logger.severe("ÄY­«°T®§");
-        logger.warning("Äµ¥Ü°T®§");
-        logger.info("¤@¯ë°T®§");
-        logger.config("³]©w¤è­±ªº°T®§");
-        logger.fine("²Ó·Lªº°T®§");
-        logger.finer("§ó²Ó·Lªº°T®§");
-        logger.finest("³Ì²Ó·Lªº°T®§");
+        logger.severe("åš´é‡è¨Šæ¯");
+        logger.warning("è­¦ç¤ºè¨Šæ¯");
+        logger.info("ä¸€èˆ¬è¨Šæ¯");
+        logger.config("è¨­å®šæ–¹é¢çš„è¨Šæ¯");
+        logger.fine("ç´°å¾®çš„è¨Šæ¯");
+        logger.finer("æ›´ç´°å¾®çš„è¨Šæ¯");
+        logger.finest("æœ€ç´°å¾®çš„è¨Šæ¯");
     }
 }

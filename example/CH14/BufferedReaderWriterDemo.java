@@ -5,21 +5,21 @@ import java.io.*;
 public class BufferedReaderWriterDemo { 
     public static void main(String[] args) { 
         try { 
-            // ½w½ÄSystem.in¿é¤J¦ê¬y
+            // ç·©è¡System.inè¼¸å…¥ä¸²æµ
             BufferedReader bufReader = 
                 new BufferedReader(
                       new InputStreamReader(System.in)); 
-            // ½w½ÄFileWriter¦r¤¸¿é¥X¦ê¬y
+            // ç·©è¡FileWriterå­—å…ƒè¼¸å‡ºä¸²æµ
             BufferedWriter bufWriter = 
                 new BufferedWriter(new FileWriter(args[0])); 
  
             String input = null; 
 
-            // ¨CÅª¤@¦æ¶i¦æ¤@¦¸¼g¤J°Ê§@
+            // æ¯è®€ä¸€è¡Œé€²è¡Œä¸€æ¬¡å¯«å…¥å‹•ä½œ
             while(!(input = 
                       bufReader.readLine()).equals("quit")) { 
                 bufWriter.write(input); 
-                // newLine()¤èªk¼g¤J»P§@·~¨t²Î¬Û¨Ìªº´«¦æ¦r¤¸
+                // newLine()æ–¹æ³•å¯«å…¥èˆ‡ä½œæ¥­ç³»çµ±ç›¸ä¾çš„æ›è¡Œå­—å…ƒ
                 bufWriter.newLine(); 
             } 
  
@@ -27,7 +27,7 @@ public class BufferedReaderWriterDemo {
             bufWriter.close(); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
-            System.out.println("¨S¦³«ü©wÀÉ®×");
+            System.out.println("æ²’æœ‰æŒ‡å®šæª”æ¡ˆ");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 

@@ -8,33 +8,33 @@ public class NewInstanceDemo2 {
         try {
             Class c = Class.forName(args[0]);
             
-            // «ü©w°Ñ¼Æ«¬ºA
+            // æŒ‡å®šåƒæ•¸å‹æ…‹
             Class[] params = new Class[2];
-            // ²Ä¤@­Ó°Ñ¼Æ¬OString
+            // ç¬¬ä¸€å€‹åƒæ•¸æ˜¯String
             params[0] = String.class;
-            // ²Ä¤G­Ó°Ñ¼Æ¬Oint
+            // ç¬¬äºŒå€‹åƒæ•¸æ˜¯int
             params[1] = Integer.TYPE;
 
-            // ¨ú±o¹ïÀ³°Ñ¼Æ¦Cªº«Øºc¤èªk            
+            // å–å¾—å°æ‡‰åƒæ•¸åˆ—çš„å»ºæ§‹æ–¹æ³•            
             Constructor constructor = 
                              c.getConstructor(params);
             
-            // «ü©w¤Ş¼Æ¤º®e
+            // æŒ‡å®šå¼•æ•¸å…§å®¹
             Object[] argObjs = new Object[2];
             argObjs[0] = "caterpillar";
             argObjs[1] = new Integer(90);
             
-            // µ¹©w¤Ş¼Æ¨Ã¹ê¨Ò¤Æ
+            // çµ¦å®šå¼•æ•¸ä¸¦å¯¦ä¾‹åŒ–
             Object obj = constructor.newInstance(argObjs);
-            // ©I¥stoString()¨ÓÆ[¬İ´y­z
+            // å‘¼å«toString()ä¾†è§€çœ‹æè¿°
             System.out.println(obj);
  
         } catch (ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ìÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°é¡åˆ¥");
         } catch (SecurityException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
-            System.out.println("¨S¦³©Ò«ü©wªº¤èªk");
+            System.out.println("æ²’æœ‰æ‰€æŒ‡å®šçš„æ–¹æ³•");
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {

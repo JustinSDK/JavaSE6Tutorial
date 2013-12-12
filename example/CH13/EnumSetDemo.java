@@ -2,18 +2,18 @@ package onlyfun.caterpillar;
  
 import java.util.*;
 
-// ©w¸q¦CÁ|«¬ºA
+// å®šç¾©åˆ—èˆ‰å‹æ…‹
 enum FontConstant { Plain, Bold, Italic }
  
 public class EnumSetDemo {
     public static void main(String[] args) {
-        // «Ø¥ß¦CÁ|­È¶°¦X
+        // å»ºç«‹åˆ—èˆ‰å€¼é›†åˆ
         EnumSet<FontConstant> enumSet = 
            EnumSet.of(FontConstant.Plain, 
                       FontConstant.Bold);
-        // Åã¥Ü¶°¦X¤º®e
+        // é¡¯ç¤ºé›†åˆå…§å®¹
         showEnumSet(enumSet);
-        // Åã¥Ü¸É¶°¦X¤º®e
+        // é¡¯ç¤ºè£œé›†åˆå…§å®¹
         showEnumSet(EnumSet.complementOf(enumSet));
     }
 

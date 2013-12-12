@@ -6,6 +6,6 @@ public class HelloRequest implements IRequest {
     }
  
     public void execute() {
-        System.out.printf("«¢Åo %s¡I%n", name);
+        System.out.printf("å“ˆå›‰ %sï¼%n", name);
     }
 }

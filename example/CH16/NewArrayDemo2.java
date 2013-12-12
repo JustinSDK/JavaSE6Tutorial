@@ -6,7 +6,7 @@ public class NewArrayDemo2 {
     public static void main(String[] args) {
         Class c = String.class;
         
-        // ¥´ºâ«Ø¥ß¤@­Ó3*4°}¦C
+        // æ‰“ç®—å»ºç«‹ä¸€å€‹3*4é™£åˆ—
         int[] dim = new int[]{3, 4};
         Object objArr = Array.newInstance(c, dim);
         

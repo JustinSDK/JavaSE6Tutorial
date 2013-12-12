@@ -10,7 +10,7 @@ public class TreeSetDemo {
         set.add("caterpillar");
         set.add("momor");
         
-        // ¨Ο¥Ξ enhanced for loop Εγ¥άª«¥σ
+        // δ½Ώη”¨ enhanced for loop ι΅―η¤Ίη‰©δ»¶
         for(String name : set) {
             System.out.print(name + " ");
         }

@@ -6,16 +6,16 @@ public class SimpleClassViewer {
      public static void main(String[] args) { 
         try {
             Class c = Class.forName(args[0]);
-            // ¨ú±o®M¥ó¥Nªíª«¥ó
+            // å–å¾—å¥—ä»¶ä»£è¡¨ç‰©ä»¶
             Package p = c.getPackage();
             
             System.out.printf("package %s;%n", p.getName());
             
-            // ¨ú±o«¬ºA­×¹¢¡A¹³¬Oclass¡Binterface
+            // å–å¾—å‹æ…‹ä¿®é£¾ï¼Œåƒæ˜¯classã€interface
             int m = c.getModifiers();
             
             System.out.print(Modifier.toString(m) + " ");
-            // ¦pªG¬O¤¶­±
+            // å¦‚æœæ˜¯ä»‹é¢
             if(Modifier.isInterface(m)) {
                 System.out.print("interface ");
             }
@@ -25,51 +25,51 @@ public class SimpleClassViewer {
             
             System.out.println(c.getName() + " {");
 
-            // ¨ú±o«Å§iªº¸ê®Æ¦¨­û¥Nªíª«¥ó
+            // å–å¾—å®£å‘Šçš„è³‡æ–™æˆå“¡ä»£è¡¨ç‰©ä»¶
             Field[] fields = c.getDeclaredFields();
             for(Field field : fields) {
-                // Åã¥ÜÅv­­­×¹¢¡A¹³¬Opublic¡Bprotected¡Bprivate
+                // é¡¯ç¤ºæ¬Šé™ä¿®é£¾ï¼Œåƒæ˜¯publicã€protectedã€private
                 System.out.print("\t" + 
                     Modifier.toString(field.getModifiers()));
-                // Åã¥Ü«¬ºA¦WºÙ
+                // é¡¯ç¤ºå‹æ…‹åç¨±
                 System.out.print(" " + 
                     field.getType().getName() + " ");
-                // Åã¥Ü¸ê®Æ¦¨­û¦WºÙ
+                // é¡¯ç¤ºè³‡æ–™æˆå“¡åç¨±
                 System.out.println(field.getName() + ";");
             }
 
-            // ¨ú±o«Å§iªº«Øºc¤èªk¥Nªíª«¥ó            
+            // å–å¾—å®£å‘Šçš„å»ºæ§‹æ–¹æ³•ä»£è¡¨ç‰©ä»¶            
             Constructor[] constructors = 
                             c.getDeclaredConstructors();
             for(Constructor constructor : constructors) {
-                // Åã¥ÜÅv­­­×¹¢¡A¹³¬Opublic¡Bprotected¡Bprivate
+                // é¡¯ç¤ºæ¬Šé™ä¿®é£¾ï¼Œåƒæ˜¯publicã€protectedã€private
                 System.out.print("\t" + 
                      Modifier.toString(
                        constructor.getModifiers()));
-                // Åã¥Ü«Øºc¤èªk¦WºÙ
+                // é¡¯ç¤ºå»ºæ§‹æ–¹æ³•åç¨±
                 System.out.println(" " + 
                       constructor.getName() + "();");
             }
-            // ¨ú±o«Å§iªº¤èªk¦¨­û¥Nªíª«¥ó             
+            // å–å¾—å®£å‘Šçš„æ–¹æ³•æˆå“¡ä»£è¡¨ç‰©ä»¶             
             Method[] methods = c.getDeclaredMethods();
             for(Method method : methods) {
-                // Åã¥ÜÅv­­­×¹¢¡A¹³¬Opublic¡Bprotected¡Bprivate
+                // é¡¯ç¤ºæ¬Šé™ä¿®é£¾ï¼Œåƒæ˜¯publicã€protectedã€private
                 System.out.print("\t" + 
                      Modifier.toString(
                               method.getModifiers()));
-                // Åã¥Üªğ¦^­È«¬ºA¦WºÙ
+                // é¡¯ç¤ºè¿”å›å€¼å‹æ…‹åç¨±
                 System.out.print(" " + 
                      method.getReturnType().getName() + " ");
-                // Åã¥Ü¤èªk¦WºÙ
+                // é¡¯ç¤ºæ–¹æ³•åç¨±
                 System.out.println(method.getName() + "();");
             }
             System.out.println("}");
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©wÃş§O");
+            System.out.println("æ²’æœ‰æŒ‡å®šé¡åˆ¥");
         }
         catch(ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šé¡åˆ¥");
         }
     }
 }

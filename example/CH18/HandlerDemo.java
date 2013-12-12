@@ -11,7 +11,7 @@ public class HandlerDemo {
             FileHandler fileHandler = 
                           new FileHandler("%h/myLogger.log");
             logger.addHandler(fileHandler);
-            logger.info("¥˙∏’∞TÆß");
+            logger.info("Ê∏¨Ë©¶Ë®äÊÅØ");
         } catch (SecurityException e) {
             e.printStackTrace();
         } catch (IOException e) {

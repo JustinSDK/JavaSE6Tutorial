@@ -4,7 +4,7 @@ public class PersonalInfoTest {
     public static void main(String[] args) {
         final PersonalInfo person = new PersonalInfo(); 
 
-        // °²³]·|¦³¨â­Ó°õ¦æºü¥i¯à§ó·spersonª«¥ó
+        // å‡è¨­æœƒæœ‰å…©å€‹åŸ·è¡Œç·’å¯èƒ½æ›´æ–°personç‰©ä»¶
         Thread thread1 = new Thread(new Runnable() { 
            public void run() { 
               while(true) 
@@ -19,7 +19,7 @@ public class PersonalInfoTest {
             } 
         }); 
          
-        System.out.println("¶}©l´ú¸Õ....."); 
+        System.out.println("é–‹å§‹æ¸¬è©¦....."); 
         
         thread1.start(); 
         thread2.start();

@@ -6,6 +6,6 @@ public class ConcreteCircle extends AbstractCircle {
     }
 
     public void render() {
-        System.out.printf("µe¤@­Ó¥b®| %f ªº¹ê¤ß¶ê\n", getRadius());
+        System.out.printf("ç•«ä¸€å€‹åŠå¾‘ %f çš„å¯¦å¿ƒåœ“\n", getRadius());
     }
 }

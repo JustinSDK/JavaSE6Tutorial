@@ -1,5 +1,5 @@
 public class PointDemo { 
-    // ¤º³¡Ãþ§O 
+    // å…§éƒ¨é¡žåˆ¥ 
     private class Point { 
         private int x, y; 
  

@@ -14,7 +14,7 @@ public class FileReaderWriterDemo {
             char[] wlnChar = {'\r', '\n'}; 
             while((in = fileReader.read()) != -1) { 
                 if(in == '\n') {
-                    // ¼g¤J"\r\n"
+                    // å¯«å…¥"\r\n"
                     fileWriter.write(wlnChar); 
                 }
                 else 
@@ -24,7 +24,7 @@ public class FileReaderWriterDemo {
             fileWriter.close(); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
-            System.out.println("½Ð«ü©wÀÉ®×");
+            System.out.println("è«‹æŒ‡å®šæª”æ¡ˆ");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 

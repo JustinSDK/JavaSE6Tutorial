@@ -6,10 +6,10 @@ enum FontConstant { Plain, Bold, Italic }
  
 public class EnumSetDemo2 {
     public static void main(String[] args) {
-        // «Ø¥ßEnumSet¹ê¨Ò¡Aªì©l¤º®e¬°ªÅ
+        // å»ºç«‹EnumSetå¯¦ä¾‹ï¼Œåˆå§‹å…§å®¹ç‚ºç©º
         EnumSet<FontConstant> enumSet = 
                     EnumSet.noneOf(FontConstant.class);
-        // ¥[¤J¦CÁ|
+        // åŠ å…¥åˆ—èˆ‰
         enumSet.add(FontConstant.Bold);
         enumSet.add(FontConstant.Italic);
         

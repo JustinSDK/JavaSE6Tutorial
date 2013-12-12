@@ -3,7 +3,7 @@ import java.io.*;
 public class ExceptionDemo { 
     public static void main(String[] args) { 
         try { 
-            throw new ArithmeticException("¨Ò¥~´ú¸Õ"); 
+            throw new ArithmeticException("ä¾‹å¤–æ¸¬è©¦"); 
         } 
         catch(Exception e) { 
             System.out.println(e.toString()); 

@@ -5,8 +5,8 @@ import java.lang.reflect.Modifier;
 import java.util.Map;
 
 public class CommandUtil {
-    // µ¹©wMapª«¥ó¤Î­n²£¥ÍªºBeanÃş§O¦WºÙ
-    // ¥i¥H¨ú¦^¤w¸g³]©w§¹¦¨ªºª«¥ó
+    // çµ¦å®šMapç‰©ä»¶åŠè¦ç”¢ç”Ÿçš„Beané¡åˆ¥åç¨±
+    // å¯ä»¥å–å›å·²ç¶“è¨­å®šå®Œæˆçš„ç‰©ä»¶
     public static Object getCommand(Map requestMap, 
                                     String commandClass) 
                                       throws Exception {
@@ -16,7 +16,7 @@ public class CommandUtil {
         return updateCommand(requestMap, o);
     }
 
-    // ¨Ï¥Îreflection¦Û°Ê§ä¥X­n§ó·sªºÄİ©Ê
+    // ä½¿ç”¨reflectionè‡ªå‹•æ‰¾å‡ºè¦æ›´æ–°çš„å±¬æ€§
     public static Object updateCommand(
                            Map requestMap, 
                            Object command) 
@@ -25,17 +25,17 @@ public class CommandUtil {
                    command.getClass().getDeclaredMethods();
     
         for(int i = 0; i < methods.length; i++) {
-            // ²¤¹Lprivate¡Bprotected¦¨­û
-            // ¥B§ä¥X¥²¶·¬Oset¶}ÀYªº¤èªk¦WºÙ
+            // ç•¥éprivateã€protectedæˆå“¡
+            // ä¸”æ‰¾å‡ºå¿…é ˆæ˜¯seté–‹é ­çš„æ–¹æ³•åç¨±
             if(!Modifier.isPrivate(methods[i].getModifiers()) &&
                !Modifier.isProtected(methods[i].getModifiers()) &&  
                methods[i].getName().startsWith("set")) {
-                // ¨ú±o¤£¥]¬Asetªº¦WºÙ
+                // å–å¾—ä¸åŒ…æ‹¬setçš„åç¨±
                 String name = methods[i].getName()
                                         .substring(3)
                                         .toLowerCase();
-                // ¦pªGsetter¦WºÙ»PÁä­È¬Û¦P
-                // ©I¥s¹ïÀ³ªºsetter¨Ã³]©w­È
+                // å¦‚æœsetteråç¨±èˆ‡éµå€¼ç›¸åŒ
+                // å‘¼å«å°æ‡‰çš„setterä¸¦è¨­å®šå€¼
                 if(requestMap.containsKey(name)) {
                     String param = (String) requestMap.get(name);
                     Object[] values = findOutParamValues(
@@ -47,7 +47,7 @@ public class CommandUtil {
         return command;  
     }
   
-    // Âà´«¬°¹ïÀ³«¬ºAªº­È
+    // è½‰æ›ç‚ºå°æ‡‰å‹æ…‹çš„å€¼
     private static Object[] findOutParamValues(
                      String param, Method method) {
         Class[] params = method.getParameterTypes();

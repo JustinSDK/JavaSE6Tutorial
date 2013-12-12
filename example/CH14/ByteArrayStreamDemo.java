@@ -16,30 +16,30 @@ public class ByteArrayStreamDemo {
 
             byte[] bytes = new byte[1];             
 
-            // ±NÀÉ®×¤º®e¼g¤J¦ì¤¸°}¦C¦ê¬y
+            // å°‡æª”æ¡ˆå…§å®¹å¯«å…¥ä½å…ƒé™£åˆ—ä¸²æµ
             while(bufferedInputStream.read(bytes) != -1) {
                 arrayOutputStream.write(bytes);
             }
             arrayOutputStream.close(); 
             bufferedInputStream.close(); 
 
-            // ¥H¦r¤¸¤è¦¡Åã¥Ü¦ì¤¸°}¦C¤º®e 
+            // ä»¥å­—å…ƒæ–¹å¼é¡¯ç¤ºä½å…ƒé™£åˆ—å…§å®¹ 
             bytes = arrayOutputStream.toByteArray(); 
             for(int i = 0; i < bytes.length; i++) {
                 System.out.print((char) bytes[i]);
             }
             System.out.println(); 
 
-            // Åı¨Ï¥ÎªÌ¿é¤J¦ì¸m»P¦r¤¸­×§ï¦ì¤¸°}¦C¤º®e 
+            // è®“ä½¿ç”¨è€…è¼¸å…¥ä½ç½®èˆ‡å­—å…ƒä¿®æ”¹ä½å…ƒé™£åˆ—å…§å®¹ 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print("¿é¤J­×§ï¦ì¸m¡G"); 
+            System.out.print("è¼¸å…¥ä¿®æ”¹ä½ç½®ï¼š"); 
             int pos = scanner.nextInt();
-            System.out.print("¿é¤J­×§ï¦r¤¸¡G"); 
-            // ­×§ï°}¦C¤¤¹ïÀ³ªº¦r¤¸
+            System.out.print("è¼¸å…¥ä¿®æ”¹å­—å…ƒï¼š"); 
+            // ä¿®æ”¹é™£åˆ—ä¸­å°æ‡‰çš„å­—å…ƒ
             bytes[pos-1] = (byte) scanner.next().charAt(0);
 
-            // ±N¦ì¤¸°}¦C¤º®e¦s¦^ÀÉ®× 
+            // å°‡ä½å…ƒé™£åˆ—å…§å®¹å­˜å›æª”æ¡ˆ 
             ByteArrayInputStream byteArrayInputStream = 
                 new ByteArrayInputStream(bytes); 
             BufferedOutputStream bufOutputStream = 
@@ -53,7 +53,7 @@ public class ByteArrayStreamDemo {
             bufOutputStream.close(); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
-            System.out.println("½Ğ«ü©wÀÉ®×¦WºÙ");
+            System.out.println("è«‹æŒ‡å®šæª”æ¡ˆåç¨±");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 

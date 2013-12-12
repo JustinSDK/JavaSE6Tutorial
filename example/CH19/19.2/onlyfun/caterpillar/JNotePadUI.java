@@ -20,7 +20,7 @@ import javax.swing.SwingConstants;
 
 public class JNotePadUI extends JFrame {
     public JNotePadUI() {
-        super("·s¼W¤å¦rÀÉ®×");
+        super("æ–°å¢æ–‡å­—æª”æ¡ˆ");
         setUpUIComponent();
         setUpEventListener();
         setVisible(true);
@@ -29,48 +29,48 @@ public class JNotePadUI extends JFrame {
     private void setUpUIComponent() {
         setSize(640, 480);
         
-        // ¿ï³æ¦C
+        // é¸å–®åˆ—
         JMenuBar menuBar = new JMenuBar();
         
-        // ³]¸m¡uÀÉ®×¡v¿ï³æ
-        JMenu fileMenu = new JMenu("ÀÉ®×");
-        JMenuItem menuOpen = new JMenuItem("¶}±ÒÂÂÀÉ");
-        // §Ö³tÁä³]¸m
+        // è¨­ç½®ã€Œæª”æ¡ˆã€é¸å–®
+        JMenu fileMenu = new JMenu("æª”æ¡ˆ");
+        JMenuItem menuOpen = new JMenuItem("é–‹å•ŸèˆŠæª”");
+        // å¿«é€Ÿéµè¨­ç½®
         menuOpen.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_O, 
                             InputEvent.CTRL_MASK));
-        JMenuItem menuSave = new JMenuItem("Àx¦sÀÉ®×");
+        JMenuItem menuSave = new JMenuItem("å„²å­˜æª”æ¡ˆ");
         menuSave.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_S, 
                             InputEvent.CTRL_MASK));
-        JMenuItem menuSaveAs = new JMenuItem("¥t¦s·sÀÉ");
+        JMenuItem menuSaveAs = new JMenuItem("å¦å­˜æ–°æª”");
 
-        JMenuItem menuClose = new JMenuItem("Ãö³¬");
+        JMenuItem menuClose = new JMenuItem("é—œé–‰");
         menuClose.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_Q, 
                             InputEvent.CTRL_MASK));
         
         fileMenu.add(menuOpen);
-        fileMenu.addSeparator(); // ¤À¹j½u
+        fileMenu.addSeparator(); // åˆ†éš”ç·š
         fileMenu.add(menuSave);
         fileMenu.add(menuSaveAs);        
-        fileMenu.addSeparator(); // ¤À¹j½u
+        fileMenu.addSeparator(); // åˆ†éš”ç·š
         fileMenu.add(menuClose);
         
-        // ³]¸m¡u½s¿è¡v¿ï³æ        
-        JMenu editMenu = new JMenu("½s¿è");
-        JMenuItem menuCut = new JMenuItem("°Å¤U");
+        // è¨­ç½®ã€Œç·¨è¼¯ã€é¸å–®        
+        JMenu editMenu = new JMenu("ç·¨è¼¯");
+        JMenuItem menuCut = new JMenuItem("å‰ªä¸‹");
         menuCut.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_X, 
                             InputEvent.CTRL_MASK));
-        JMenuItem menuCopy = new JMenuItem("½Æ»s");
+        JMenuItem menuCopy = new JMenuItem("è¤‡è£½");
         menuCopy.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_C, 
                             InputEvent.CTRL_MASK));
-        JMenuItem menuPaste = new JMenuItem("¶K¤W");
+        JMenuItem menuPaste = new JMenuItem("è²¼ä¸Š");
         menuPaste.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_V, 
                             InputEvent.CTRL_MASK));
@@ -78,9 +78,9 @@ public class JNotePadUI extends JFrame {
         editMenu.add(menuCopy);
         editMenu.add(menuPaste);
         
-        // ³]¸m¡uÃö©ó¡v¿ï³æ        
-        JMenu aboutMenu = new JMenu("Ãö©ó");
-        JMenuItem menuAbout = new JMenuItem("Ãö©óJNotePad");
+        // è¨­ç½®ã€Œé—œæ–¼ã€é¸å–®        
+        JMenu aboutMenu = new JMenu("é—œæ–¼");
+        JMenuItem menuAbout = new JMenuItem("é—œæ–¼JNotePad");
         aboutMenu.add(menuAbout);
         
         menuBar.add(fileMenu);
@@ -89,9 +89,9 @@ public class JNotePadUI extends JFrame {
         
         setJMenuBar(menuBar);
         
-        // ¤å¦r½s¿è°Ï°ì
+        // æ–‡å­—ç·¨è¼¯å€åŸŸ
         JTextArea textArea = new JTextArea();
-        textArea.setFont(new Font("²Ó©úÅé", Font.PLAIN, 16));
+        textArea.setFont(new Font("ç´°æ˜é«”", Font.PLAIN, 16));
         textArea.setLineWrap(true);
         JScrollPane panel = new JScrollPane(textArea,
           ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
@@ -100,8 +100,8 @@ public class JNotePadUI extends JFrame {
         Container contentPane = getContentPane();
         contentPane.add(panel, BorderLayout.CENTER);  
         
-        // ª¬ºA¦C
-        JLabel stateBar = new JLabel("¥¼­×§ï");
+        // ç‹€æ…‹åˆ—
+        JLabel stateBar = new JLabel("æœªä¿®æ”¹");
         stateBar.setHorizontalAlignment(SwingConstants.LEFT); 
         stateBar.setBorder(
                 BorderFactory.createEtchedBorder());

@@ -6,25 +6,25 @@ import java.util.Locale;
 
 public class DateTimeInstanceDemo2 {
     public static void main(String[] args) {
-        // ¨ú±o¥Ø«e®É¶¡
+        // å–å¾—ç›®å‰æ™‚é–“
         Date date = new Date(); 
 
-        // en: ­^»y¨t US: ¬ü°ê
+        // en: è‹±èªç³» US: ç¾åœ‹
         Locale locale = new Locale("en", "US");
 
-        // Â²µu¸ê°T®æ¦¡
+        // ç°¡çŸ­è³‡è¨Šæ ¼å¼
         DateFormat shortFormat = 
            DateFormat.getDateTimeInstance( 
               DateFormat.SHORT, DateFormat.SHORT, locale); 
-        // ¤¤µ¥¸ê°T®æ¦¡
+        // ä¸­ç­‰è³‡è¨Šæ ¼å¼
         DateFormat mediumFormat = 
            DateFormat.getDateTimeInstance( 
               DateFormat.MEDIUM, DateFormat.MEDIUM, locale); 
-        // ªø¸ê°T®æ¦¡
+        // é•·è³‡è¨Šæ ¼å¼
         DateFormat longFormat = 
            DateFormat.getDateTimeInstance( 
               DateFormat.LONG, DateFormat.LONG, locale); 
-        // ¸Ô²Ó¸ê°T®æ¦¡
+        // è©³ç´°è³‡è¨Šæ ¼å¼
         DateFormat fullFormat = 
            DateFormat.getDateTimeInstance( 
                 DateFormat.FULL, DateFormat.FULL, locale); 

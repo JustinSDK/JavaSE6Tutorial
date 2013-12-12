@@ -7,18 +7,18 @@ public class CatchWho2 {
             catch(ArithmeticException e) { 
                 System.out.println(
                     "ArrayIndexOutOfBoundsException" + 
-                    "/¤º¼htry-catch"); 
+                    "/å…§å±¤try-catch"); 
             }
  
             throw new ArithmeticException(); 
         } 
         catch(ArithmeticException e) { 
-            System.out.println("µo¥ÍArithmeticException"); 
+            System.out.println("ç™¼ç”ŸArithmeticException"); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
             System.out.println(
                 "ArrayIndexOutOfBoundsException" + 
-                "/¥~¼htry-catch"); 
+                "/å¤–å±¤try-catch"); 
         } 
     } 
 }

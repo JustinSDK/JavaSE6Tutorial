@@ -3,11 +3,11 @@ public class GcTest {
  
     public GcTest(String name) { 
         this.name = name; 
-        System.out.println(name + "«Ø¥ß"); 
+        System.out.println(name + "å»ºç«‹"); 
     } 
  
-    // ª«¥ó¦^¦¬«e°õ¦æ 
+    // ç‰©ä»¶å›æ”¶å‰åŸ·è¡Œ 
     protected void finalize() { 
-        System.out.println(name + "³Q¦^¦¬"); 
+        System.out.println(name + "è¢«å›æ”¶"); 
     } 
 }

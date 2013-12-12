@@ -10,22 +10,22 @@ public class StringStack {
     }
     
     public void push(String name) { 
-        // ±N¤¸¯À¥[¤J¦ê¦C«eºİ
+        // å°‡å…ƒç´ åŠ å…¥ä¸²åˆ—å‰ç«¯
         linkedList.addFirst(name);
     }
     
     public String top() {
-        // ¨ú±o¦ê¦C²Ä¤@­Ó¤¸¯À
+        // å–å¾—ä¸²åˆ—ç¬¬ä¸€å€‹å…ƒç´ 
         return linkedList.getFirst();
     }
     
     public String pop() {
-        // ²¾¥X²Ä¤@­Ó¤¸¯À
+        // ç§»å‡ºç¬¬ä¸€å€‹å…ƒç´ 
         return linkedList.removeFirst();
     }
  
     public boolean isEmpty() {
-        // ¦ê¦C¬O§_¬°ªÅ
+        // ä¸²åˆ—æ˜¯å¦ç‚ºç©º
         return linkedList.isEmpty();
     }
 }

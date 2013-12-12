@@ -10,7 +10,7 @@ public class LoggingDemo {
             System.out.println(args[0]);
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            logger.warning("¨S¦³´£¨Ñ°õ¦æ®Éªº¤Ş¼Æ¡I");
+            logger.warning("æ²’æœ‰æä¾›åŸ·è¡Œæ™‚çš„å¼•æ•¸ï¼");
         }                
     }
 }

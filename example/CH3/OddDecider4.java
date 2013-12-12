@@ -7,11 +7,11 @@ public class OddDecider4 {
         int replay = 0; 
  
         do { 
-            System.out.print("¿é¤J¾ã¼Æ­È¡G"); 
+            System.out.print("è¼¸å…¥æ•´æ•¸å€¼ï¼š"); 
             input = scanner.nextInt();
-            System.out.println("¿é¤J¼Æ¬°©_¼Æ¡H" + 
+            System.out.println("è¼¸å…¥æ•¸ç‚ºå¥‡æ•¸ï¼Ÿ" + 
                             ((input%2 == 1) ? 'Y': 'N')); 
-            System.out.print("Ä~Äò(1:Ä~Äò 0:µ²§ô)¡H"); 
+            System.out.print("ç¹¼çºŒ(1:ç¹¼çºŒ 0:çµæŸ)ï¼Ÿ"); 
             replay = scanner.nextInt();
         } while(replay == 1);   
     } 

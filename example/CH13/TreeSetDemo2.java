@@ -4,7 +4,7 @@ import java.util.*;
  
 public class TreeSetDemo2 {
     public static void main(String[] args) {
-        // ¦Û­qComparator
+        // è‡ªè¨‚Comparator
         Comparator<String> comparator = 
                       new CustomComparator<String>();
         Set<String> set = 
@@ -14,7 +14,7 @@ public class TreeSetDemo2 {
         set.add("caterpillar");
         set.add("momor");
         
-        // ¨Ï¥Î enhanced for loop Åã¥Üª«¥ó
+        // ä½¿ç”¨ enhanced for loop é¡¯ç¤ºç‰©ä»¶
         for(String name : set) {
             System.out.print(name + " ");
         }

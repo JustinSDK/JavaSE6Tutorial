@@ -12,9 +12,9 @@ public class NewArraysDemo {
                         {4, 6, 4},
                         {7, 8, 9}};
  
-        System.out.println("arr1 ¤º®eµ¥©ó arr2 ? " + 
+        System.out.println("arr1 å…§å®¹ç­‰æ–¼ arr2 ? " + 
                             Arrays.deepEquals(arr1, arr2));
-        System.out.println("arr1 ¤º®eµ¥©ó arr3 ? " + 
+        System.out.println("arr1 å…§å®¹ç­‰æ–¼ arr3 ? " + 
                             Arrays.deepEquals(arr1, arr3));
         System.out.println("arr1 deepToString()\n\t" + 
                             Arrays.deepToString(arr1));

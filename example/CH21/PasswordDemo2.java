@@ -7,18 +7,18 @@ public class PasswordDemo2 {
         Console console = System.console();
         while(true) {
 
-            String name = console.readLine("[%s] ", "¿é¤J¦WºÙ¡K");
+            String name = console.readLine("[%s] ", "è¼¸å…¥åç¨±â€¦");
 
-            char[] passwd = console.readPassword("[%s]", "¿é¤J±K½X¡K");
+            char[] passwd = console.readPassword("[%s]", "è¼¸å…¥å¯†ç¢¼â€¦");
             String password = new String(passwd);
 
             if("caterpillar".equals(name) &&
                "123456".equals(password)) {
-                System.out.println("Åwªï caterpillar ");
+                System.out.println("æ­¡è¿ caterpillar ");
                 break;
             }
             else {
-                System.out.printf("%s¡A¦WºÙ©Î±K½X¿ù»~¡A½Ğ­«·s¿é¤J¡I%n", name);
+                System.out.printf("%sï¼Œåç¨±æˆ–å¯†ç¢¼éŒ¯èª¤ï¼Œè«‹é‡æ–°è¼¸å…¥ï¼%n", name);
             }
         }
         

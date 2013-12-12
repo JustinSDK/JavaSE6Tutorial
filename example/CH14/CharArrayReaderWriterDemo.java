@@ -11,7 +11,7 @@ public class CharArrayReaderWriterDemo {
                 new BufferedReader( 
                      new FileReader(file)); 
  
-            // ±NÀÉ®×Åª¤J¦r¤¸°}¦C 
+            // å°‡æª”æ¡ˆè®€å…¥å­—å…ƒé™£åˆ— 
             CharArrayWriter charArrayWriter = 
                 new CharArrayWriter(); 
             char[] array = new char[1]; 
@@ -22,22 +22,22 @@ public class CharArrayReaderWriterDemo {
             charArrayWriter.close(); 
             bufInputReader.close(); 
  
-            // Åã¥Ü¦r¤¸°}¦C¤º®e 
+            // é¡¯ç¤ºå­—å…ƒé™£åˆ—å…§å®¹ 
             array = charArrayWriter.toCharArray(); 
             for(int i = 0; i < array.length; i++) 
                 System.out.print(array[i] + " "); 
             System.out.println(); 
  
-            // Åý¨Ï¥ÎªÌ¿é¤J¦ì¸m»P¦r¤¸­×§ï¦r¤¸°}¦C¤º®e 
+            // è®“ä½¿ç”¨è€…è¼¸å…¥ä½ç½®èˆ‡å­—å…ƒä¿®æ”¹å­—å…ƒé™£åˆ—å…§å®¹ 
             Scanner scanner = new Scanner(System.in);
              
-            System.out.print("¿é¤J­×§ï¦ì¸m¡G"); 
+            System.out.print("è¼¸å…¥ä¿®æ”¹ä½ç½®ï¼š"); 
             int pos = scanner.nextInt(); 
-            System.out.print("¿é¤J­×§ï¦r¤¸¡G"); 
+            System.out.print("è¼¸å…¥ä¿®æ”¹å­—å…ƒï¼š"); 
             char ch = scanner.next().charAt(0); 
             array[pos-1] = ch; 
  
-            // ±N¦r¤¸°}¦C¤º®e¦s¦^ÀÉ®× 
+            // å°‡å­—å…ƒé™£åˆ—å…§å®¹å­˜å›žæª”æ¡ˆ 
             CharArrayReader charArrayReader = 
                 new CharArrayReader(array); 
             BufferedWriter bufWriter = 
@@ -53,7 +53,7 @@ public class CharArrayReaderWriterDemo {
             bufWriter.close(); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
-            System.out.println("¨S¦³«ü©wÀÉ®×");
+            System.out.println("æ²’æœ‰æŒ‡å®šæª”æ¡ˆ");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 

@@ -10,11 +10,11 @@ public class Table implements Cloneable {
 
     public Object clone () 
                      throws CloneNotSupportedException {
-        // ©I¥s¤÷Ãşªºclone()¨Ó½Æ»s
+        // å‘¼å«çˆ¶é¡çš„clone()ä¾†è¤‡è£½
         Table table = (Table) super.clone();
 
         if(this.center != null) {
-            // ½Æ»sPointÃş«¬ªº¸ê®Æ¦¨­û
+            // è¤‡è£½Pointé¡å‹çš„è³‡æ–™æˆå“¡
             table.center = (Point) center.clone(); 
         }
         

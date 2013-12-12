@@ -2,15 +2,15 @@ public class ShiftOperator {
     public static void main(String[] args) { 
         int number = 1; 
 
-        System.out.println( "2ªº0¦¸: " + number); 
+        System.out.println( "2çš„0æ¬¡: " + number); 
 
         number = number << 1; 
-        System.out.println("2ªº1¦¸: " +  number); 
+        System.out.println("2çš„1æ¬¡: " +  number); 
 
         number = number << 1; 
-        System.out.println("2ªº2¦¸: " + number); 
+        System.out.println("2çš„2æ¬¡: " + number); 
 
         number = number << 1; 
-        System.out.println("2ªº3¦¸¡G" + number); 
+        System.out.println("2çš„3æ¬¡ï¼š" + number); 
     } 
 } 

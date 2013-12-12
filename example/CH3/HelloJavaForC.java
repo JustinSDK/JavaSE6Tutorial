@@ -1,6 +1,6 @@
 public class HelloJavaForC {
     public static void main(String[] args) {
-        System.out.printf("%s¡I ³o¬O±zªº²Ä¤@­ÓJavaµ{¦¡¡I\n", 
-                          "C»y¨¥Fan");
+        System.out.printf("%sï¼ é€™æ˜¯æ‚¨çš„ç¬¬ä¸€å€‹Javaç¨‹å¼ï¼\n", 
+                          "Cèªè¨€Fan");
     }
 }

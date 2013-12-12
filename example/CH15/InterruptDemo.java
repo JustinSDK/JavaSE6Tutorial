@@ -5,7 +5,7 @@ public class InterruptDemo {
         Thread thread = new Thread(new Runnable() { 
             public void run() { 
                 try { 
-                    // ¼È°±99999²@¬í
+                    // æš«åœ99999æ¯«ç§’
                     Thread.sleep(99999); 
                 } 
                 catch(InterruptedException e) { 

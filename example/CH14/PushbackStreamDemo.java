@@ -14,20 +14,20 @@ public class PushbackStreamDemo {
 
             while((count = pushbackInputStream.read(array))
                                              != -1) {
-                // ¨â­Ó¦ì¤¸²ÕÂà´«¬°¾ã¼Æ 
+                // å…©å€‹ä½å…ƒçµ„è½‰æ›ç‚ºæ•´æ•¸ 
                 tmp = (short)((array[0] << 8) | 
                       (array[1] & 0xff)); 
                 tmp = tmp & 0xFFFF; 
  
-                // §PÂ_¬O§_¬°BIG5¡A¦pªG¬O«hÅã¥ÜBIG5¤¤¤å¦r
+                // åˆ¤æ–·æ˜¯å¦ç‚ºBIG5ï¼Œå¦‚æœæ˜¯å‰‡é¡¯ç¤ºBIG5ä¸­æ–‡å­—
                 if(tmp >= 0xA440 && tmp < 0xFFFF) {
                     System.out.println("BIG5: " + 
                              new String(array));
                 } 
                 else { 
-                    // ±N²Ä¤G­Ó¦ì¤¸²Õ±À¦^¦ê¬y 
+                    // å°‡ç¬¬äºŒå€‹ä½å…ƒçµ„æ¨å›ä¸²æµ 
                     pushbackInputStream.unread(array, 1, 1); 
-                    // Åã¥ÜASCII½d³òªº¦r¤¸
+                    // é¡¯ç¤ºASCIIç¯„åœçš„å­—å…ƒ
                     System.out.println("ASCII: " + 
                             (char)array[0]); 
                 } 
@@ -36,7 +36,7 @@ public class PushbackStreamDemo {
             pushbackInputStream.close(); 
         } 
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("½Ğ«ü©wÀÉ®×¦WºÙ");
+            System.out.println("è«‹æŒ‡å®šæª”æ¡ˆåç¨±");
         }
         catch(IOException e) { 
             e.printStackTrace(); 

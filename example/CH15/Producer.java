@@ -9,18 +9,18 @@ public class Producer implements Runnable {
     
     public void run() { 
         System.out.println(
-                "¥Í²£ªÌ¶}©l¥Í²£¾ã¼Æ......"); 
+                "ç”Ÿç”¢è€…é–‹å§‹ç”Ÿç”¢æ•´æ•¸......"); 
 
-        // ¥Í²£1¨ì10ªº¾ã¼Æ
+        // ç”Ÿç”¢1åˆ°10çš„æ•´æ•¸
         for(int product = 1; product <= 10; product++) { 
             try { 
-                // ¼È°±ÀH¾÷®É¶¡
+                // æš«åœéš¨æ©Ÿæ™‚é–“
                 Thread.sleep((int) Math.random() * 3000); 
             } 
             catch(InterruptedException e) { 
                 e.printStackTrace(); 
             } 
-            // ±N²£«~¥æµ¹©±­û
+            // å°‡ç”¢å“äº¤çµ¦åº—å“¡
             clerk.setProduct(product); 
         }       
     } 

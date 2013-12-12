@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ScannerDemo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("½Ğ¿é¤J±zªº¦W¦r¡G");
-        System.out.printf("«¢Åo¡I %s!\n", scanner.next());
+        System.out.print("è«‹è¼¸å…¥æ‚¨çš„åå­—ï¼š");
+        System.out.printf("å“ˆå›‰ï¼ %s!\n", scanner.next());
     }
 }

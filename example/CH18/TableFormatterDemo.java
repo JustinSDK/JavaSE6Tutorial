@@ -13,8 +13,8 @@ public class TableFormatterDemo {
                 }
             }
             
-            logger.info("∞TÆß1");
-            logger.warning("∞TÆß2");
+            logger.info("Ë®äÊÅØ1");
+            logger.warning("Ë®äÊÅØ2");
         } catch (SecurityException e) {
             e.printStackTrace();
         }

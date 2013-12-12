@@ -5,10 +5,10 @@ public class RequestDemo {
             switch (n) {
                 case 0:
                     doRequest(
-                         new HelloRequest("¨}¸¯®æ"));
+                         new HelloRequest("è‰¯è‘›æ ¼"));
                     break;
                 case 1:
-                    doRequest(new WelcomeRequest("Wiki ºô¯¸"));
+                    doRequest(new WelcomeRequest("Wiki ç¶²ç«™"));
             }
         }
     }

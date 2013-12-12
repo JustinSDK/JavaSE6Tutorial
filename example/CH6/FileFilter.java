@@ -3,7 +3,7 @@ public class FileFilter {
         String[] filenames = {"caterpillar.jpg", "cater.gif", 
                  "bush.jpg", "wuwu.jpg", "clockman.gif"};
 
-        System.out.print("¹LÂo¥XjpgÀÉ®×: "); 
+        System.out.print("éæ¿¾å‡ºjpgæª”æ¡ˆ: "); 
 
         for(int i = 0; i < filenames.length; i++) {
             if(filenames[i].endsWith("jpg")) {
