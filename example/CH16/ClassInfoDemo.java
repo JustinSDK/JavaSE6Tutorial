@@ -8,10 +8,10 @@ public class ClassInfoDemo {
             System.out.println(p.getName());
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©wÃş§O");
+            System.out.println("æ²’æœ‰æŒ‡å®šé¡åˆ¥");
         }
         catch(ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šé¡åˆ¥");
         }
     }
 }

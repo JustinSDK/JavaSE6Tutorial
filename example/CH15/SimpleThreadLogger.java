@@ -19,9 +19,9 @@ public class SimpleThreadLogger {
             try {
                 logger = Logger.getLogger(
                            Thread.currentThread().getName());
-                // Logger ¹w³]¬O¦b¥D±±¥x¿é¥X
-                // §Ú­Ì¥[¤J¤@­ÓÀÉ®×¿é¥XªºHandler
-                // ¥¦·|¿é¥XXMLªº°O¿ı¤å¥ó
+                // Logger é è¨­æ˜¯åœ¨ä¸»æ§å°è¼¸å‡º
+                // æˆ‘å€‘åŠ å…¥ä¸€å€‹æª”æ¡ˆè¼¸å‡ºçš„Handler
+                // å®ƒæœƒè¼¸å‡ºXMLçš„è¨˜éŒ„æ–‡ä»¶
                 logger.addHandler(
                     new FileHandler(
                            Thread.currentThread().getName() 

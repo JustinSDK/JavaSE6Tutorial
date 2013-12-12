@@ -11,13 +11,13 @@ public class ConnectionDemo {
             Connection conn = dbsource.getConnection();
             
             if(!conn.isClosed()) {
-                System.out.println("¸ê®Æ®w³s±µ¤w¶}±Ò¡K");
+                System.out.println("è³‡æ–™åº«é€£æŽ¥å·²é–‹å•Ÿâ€¦");
             }
             
             dbsource.closeConnection(conn);
             
             if(conn.isClosed()) {
-                System.out.println("¸ê®Æ®w³s±µ¤wÃö³¬¡K");
+                System.out.println("è³‡æ–™åº«é€£æŽ¥å·²é—œé–‰â€¦");
             }
             
         } catch (IOException e) {

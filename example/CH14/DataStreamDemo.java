@@ -13,31 +13,31 @@ public class DataStreamDemo {
                          new FileOutputStream(args[0])); 
             
             for(Member member : members) { 
-               // ¼g¤JUTF¦r¦ê
+               // å¯«å…¥UTFå­—ä¸²
                dataOutputStream.writeUTF(member.getName()); 
-               // ¼g¤Jint¸ê®Æ
+               // å¯«å…¥intè³‡æ–™
                dataOutputStream.writeInt(member.getAge()); 
             } 
-            // ¥X²M©Ò¦³¸ê®Æ¦Ü¥Øªº¦a
+            // å‡ºæ¸…æ‰€æœ‰è³‡æ–™è‡³ç›®çš„åœ°
             dataOutputStream.flush(); 
-            // Ãö³¬¦ê¬y
+            // é—œé–‰ä¸²æµ
             dataOutputStream.close(); 
             
             DataInputStream dataInputStream = 
                 new DataInputStream( 
                          new FileInputStream(args[0])); 
-            // Åª¥X¸ê®Æ¨ÃÁÙ­ì¬°ª«¥ó
+            // è®€å‡ºè³‡æ–™ä¸¦é‚„åŸç‚ºç‰©ä»¶
             for(int i = 0; i < members.length; i++) { 
-                // Åª¥XUTF¦r¦ê
+                // è®€å‡ºUTFå­—ä¸²
                 String name = dataInputStream.readUTF(); 
-                // Åª¥Xint¸ê®Æ
+                // è®€å‡ºintè³‡æ–™
                 int score = dataInputStream.readInt();
                 members[i] = new Member(name, score); 
             } 
-            // Ãö³¬¦ê¬y
+            // é—œé–‰ä¸²æµ
             dataInputStream.close(); 
 
-            // Åã¥ÜÁÙ­ì«áªº¸ê®Æ
+            // é¡¯ç¤ºé‚„åŸå¾Œçš„è³‡æ–™
             for(Member member : members) { 
                System.out.printf("%s\t%d%n", member.getName(), member.getAge());
             } 

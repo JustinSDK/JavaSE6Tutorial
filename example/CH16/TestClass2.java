@@ -2,6 +2,6 @@ package onlyfun.caterpillar;
 
 public class TestClass2 {
     static {
-        System.out.println("[°õ¦æÀRºA°Ï¶ô]");
+        System.out.println("[åŸ·è¡Œéœæ…‹å€å¡Š]");
     }
 }

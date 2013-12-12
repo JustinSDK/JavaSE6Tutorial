@@ -10,7 +10,7 @@ public class LinkedHashSetDemo {
         set.add("momor");
         set.add("bush");
         
-       // ¨Ο¥Ξ enhanced for loop Εγ¥άª«¥σ
+       // δ½Ώη”¨ enhanced for loop ι΅―η¤Ίη‰©δ»¶
         for(String name : set) {
             System.out.print(name + " ");
         }

@@ -10,17 +10,17 @@ public class SystemTrayDemo2 {
             Image image = Toolkit.getDefaultToolkit()
                                  .getImage("musical_note_smile.gif");
             PopupMenu popup = new PopupMenu();
-            MenuItem item = new MenuItem("¶}±ÒJNotePad 1.0");
+            MenuItem item = new MenuItem("é–‹å•ŸJNotePad 1.0");
             popup.add(item);
             TrayIcon trayIcon = new TrayIcon(image, "JNotePad 1.0", popup);
             try {
                 tray.add(trayIcon);
             } catch (AWTException e) {
-                System.err.println("µLªk¥[¤J¨t²Î¤u¨ã¦C¹Ï¥Ü");
+                System.err.println("ç„¡æ³•åŠ å…¥ç³»çµ±å·¥å…·åˆ—åœ–ç¤º");
                 e.printStackTrace();
             }
         } else {
-            System.err.println("µLªk¨ú±o¨t²Î¤u¨ã¦C");
+            System.err.println("ç„¡æ³•å–å¾—ç³»çµ±å·¥å…·åˆ—");
         }
     }
 }

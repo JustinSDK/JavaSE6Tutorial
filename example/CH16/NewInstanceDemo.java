@@ -17,7 +17,7 @@ public class NewInstanceDemo {
             }
         }
         catch(ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wªºÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„é¡åˆ¥");
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {

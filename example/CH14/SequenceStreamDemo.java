@@ -6,18 +6,18 @@ import java.io.*;
 public class SequenceStreamDemo {
     public static void main(String[] args) {
         try { 
-            // args[0]: «ü©w¤À³Î¡]s¡^©Î³s±µ¡]c¡^
+            // args[0]: æŒ‡å®šåˆ†å‰²ï¼ˆsï¼‰æˆ–é€£æ¥ï¼ˆcï¼‰
             switch (args[0].charAt(1)) {
                 case 's':
-                    // args[1]: ¨C­Ó¤À³ÎÀÉ®×ªº¤j¤p
+                    // args[1]: æ¯å€‹åˆ†å‰²æª”æ¡ˆçš„å¤§å°
                     int size = Integer.parseInt(args[1]);
-                    // args[2]: «ü©w­n³Q¤À³ÎªºÀÉ®×¦WºÙ
+                    // args[2]: æŒ‡å®šè¦è¢«åˆ†å‰²çš„æª”æ¡ˆåç¨±
                     seperate(args[2], size); 
                     break;
                 case 'c':
-                    // args[1]: «ü©w­n³Q²Õ¦XªºÀÉ®×­Ó¼Æ
+                    // args[1]: æŒ‡å®šè¦è¢«çµ„åˆçš„æª”æ¡ˆå€‹æ•¸
                     int number = Integer.parseInt(args[1]);
-                    // args[2]: ²Õ¦X«áªºÀÉ®×¦WºÙ
+                    // args[2]: çµ„åˆå¾Œçš„æª”æ¡ˆåç¨±
                     concatenate(args[2], number); 
                     break;
             }
@@ -26,14 +26,14 @@ public class SequenceStreamDemo {
             System.out.println(
                 "Using: java UseSequenceStream [-s/-c]" + 
                 " (size/number) filename"); 
-            System.out.println("-s: ¤À³ÎÀÉ®×\n-c: ²Õ¦XÀÉ®×"); 
+            System.out.println("-s: åˆ†å‰²æª”æ¡ˆ\n-c: çµ„åˆæª”æ¡ˆ"); 
         } 
         catch(IOException e) { 
             e.printStackTrace(); 
         } 
     }
 
-    // ¤À³ÎÀÉ®×
+    // åˆ†å‰²æª”æ¡ˆ
     public static void seperate(String filename, int size) 
                                     throws IOException { 
         FileInputStream fileInputStream = 
@@ -43,17 +43,17 @@ public class SequenceStreamDemo {
 
         byte[] data = new byte[1]; 
         int count = 0;  
-        // ±q­ìÀÉ®×¤j¤p¤Î«ü©w¤À³Îªº¤j¤p
-        // ¨M©w­n¤À³Î¬°´X­ÓÀÉ®× 
+        // å¾åŸæª”æ¡ˆå¤§å°åŠæŒ‡å®šåˆ†å‰²çš„å¤§å°
+        // æ±ºå®šè¦åˆ†å‰²ç‚ºå¹¾å€‹æª”æ¡ˆ 
         if(fileInputStream.available() % size == 0) 
             count = fileInputStream.available() / size; 
         else 
             count = fileInputStream.available() / size + 1; 
  
-        // ¶}©l¶i¦æ¤À³Î
+        // é–‹å§‹é€²è¡Œåˆ†å‰²
         for(int i = 0; i < count; i++) { 
             int num = 0; 
-            // ¤À³ÎªºÀÉ®×¥[¤W©³½u»P½s¸¹
+            // åˆ†å‰²çš„æª”æ¡ˆåŠ ä¸Šåº•ç·šèˆ‡ç·¨è™Ÿ
             File file = new File(filename + "_" + (i + 1));
             BufferedOutputStream bufOutputStream = 
                 new BufferedOutputStream( 
@@ -62,7 +62,7 @@ public class SequenceStreamDemo {
             while(bufInputStream.read(data) != -1) { 
                 bufOutputStream.write(data); 
                 num++; 
-                if(num == size) { // ¤À³Î¥X¤@­ÓÀÉ®×
+                if(num == size) { // åˆ†å‰²å‡ºä¸€å€‹æª”æ¡ˆ
                     bufOutputStream.flush(); 
                     bufOutputStream.close(); 
                     break; 
@@ -75,25 +75,25 @@ public class SequenceStreamDemo {
             } 
         } 
  
-        System.out.println("¤À³Î¬°" + count + "­ÓÀÉ®×"); 
+        System.out.println("åˆ†å‰²ç‚º" + count + "å€‹æª”æ¡ˆ"); 
     } 
 
-    // ³s±µÀÉ®×
+    // é€£æ¥æª”æ¡ˆ
     public static void concatenate(String filename, 
                           int number) throws IOException {
-        // ¦¬¶°ÀÉ®×¥ÎªºList
+        // æ”¶é›†æª”æ¡ˆç”¨çš„List
         List<InputStream> list = 
                 new ArrayList<InputStream>();
         
         for(int i = 0; i < number; i++) {
-            // ÀÉ®×¦W¥²¶·¬°©³½u¥[¤W½s¸¹
+            // æª”æ¡ˆåå¿…é ˆç‚ºåº•ç·šåŠ ä¸Šç·¨è™Ÿ
             File file = new File(filename + "_" + (i+1));
             list.add(i, new FileInputStream(file));
         }
         
         final Iterator<InputStream> iterator = list.iterator();
         
-        // SequenceInputStream »İ­n¤@­ÓEnumerationª«¥ó¨Ó«Øºc
+        // SequenceInputStream éœ€è¦ä¸€å€‹Enumerationç‰©ä»¶ä¾†å»ºæ§‹
         Enumeration<InputStream> enumation = 
             new Enumeration<InputStream>() {
                 public boolean hasMoreElements() {
@@ -105,8 +105,8 @@ public class SequenceStreamDemo {
                 }
             };
  
-        // «Ø¥ßSequenceInputStream
-        // ¨Ã¨Ï¥ÎBufferedInputStream
+        // å»ºç«‹SequenceInputStream
+        // ä¸¦ä½¿ç”¨BufferedInputStream
         BufferedInputStream bufInputStream = 
             new BufferedInputStream( 
                     new SequenceInputStream(enumation), 
@@ -117,13 +117,13 @@ public class SequenceStreamDemo {
                        new FileOutputStream(filename), 8192); 
 
         byte[] data = new byte[1]; 
-        // Åª¨ú©Ò¦³ÀÉ®×¸ê®Æ¨Ã¼g¤J¥Øªº¦aÀÉ®×
+        // è®€å–æ‰€æœ‰æª”æ¡ˆè³‡æ–™ä¸¦å¯«å…¥ç›®çš„åœ°æª”æ¡ˆ
         while(bufInputStream.read(data) != -1) 
             bufOutputStream.write(data); 
 
         bufInputStream.close(); 
         bufOutputStream.flush(); 
         bufOutputStream.close(); 
-        System.out.println("²Õ¦X" + number + "­ÓÀÉ®× OK!!"); 
+        System.out.println("çµ„åˆ" + number + "å€‹æª”æ¡ˆ OK!!"); 
     } 
 }

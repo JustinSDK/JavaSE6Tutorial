@@ -1,19 +1,19 @@
 public class UseGC { 
     public static void main(String[] args) { 
-        System.out.println("½Ğ«öCtrl + C²×¤îµ{¦¡........"); 
+        System.out.println("è«‹æŒ‰Ctrl + Cçµ‚æ­¢ç¨‹å¼........"); 
  
         GcTest obj1 = new GcTest("object1"); 
         GcTest obj2 = new GcTest("object2"); 
         GcTest obj3 = new GcTest("object3"); 
  
-        // ¥O¦WºÙ¤£°Ñ¦Ò¦Üª«¥ó 
+        // ä»¤åç¨±ä¸åƒè€ƒè‡³ç‰©ä»¶ 
         obj1 = null; 
         obj2 = null; 
         obj3 = null; 
  
-        // «ØÄ³¦^¦¬ª«¥ó 
+        // å»ºè­°å›æ”¶ç‰©ä»¶ 
         System.gc(); 
  
-        while(true); // ¤£Â_°õ¦æµ{¦¡
+        while(true); // ä¸æ–·åŸ·è¡Œç¨‹å¼
     } 
 }

@@ -4,20 +4,20 @@ public class AdvancedArray {
         int[] tmp1 = arr1; 
         int[] tmp2 = arr1; 
  
-        System.out.print("³z¹Ltmp1¨ú¥X°}¦C­È¡G");
+        System.out.print("é€étmp1å–å‡ºé™£åˆ—å€¼ï¼š");
         for(int i = 0; i < tmp1.length; i++) 
             System.out.print(tmp1[i] + " "); 
 
-        System.out.print("\n³z¹Ltmp2¨ú¥X°}¦C­È¡G"); 
+        System.out.print("\né€étmp2å–å‡ºé™£åˆ—å€¼ï¼š"); 
         for(int i = 0; i < tmp2.length; i++) 
             System.out.print(tmp2[i] + " "); 
  
         tmp1[2] = 9; 
-        System.out.print("\n\n³z¹Ltmp1¨ú¥X°}¦C­È¡G");
+        System.out.print("\n\né€étmp1å–å‡ºé™£åˆ—å€¼ï¼š");
         for(int i = 0; i < tmp1.length; i++) 
             System.out.print(tmp1[i] + " "); 
 
-        System.out.print("\n³z¹Ltmp2¨ú¥X°}¦C­È¡G"); 
+        System.out.print("\né€étmp2å–å‡ºé™£åˆ—å€¼ï¼š"); 
         for(int i = 0; i < tmp2.length; i++) 
             System.out.print(tmp2[i] + " "); 
         System.out.println();    

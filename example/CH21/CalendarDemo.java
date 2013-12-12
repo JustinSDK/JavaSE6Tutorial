@@ -8,13 +8,13 @@ public class CalendarDemo {
         Calendar rightNow = Calendar.getInstance();
         Locale locale = Locale.getDefault();
        
-        System.out.println("≤{¶bÆ…∂°¨O°G");
-        System.out.printf("%s°G%d %n",
+        System.out.println("ÁèæÂú®ÊôÇÈñìÊòØÔºö");
+        System.out.printf("%sÔºö%d %n",
            rightNow.getDisplayName(ERA, LONG, locale),
            rightNow.get(YEAR));
         System.out.println(
            rightNow.getDisplayName(MONTH, LONG, locale));
-        System.out.printf("%d §È%n", 
+        System.out.printf("%d Êó•%n", 
            rightNow.get(DAY_OF_MONTH));
         System.out.println(
            rightNow.getDisplayName(DAY_OF_WEEK, LONG, locale));

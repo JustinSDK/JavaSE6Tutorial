@@ -2,17 +2,17 @@ package onlyfun.caterpillar;
  
 public class ThreadA {
     public static void main(String[] args) {
-        System.out.println("Thread A °õ¦æ");
+        System.out.println("Thread A åŸ·è¡Œ");
 
         Thread threadB = new Thread(new Runnable() { 
             public void run() { 
                 try { 
-                    System.out.println("Thread B ¶}©l.."); 
+                    System.out.println("Thread B é–‹å§‹.."); 
                     for(int i = 0; i < 5; i++) { 
                         Thread.sleep(1000); 
-                        System.out.println("Thread B °õ¦æ.."); 
+                        System.out.println("Thread B åŸ·è¡Œ.."); 
                     }
-                    System.out.println("Thread B §Y±Nµ²§ô.."); 
+                    System.out.println("Thread B å³å°‡çµæŸ.."); 
                 } 
                 catch(InterruptedException e) { 
                     e.printStackTrace(); 
@@ -23,13 +23,13 @@ public class ThreadA {
         threadB.start();
 
         try {
-            // Thread B ¥[¤J Thread A
+            // Thread B åŠ å…¥ Thread A
             threadB.join();
         } 
         catch(InterruptedException e) { 
             e.printStackTrace(); 
         } 
 
-        System.out.println("Thread A °õ¦æ");
+        System.out.println("Thread A åŸ·è¡Œ");
     }
 }

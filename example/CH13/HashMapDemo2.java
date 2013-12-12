@@ -7,9 +7,9 @@ public class HashMapDemo2 {
         Map<String, String> map = 
                   new HashMap<String, String>();
  
-        map.put("justin", "justin ªº°T®§");
-        map.put("momor", "momor ªº°T®§");
-        map.put("caterpillar", "caterpillar ªº°T®§");
+        map.put("justin", "justin çš„è¨Šæ¯");
+        map.put("momor", "momor çš„è¨Šæ¯");
+        map.put("caterpillar", "caterpillar çš„è¨Šæ¯");
         
         Collection collection = map.values();
         Iterator iterator = collection.iterator();
@@ -18,7 +18,7 @@ public class HashMapDemo2 {
         }
         System.out.println();
 
-        // ¨Æ¹ê¤W¤]¥i¥H¨Ï¥Î¼W±jªº for °j°é
+        // äº‹å¯¦ä¸Šä¹Ÿå¯ä»¥ä½¿ç”¨å¢å¼·çš„ for è¿´åœˆ
         for(String value : map.values()) {
             System.out.println(value);
         }

@@ -1,8 +1,8 @@
 public class SafeArrayDemo { 
     public static void main(String[] args) { 
-        // ¹w³]10­Ó¤¸¯À 
+        // é è¨­10å€‹å…ƒç´  
         SafeArray arr1 = new SafeArray();  
-         // «ü©w°t¸m 5 ­Ó¤¸¯À 
+         // æŒ‡å®šé…ç½® 5 å€‹å…ƒç´  
         SafeArray arr2 = new SafeArray(5);
  
         for(int i = 0; i < arr1.getLength(); i++) 

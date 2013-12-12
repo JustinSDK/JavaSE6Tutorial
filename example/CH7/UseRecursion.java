@@ -4,7 +4,7 @@ public class UseRecursion {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
  
-        System.out.println("¿é¤J¨â¼Æ:"); 
+        System.out.println("è¼¸å…¥å…©æ•¸:"); 
         System.out.print("m = "); 
         int m = scanner.nextInt();
 

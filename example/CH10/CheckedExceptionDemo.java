@@ -5,15 +5,15 @@ public class CheckedExceptionDemo {
         try { 
             BufferedReader buf = new BufferedReader( 
                 new InputStreamReader(System.in)); 
-            System.out.print("½Ð¿é¤J¾ã¼Æ: "); 
+            System.out.print("è«‹è¼¸å…¥æ•´æ•¸: "); 
             int input = Integer.parseInt(buf.readLine()); 
             System.out.println("input x 10 = " + (input*10)); 
         } 
         catch(IOException e) { 
-            System.out.println("I/O¿ù»~"); 
+            System.out.println("I/OéŒ¯èª¤"); 
         } 
         catch(NumberFormatException e) { 
-            System.out.println("¿é¤J¥²¶·¬°¾ã¼Æ"); 
+            System.out.println("è¼¸å…¥å¿…é ˆç‚ºæ•´æ•¸"); 
         } 
     } 
 }

@@ -1,10 +1,10 @@
 public class ComparisonOperator {
     public static void main(String[] args) {
-        System.out.println("10 >  5 µ²ªG " + (10 > 5)); 
-        System.out.println("10 >= 5 µ²ªG " + (10 >= 5)); 
-        System.out.println("10 <  5 µ²ªG " + (10 < 5)); 
-        System.out.println("10 <= 5 µ²ªG " + (10 <= 5)); 
-        System.out.println("10 == 5 µ²ªG " + (10 == 5)); 
-        System.out.println("10 != 5 µ²ªG " + (10 != 5));
+        System.out.println("10 >  5 çµæžœ " + (10 > 5)); 
+        System.out.println("10 >= 5 çµæžœ " + (10 >= 5)); 
+        System.out.println("10 <  5 çµæžœ " + (10 < 5)); 
+        System.out.println("10 <= 5 çµæžœ " + (10 <= 5)); 
+        System.out.println("10 == 5 çµæžœ " + (10 == 5)); 
+        System.out.println("10 != 5 çµæžœ " + (10 != 5));
     }
 }

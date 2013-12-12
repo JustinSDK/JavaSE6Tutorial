@@ -7,11 +7,11 @@ public class EraserThreadDemo {
         Scanner scanner = new Scanner(System.in);
         
         while(true) {
-            System.out.print("¿é¤J¦WºÙ¡G");
+            System.out.print("è¼¸å…¥åç¨±ï¼š");
             String name = scanner.next();
 
-            System.out.print("¿é¤J±K½X¡G ");
-            // ±Ò°Ê Eraser °õ¦æºü
+            System.out.print("è¼¸å…¥å¯†ç¢¼ï¼š ");
+            // å•Ÿå‹• Eraser åŸ·è¡Œç·’
             EraserThread eraserThread = new EraserThread('#');
             eraserThread.start();
             String password = scanner.next();
@@ -19,11 +19,11 @@ public class EraserThreadDemo {
 
             if("caterpillar".equals(name) &&
                "123456".equals(password)) {
-                System.out.println("Åwªï caterpillar ");
+                System.out.println("æ­¡è¿ caterpillar ");
                 break;
             }
             else {
-                System.out.printf("%s¡A¦WºÙ©Î±K½X¿ù»~¡A½Ğ­«·s¿é¤J¡I%n", name);
+                System.out.printf("%sï¼Œåç¨±æˆ–å¯†ç¢¼éŒ¯èª¤ï¼Œè«‹é‡æ–°è¼¸å…¥ï¼%n", name);
             }
         }
 

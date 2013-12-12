@@ -1,6 +1,6 @@
 public class ErrDemo { 
     public static void main(String[] args) { 
-         System.out.println("¨Ï¥Îout¿é¥X°T®§"); 
-         System.err.println("¨Ï¥Îerr¿é¥X°T®§"); 
+         System.out.println("ä½¿ç”¨outè¼¸å‡ºè¨Šæ¯"); 
+         System.err.println("ä½¿ç”¨errè¼¸å‡ºè¨Šæ¯"); 
     } 
 }

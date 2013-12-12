@@ -3,8 +3,8 @@ package onlyfun.caterpillar;
 public class LoadClassTest {
     public static void main(String[] args) {
         TestClass test = null;
-        System.out.println("«Å§iTestClass°Ñ¦Ò¦WºÙ");
+        System.out.println("å®£å‘ŠTestClassåƒè€ƒåç¨±");
         test = new TestClass();
-        System.out.println("¥Í¦¨TestClass¹ê¨Ò");
+        System.out.println("ç”ŸæˆTestClasså¯¦ä¾‹");
     }
 }

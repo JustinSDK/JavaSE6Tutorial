@@ -7,7 +7,7 @@ public class QueueDemo {
         Scanner scanner = new Scanner(System.in);
         Queue<String> queue = new LinkedList<String>();
         
-        System.out.println("¿é¤J¦WºÙ(¨Ï¥Îquitµ²§ô)"); 
+        System.out.println("è¼¸å…¥åç¨±(ä½¿ç”¨quitçµæŸ)"); 
 
         while(true) { 
             System.out.print("# "); 
@@ -15,13 +15,13 @@ public class QueueDemo {
  
             if(input.equals("quit"))
                  break; 
-            // offer()¡G¥[¤J¤¸¯À¦Ü¦î¦C¤¤
+            // offer()ï¼šåŠ å…¥å…ƒç´ è‡³ä½‡åˆ—ä¸­
             queue.offer(input); 
         }
         
-        System.out.print("Åã¥Ü¿é¤J: ");
+        System.out.print("é¡¯ç¤ºè¼¸å…¥: ");
         String element = null;
-        // poll()¡G¨ú±o¨Ã²¾¥h¦î¦C¤¤ªº¤¸¯À
+        // poll()ï¼šå–å¾—ä¸¦ç§»å»ä½‡åˆ—ä¸­çš„å…ƒç´ 
         while((element = queue.poll()) != null) {
             System.out.print(element + " ");
         }

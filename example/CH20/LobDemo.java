@@ -13,12 +13,12 @@ public class LobDemo {
             dbsource = new SimpleDBSource();
             conn = dbsource.getConnection(); 
 
-            // ¨ú±oÀÉ®×
+            // å–å¾—æª”æ¡ˆ
             File file = new File(args[0]); 
             int length = (int) file.length(); 
             InputStream fin = new FileInputStream(file); 
 
-            // ¶ñ¤J¸ê®Æ®w
+            // å¡«å…¥è³‡æ–™åº«
             pstmt = conn.prepareStatement( 
             "INSERT INTO t_file VALUES(?, ?, ?)");
             pstmt.setInt(1, 1);
@@ -51,7 +51,7 @@ public class LobDemo {
         Statement stmt = null;
         
         try {
-            // ±q¸ê®Æ®w¨ú¥XÀÉ®×
+            // å¾è³‡æ–™åº«å–å‡ºæª”æ¡ˆ
             stmt = conn.createStatement(); 
             ResultSet result = stmt.executeQuery(
             "SELECT * FROM t_file"); 
@@ -59,7 +59,7 @@ public class LobDemo {
             String filename = result.getString(2); 
             Blob blob = result.getBlob(3); 
 
-            // ¼g¤JÀÉ®× 
+            // å¯«å…¥æª”æ¡ˆ 
             FileOutputStream fout = 
                 new FileOutputStream(filename + ".bak"); 
             fout.write(blob.getBytes(1, (int)blob.length())); 

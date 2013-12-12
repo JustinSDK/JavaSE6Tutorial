@@ -9,9 +9,9 @@ public class TreeMapDemo2 {
         Map<String, String> map = 
                 new TreeMap<String, String>(comparator);
         
-        map.put("justin", "justin ªº°T®§");
-        map.put("momor", "momor ªº°T®§");
-        map.put("caterpillar", "caterpillar ªº°T®§");
+        map.put("justin", "justin çš„è¨Šæ¯");
+        map.put("momor", "momor çš„è¨Šæ¯");
+        map.put("caterpillar", "caterpillar çš„è¨Šæ¯");
         
         for(String value : map.values()) {
             System.out.println(value);    

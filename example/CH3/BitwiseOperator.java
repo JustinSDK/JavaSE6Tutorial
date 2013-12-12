@@ -1,4 +1,4 @@
-﻿public class BitwiseOperator { 
+public class BitwiseOperator { 
     public static void main(String[] args) { 
         System.out.println("AND運算："); 
         System.out.println("0 AND 0\t\t" + (0 & 0)); 

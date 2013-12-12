@@ -8,18 +8,18 @@ public class CloneDemo {
         Table clonedTable = (Table) table.clone();
         Point clonedCenter = clonedTable.getCenter();
 
-        System.out.printf("­ì¨ÓªºTable¤¤¤ß¡G(%d, %d)\n", 
+        System.out.printf("åŸä¾†çš„Tableä¸­å¿ƒï¼š(%d, %d)\n", 
            originalCenter.getX(), originalCenter.getY());
-        System.out.printf("½Æ»sªºTable¤¤¤ß¡G(%d, %d)\n", 
+        System.out.printf("è¤‡è£½çš„Tableä¸­å¿ƒï¼š(%d, %d)\n", 
            clonedCenter.getX(), clonedCenter.getY());
 
         clonedCenter.setX(10);
         clonedCenter.setY(10);
 
-        // §ïÅÜ½Æ»s«~ªº¤º®e¡A¹ï­ì¨Óªºª«¥ó¤£·|¦³¼vÅT
-        System.out.printf("­ì¨ÓªºTable¤¤¤ß¡G(%d, %d)\n", 
+        // æ”¹è®Šè¤‡è£½å“çš„å…§å®¹ï¼Œå°åŸä¾†çš„ç‰©ä»¶ä¸æœƒæœ‰å½±éŸ¿
+        System.out.printf("åŸä¾†çš„Tableä¸­å¿ƒï¼š(%d, %d)\n", 
            originalCenter.getX(), originalCenter.getY());
-        System.out.printf("½Æ»sªºTable¤¤¤ß¡G(%d, %d)\n", 
+        System.out.printf("è¤‡è£½çš„Tableä¸­å¿ƒï¼š(%d, %d)\n", 
            clonedCenter.getX(), clonedCenter.getY());
     }
 }

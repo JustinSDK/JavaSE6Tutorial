@@ -9,8 +9,8 @@ public class HashMapDemo {
         String key1 = "caterpillar";
         String key2 = "justin";
 
-        map.put(key1, "caterpillar ªº°T®§");
-        map.put(key2, "justin ªº°T®§");
+        map.put(key1, "caterpillar çš„è¨Šæ¯");
+        map.put(key2, "justin çš„è¨Šæ¯");
         
         System.out.println(map.get(key1));
         System.out.println(map.get(key2));

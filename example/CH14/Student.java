@@ -1,7 +1,7 @@
 package onlyfun.caterpillar;
  
 public class Student {
-    private String name; // ©T©w 15 ¦r¤¸
+    private String name; // å›ºå®š 15 å­—å…ƒ
     private int score; 
  
     public Student() { 
@@ -35,7 +35,7 @@ public class Student {
     public int getScore() { 
         return score; 
     } 
-     // ¨Cµ§¸ê®Æ©T©w¼g¤J34¦ì¤¸²Õ 
+     // æ¯ç­†è³‡æ–™å›ºå®šå¯«å…¥34ä½å…ƒçµ„ 
     public static int size() { 
         return 34; 
     } 

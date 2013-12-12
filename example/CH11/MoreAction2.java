@@ -1,25 +1,25 @@
 public enum MoreAction2 {
     TURN_LEFT {
-        // ¹ê§@©â¶H¤èªk
+        // å¯¦ä½œæŠ½è±¡æ–¹æ³•
         public String getDescription() {
-            return "¦V¥ªÂà";
+            return "å‘å·¦è½‰";
         }
-    },  // °O±o³oÃäªº¦CÁ|­È¤À¹j¨Ï¥Î ,
+    },  // è¨˜å¾—é€™é‚Šçš„åˆ—èˆ‰å€¼åˆ†éš”ä½¿ç”¨ ,
  
     TURN_RIGHT {
-        // ¹ê§@©â¶H¤èªk
+        // å¯¦ä½œæŠ½è±¡æ–¹æ³•
         public String getDescription() {
-            return "¦V¥kÂà";
+            return "å‘å³è½‰";
         }
-    }, // °O±o³oÃäªº¦CÁ|­È¤À¹j¨Ï¥Î ,
+    }, // è¨˜å¾—é€™é‚Šçš„åˆ—èˆ‰å€¼åˆ†éš”ä½¿ç”¨ ,
  
     SHOOT {
-        // ¹ê§@©â¶H¤èªk
+        // å¯¦ä½œæŠ½è±¡æ–¹æ³•
         public String getDescription() {
-            return "®gÀ»";
+            return "å°„æ“Š";
         }
-    }; // °O±o³oÃäªº¦CÁ|­Èµ²§ô¨Ï¥Î ;
+    }; // è¨˜å¾—é€™é‚Šçš„åˆ—èˆ‰å€¼çµæŸä½¿ç”¨ ;
 
-    // «Å§i­Ó©â¶H¤èªk
+    // å®£å‘Šå€‹æŠ½è±¡æ–¹æ³•
     public abstract String getDescription();
 }

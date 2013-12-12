@@ -1,10 +1,10 @@
 public class CheckArgsDemo {
     public static void main(String[] args) {
         try {
-            System.out.printf("°õ¦æ %s ¥\¯à%n", args[0]);
+            System.out.printf("åŸ·è¡Œ %s åŠŸèƒ½%n", args[0]);
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©w¤Þ¼Æ");
+            System.out.println("æ²’æœ‰æŒ‡å®šå¼•æ•¸");
             e.printStackTrace();
         }
     }

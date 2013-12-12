@@ -7,25 +7,25 @@ public class ArraysMethodDemo {
  
         int[] arr = {93, 5, 3, 55, 57, 7, 2 ,73, 41, 91};
  
-        System.out.print("±Æ§Ç«e: "); 
+        System.out.print("æ’åºå‰: "); 
         for(int i = 0; i < arr.length; i++) 
             System.out.print(arr[i] + " "); 
         System.out.println(); 
  
         Arrays.sort(arr);
  
-        System.out.print("±Æ§Ç«á: "); 
+        System.out.print("æ’åºå¾Œ: "); 
         for(int i = 0; i < arr.length; i++) 
             System.out.print(arr[i] + " ");
  
-        System.out.print("\n½Ğ¿é¤J·j´M­È: "); 
+        System.out.print("\nè«‹è¼¸å…¥æœå°‹å€¼: "); 
         int key = scanner.nextInt();
         int find = -1;
         if((find = Arrays.binarySearch(arr, key)) > -1) {
-            System.out.println("§ä¨ì­È©ó¯Á¤Ş " + 
-                                       find + " ¦ì¸m"); 
+            System.out.println("æ‰¾åˆ°å€¼æ–¼ç´¢å¼• " + 
+                                       find + " ä½ç½®"); 
         }
         else 
-            System.out.println("§ä¤£¨ì«ü©w­È"); 
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šå€¼"); 
     }
 }

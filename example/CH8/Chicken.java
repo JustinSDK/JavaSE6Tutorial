@@ -1,17 +1,17 @@
-public class Chicken extends Bird { // ÂX¥RBirdÃş§O
-    private String crest; // ·s¼W¨p¦³¦¨­û¡AÂû«a´y­z
+public class Chicken extends Bird { // æ“´å……Birdé¡åˆ¥
+    private String crest; // æ–°å¢ç§æœ‰æˆå“¡ï¼Œé›å† æè¿°
 
     public Chicken() {
         super();
     }
 
-    // ©w¸q«Øºc¤èªk
+    // å®šç¾©å»ºæ§‹æ–¹æ³•
     public Chicken(String name, String crest) {
         super(name);
         this.crest = crest;
     }
 
-    // ·s¼W¤èªk
+    // æ–°å¢æ–¹æ³•
     public void setCrest(String crest) {
         this.crest = crest;
     }
@@ -21,6 +21,6 @@ public class Chicken extends Bird { // ÂX¥RBirdÃş§O
     }
 
     public void wu() {
-       System.out.println("©B©B¥s¡K");
+       System.out.println("å’•å’•å«â€¦");
     }
 }

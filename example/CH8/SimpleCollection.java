@@ -3,7 +3,7 @@ public class SimpleCollection {
     private int index = 0; 
  
     public SimpleCollection() { 
-        // ¹w³]10­Óª«¥óªÅ¶¡ 
+        // é è¨­10å€‹ç‰©ä»¶ç©ºé–“ 
         objArr = new Object[10]; 
     } 
  

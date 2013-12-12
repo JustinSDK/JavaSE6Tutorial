@@ -11,13 +11,13 @@ public class ArrayElementDemo {
         boolean[] zArr = new boolean[5];
         String[] strArr = new String[5];
 
-        System.out.println("short °}¦CÃþ§O¡G" + sArr.getClass());
-        System.out.println("int °}¦CÃþ§O¡G" + iArr.getClass());
-        System.out.println("long °}¦CÃþ§O¡G" + lArr.getClass());
-        System.out.println("float °}¦CÃþ§O¡G" + fArr.getClass());
-        System.out.println("double °}¦CÃþ§O¡G" + dArr.getClass());
-        System.out.println("byte °}¦CÃþ§O¡G" + bArr.getClass());
-        System.out.println("boolean °}¦CÃþ§O¡G" + zArr.getClass());
-        System.out.println("String °}¦CÃþ§O¡G" + strArr.getClass());
+        System.out.println("short é™£åˆ—é¡žåˆ¥ï¼š" + sArr.getClass());
+        System.out.println("int é™£åˆ—é¡žåˆ¥ï¼š" + iArr.getClass());
+        System.out.println("long é™£åˆ—é¡žåˆ¥ï¼š" + lArr.getClass());
+        System.out.println("float é™£åˆ—é¡žåˆ¥ï¼š" + fArr.getClass());
+        System.out.println("double é™£åˆ—é¡žåˆ¥ï¼š" + dArr.getClass());
+        System.out.println("byte é™£åˆ—é¡žåˆ¥ï¼š" + bArr.getClass());
+        System.out.println("boolean é™£åˆ—é¡žåˆ¥ï¼š" + zArr.getClass());
+        System.out.println("String é™£åˆ—é¡žåˆ¥ï¼š" + strArr.getClass());
     }
 }

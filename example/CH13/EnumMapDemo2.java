@@ -9,9 +9,9 @@ public class EnumMapDemo2 {
         Map<Action, String> map = 
           new EnumMap<Action, String>(Action.class);
         
-        map.put(Action.SHOOT, "®gÀ»");        
-        map.put(Action.TURN_RIGHT, "¦V¥kÂà");
-        map.put(Action.TURN_LEFT, "¦V¥ªÂà");
+        map.put(Action.SHOOT, "å°„æ“Š");        
+        map.put(Action.TURN_RIGHT, "å‘å³è½‰");
+        map.put(Action.TURN_LEFT, "å‘å·¦è½‰");
         
         for(String value : map.values( )) {
             System.out.println(value);

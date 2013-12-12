@@ -6,19 +6,19 @@ public abstract class AbstractGuessGame {
     }
  
     public void start() {
-        showMessage("Åwªï");
+        showMessage("æ­¡è¿Ž");
  
         int guess = 0;
         do {
             guess = getUserInput();
             if(guess > number) {
-                showMessage("¿é¤Jªº¼Æ¦r¸û¤j");
+                showMessage("è¼¸å…¥çš„æ•¸å­—è¼ƒå¤§");
             }
             else if(guess < number) {
-                showMessage("¿é¤Jªº¼Æ¦r¸û¤p");
+                showMessage("è¼¸å…¥çš„æ•¸å­—è¼ƒå°");
             }
             else {
-                showMessage("²q¤¤¤F");
+                showMessage("çŒœä¸­äº†");
             }
         } while(guess != number);
     }

@@ -8,7 +8,7 @@ public class EnhancedForDemo {
         
         List<String> list = new ArrayList<String>();
         
-        System.out.println("¿é¤J¦WºÙ(¿é¤Jquitµ²§ô)"); 
+        System.out.println("è¼¸å…¥åç¨±(è¼¸å…¥quitçµæŸ)"); 
         while(true) { 
             System.out.print("# "); 
             String input = scanner.next(); 
@@ -18,7 +18,7 @@ public class EnhancedForDemo {
             list.add(input); 
         }
         
-        // ¨Ï¥Îforeach¨Ó¹M³XList¤¤ªº¤¸¯À
+        // ä½¿ç”¨foreachä¾†éè¨ªListä¸­çš„å…ƒç´ 
         for(String s : list) {
             System.out.print(s + " ");
         }

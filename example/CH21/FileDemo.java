@@ -6,7 +6,7 @@ public class FileDemo {
     public static void main(String[] args) {
         File[] roots = File.listRoots();
         for(File root : roots) {
-            System.out.printf("%s Á`®e¶q %d¡A¥i¥Î®e¶q %d %n", 
+            System.out.printf("%s ç¸½å®¹é‡ %dï¼Œå¯ç”¨å®¹é‡ %d %n", 
                root.getPath(), root.getTotalSpace(), root.getUsableSpace());
         }
     }

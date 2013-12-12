@@ -9,19 +9,19 @@ public class Consumer implements Runnable {
     
     public void run() { 
         System.out.println(
-                "®ø¶OªÌ¶}©l®ø¯Ó¾ã¼Æ......"); 
+                "æ¶ˆè²»è€…é–‹å§‹æ¶ˆè€—æ•´æ•¸......"); 
 
-        // ®ø¯Ó10­Ó¾ã¼Æ
+        // æ¶ˆè€—10å€‹æ•´æ•¸
         for(int i = 1; i <= 10; i++) { 
             try { 
-                // µ¥«ÝÀH¾÷®É¶¡
+                // ç­‰å¾…éš¨æ©Ÿæ™‚é–“
                 Thread.sleep((int) (Math.random() * 3000)); 
             } 
             catch(InterruptedException e) { 
                 e.printStackTrace(); 
             } 
 
-            // ±q©±­û³B¨ú¨«¾ã¼Æ
+            // å¾žåº—å“¡è™•å–èµ°æ•´æ•¸
             clerk.getProduct(); 
         } 
     } 

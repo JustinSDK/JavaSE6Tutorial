@@ -17,21 +17,21 @@ public class BufferedStreamDemo {
                 new BufferedOutputStream(
                          new FileOutputStream(desFile));
  
-            System.out.println("½Æ»sÀÉ®×¡G" + 
-                             srcFile.length() + "¦ì¤¸²Õ");
+            System.out.println("è¤‡è£½æª”æ¡ˆï¼š" + 
+                             srcFile.length() + "ä½å…ƒçµ„");
 
             while(bufferedInputStream.read(data) != -1) { 
                 bufferedOutputStream.write(data); 
             }
             
-            // ±N½w½Ä°Ï¤¤ªº¸ê®Æ¥ş³¡¼g¥X 
+            // å°‡ç·©è¡å€ä¸­çš„è³‡æ–™å…¨éƒ¨å¯«å‡º 
             bufferedOutputStream.flush();
  
-            // Ãö³¬¦ê¬y 
+            // é—œé–‰ä¸²æµ 
             bufferedInputStream.close(); 
             bufferedOutputStream.close(); 
 
-            System.out.println("½Æ»s§¹¦¨"); 
+            System.out.println("è¤‡è£½å®Œæˆ"); 
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
             System.out.println(

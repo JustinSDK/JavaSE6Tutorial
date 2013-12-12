@@ -2,7 +2,7 @@ public class SafeArray {
     private int[] arr; 
  
     public SafeArray() {
-        this(10); // ¹w³] 10 ­Ó¤¸¯À
+        this(10); // é è¨­ 10 å€‹å…ƒç´ 
     }
  
     public SafeArray(int length) { 
@@ -17,7 +17,7 @@ public class SafeArray {
  
     public int getElement(int i) { 
         if(i >= arr.length || i < 0) { 
-            System.err.println("¯Á¤Þ¿ù»~"); 
+            System.err.println("ç´¢å¼•éŒ¯èª¤"); 
             return 0; 
         } 
  
@@ -30,7 +30,7 @@ public class SafeArray {
  
     public void setElement(int i, int data) { 
         if(i >= arr.length || i < 0) { 
-            System.err.println("¯Á¤Þ¿ù»~"); 
+            System.err.println("ç´¢å¼•éŒ¯èª¤"); 
             return; 
         }
  

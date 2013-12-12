@@ -4,7 +4,7 @@ public class DaemonThread {
     public static void main(String[] args) {
 
         Thread thread = new Thread(
-        // ³o¬O°Î¦WÃş§Oªº¼gªk
+        // é€™æ˜¯åŒ¿åé¡åˆ¥çš„å¯«æ³•
             new Runnable() {
                 public void run() { 
                     while(true) { 
@@ -12,7 +12,7 @@ public class DaemonThread {
                     } 
                 }        
             }); 
-        // ³]©w¬°Daemon°õ¦æºü
+        // è¨­å®šç‚ºDaemonåŸ·è¡Œç·’
         thread.setDaemon(true); 
         thread.start(); 
     }

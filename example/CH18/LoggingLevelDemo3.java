@@ -11,12 +11,12 @@ public class LoggingLevelDemo3 {
         consoleHandler.setLevel(Level.ALL);
         logger.addHandler(consoleHandler);
         
-        logger.log(Level.SEVERE, "ÄY­«°T®§");
-        logger.log(Level.WARNING, "Äµ¥Ü°T®§");
-        logger.log(Level.INFO, "¤@¯ë°T®§");
-        logger.log(Level.CONFIG, "³]©w¤è­±ªº°T®§");
-        logger.log(Level.FINE, "²Ó·Lªº°T®§");
-        logger.log(Level.FINER, "§ó²Ó·Lªº°T®§");
-        logger.log(Level.FINEST, "³Ì²Ó·Lªº°T®§");
+        logger.log(Level.SEVERE, "åš´é‡è¨Šæ¯");
+        logger.log(Level.WARNING, "è­¦ç¤ºè¨Šæ¯");
+        logger.log(Level.INFO, "ä¸€èˆ¬è¨Šæ¯");
+        logger.log(Level.CONFIG, "è¨­å®šæ–¹é¢çš„è¨Šæ¯");
+        logger.log(Level.FINE, "ç´°å¾®çš„è¨Šæ¯");
+        logger.log(Level.FINER, "æ›´ç´°å¾®çš„è¨Šæ¯");
+        logger.log(Level.FINEST, "æœ€ç´°å¾®çš„è¨Šæ¯");
     }
 }

@@ -4,21 +4,21 @@ public class ForNameDemo {
     public static void main(String[] args) { 
         try {
             Class c = Class.forName(args[0]);
-            System.out.println("Ãş§O¦WºÙ¡G" + 
+            System.out.println("é¡åˆ¥åç¨±ï¼š" + 
                           c.getName()); 
-            System.out.println("¬O§_¬°¤¶­±¡G" + 
+            System.out.println("æ˜¯å¦ç‚ºä»‹é¢ï¼š" + 
                              c.isInterface()); 
-            System.out.println("¬O§_¬°°ò¥»«¬ºA¡G" + 
+            System.out.println("æ˜¯å¦ç‚ºåŸºæœ¬å‹æ…‹ï¼š" + 
                              c.isPrimitive()); 
-            System.out.println("¬O§_¬°°}¦C¡G" + c.isArray()); 
-            System.out.println("¤÷Ãş§O¡G" + 
+            System.out.println("æ˜¯å¦ç‚ºé™£åˆ—ï¼š" + c.isArray()); 
+            System.out.println("çˆ¶é¡åˆ¥ï¼š" + 
                              c.getSuperclass().getName());
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©wÃş§O¦WºÙ");
+            System.out.println("æ²’æœ‰æŒ‡å®šé¡åˆ¥åç¨±");
         }
         catch(ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wªºÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„é¡åˆ¥");
         }
     }
 }

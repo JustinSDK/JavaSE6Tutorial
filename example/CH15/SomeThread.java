@@ -2,7 +2,7 @@ package onlyfun.caterpillar;
 
 public class SomeThread implements Runnable {
     public void run() { 
-        System.out.println("sleep....¦Ü blocked ª¬ºA"); 
+        System.out.println("sleep....è‡³ blocked ç‹€æ…‹"); 
         try { 
             Thread.sleep(9999); 
         } 

@@ -6,7 +6,7 @@ import java.text.MessageFormat;
 public class MessageFormatDemo {
     public static void main(String[] args) {
         try {
-            // ¸j©wmessages.properties
+            // ç¶å®šmessages.properties
             ResourceBundle resource = 
                   ResourceBundle.getBundle("messages2");
 
@@ -17,11 +17,11 @@ public class MessageFormatDemo {
             MessageFormat formatter = 
                  new MessageFormat(message);
 
-            // Åã¥Ü®æ¦¡¤Æ«áªº°T®§
+            // é¡¯ç¤ºæ ¼å¼åŒ–å¾Œçš„è¨Šæ¯
             System.out.println(formatter.format(params));
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©w¤Ş¼Æ");
+            System.out.println("æ²’æœ‰æŒ‡å®šå¼•æ•¸");
         }
     }
 }

@@ -18,7 +18,7 @@ public class TextModeGame extends AbstractGuessGame {
     }
   
     protected int getUserInput() {
-        System.out.print("\n¿é¤J¼Æ¦r¡G");
+        System.out.print("\nè¼¸å…¥æ•¸å­—ï¼š");
         return scanner.nextInt();
     }
 }

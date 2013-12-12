@@ -3,8 +3,8 @@ import java.util.regex.*;
 public class UsePatternMatcher {
     public static void main(String[] args) {
         String phones1 = 
-              "Justin ªº¤â¾÷¸¹½X¡G0939-100391\n" +
-              "momor ªº¤â¾÷¸¹½X¡G0939-666888\n";
+              "Justin çš„æ‰‹æ©Ÿè™Ÿç¢¼ï¼š0939-100391\n" +
+              "momor çš„æ‰‹æ©Ÿè™Ÿç¢¼ï¼š0939-666888\n";
         
         Pattern pattern = Pattern.compile(".*0939-\\d{6}");
         Matcher matcher = pattern.matcher(phones1);
@@ -14,8 +14,8 @@ public class UsePatternMatcher {
         }
         
         String phones2 = 
-             "caterpillar ªº¤â¾÷¸¹½X¡G0952-600391\n" +
-             "bush ªº¤â¾÷¸¹½X¡G0939-550391";
+             "caterpillar çš„æ‰‹æ©Ÿè™Ÿç¢¼ï¼š0952-600391\n" +
+             "bush çš„æ‰‹æ©Ÿè™Ÿç¢¼ï¼š0939-550391";
         
         matcher = pattern.matcher(phones2);
 

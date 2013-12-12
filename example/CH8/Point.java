@@ -15,7 +15,7 @@ public class Point implements Cloneable {
     public int getY() { return y; }    
 
     public Object clone() throws CloneNotSupportedException {
-        // ©I¥s¤÷Ãş§Oªºclone()¨Ó¶i¦æ½Æ»s
+        // å‘¼å«çˆ¶é¡åˆ¥çš„clone()ä¾†é€²è¡Œè¤‡è£½
         return super.clone(); 
     }   
 }

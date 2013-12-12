@@ -7,13 +7,13 @@ public class ObjectStreamDemo {
     public static void main(String[] args) {
         User[] users = {new User("cater", 101),
                         new User("justin", 102)}; 
-        // ¼g¤J·sÀÉ
+        // å¯«å…¥æ–°æª”
         writeObjectsToFile(users, args[0]);
 
         try {
-            // Åª¨úÀÉ®×¸ê®Æ
+            // è®€å–æª”æ¡ˆè³‡æ–™
             users = readObjectsFromFile(args[0]);
-            // Åã¥ÜÅª¦^ªºª«¥ó
+            // é¡¯ç¤ºè®€å›çš„ç‰©ä»¶
             for(User user : users) {
                 System.out.printf("%s\t%d%n", user.getName(), user.getNumber());
             }
@@ -23,25 +23,25 @@ public class ObjectStreamDemo {
             users[0] = new User("momor", 103);
             users[1] = new User("becky", 104);
             
-            // ªş¥[·sª«¥ó¦ÜÀÉ®×
+            // é™„åŠ æ–°ç‰©ä»¶è‡³æª”æ¡ˆ
             appendObjectsToFile(users, args[0]);
             
-            // Åª¨úÀÉ®×¸ê®Æ
+            // è®€å–æª”æ¡ˆè³‡æ–™
             users = readObjectsFromFile(args[0]);
-            // Åã¥ÜÅª¦^ªºª«¥ó
+            // é¡¯ç¤ºè®€å›çš„ç‰©ä»¶
             for(User user : users) {
                 System.out.printf("%s\t%d%n", user.getName(), user.getNumber());
             }
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©wÀÉ¦W");
+            System.out.println("æ²’æœ‰æŒ‡å®šæª”å");
         }
         catch(FileNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    // ±N«ü©wªºª«¥ó¼g¤J¦Ü«ü©wªºÀÉ®×
+    // å°‡æŒ‡å®šçš„ç‰©ä»¶å¯«å…¥è‡³æŒ‡å®šçš„æª”æ¡ˆ
     public static void writeObjectsToFile(
                          Object[] objs, String filename) { 
         File file = new File(filename);
@@ -51,10 +51,10 @@ public class ObjectStreamDemo {
                 new ObjectOutputStream(
                       new FileOutputStream(file)); 
             for(Object obj : objs) {
-                // ±Nª«¥ó¼g¤JÀÉ®×
+                // å°‡ç‰©ä»¶å¯«å…¥æª”æ¡ˆ
                 objOutputStream.writeObject(obj); 
             }
-            // Ãö³¬¦ê¬y
+            // é—œé–‰ä¸²æµ
             objOutputStream.close(); 
         } 
         catch(IOException e) { 
@@ -62,17 +62,17 @@ public class ObjectStreamDemo {
         }
     }
     
-    // ±N«ü©wÀÉ®×¤¤ªºª«¥ó¸ê®ÆÅª¦^
+    // å°‡æŒ‡å®šæª”æ¡ˆä¸­çš„ç‰©ä»¶è³‡æ–™è®€å›
     public static User[] readObjectsFromFile(
                              String filename) 
                                throws FileNotFoundException {
         File file = new File(filename); 
  
-        // ¦pªGÀÉ®×¤£¦s¦b´N¥á¥X¨Ò¥~
+        // å¦‚æœæª”æ¡ˆä¸å­˜åœ¨å°±ä¸Ÿå‡ºä¾‹å¤–
         if(!file.exists()) 
             throw new FileNotFoundException(); 
  
-        // ¨Ï¥ÎList¥ıÀx¦sÅª¦^ªºª«¥ó
+        // ä½¿ç”¨Listå…ˆå„²å­˜è®€å›çš„ç‰©ä»¶
         List<User> list = new ArrayList<User>();
         
         try {
@@ -97,30 +97,30 @@ public class ObjectStreamDemo {
         return list.toArray(users);
     }
  
-    // ±Nª«¥óªş¥[¦Ü«ü©wªºÀÉ®×¤§«á
+    // å°‡ç‰©ä»¶é™„åŠ è‡³æŒ‡å®šçš„æª”æ¡ˆä¹‹å¾Œ
     public static void appendObjectsToFile(
                            Object[] objs, String filename) 
                                throws FileNotFoundException {
   
         File file = new File(filename); 
  
-        // ¦pªGÀÉ®×¤£¦s¦b«h¥á¥X¨Ò¥~
+        // å¦‚æœæª”æ¡ˆä¸å­˜åœ¨å‰‡ä¸Ÿå‡ºä¾‹å¤–
         if(!file.exists()) 
              throw new FileNotFoundException(); 
 
         try {
-            // ªş¥[¼Ò¦¡
+            // é™„åŠ æ¨¡å¼
             ObjectOutputStream objOutputStream = 
                new ObjectOutputStream(
                   new FileOutputStream(file, true)) { 
-                    // ¦pªG­nªş¥[ª«¥ó¦ÜÀÉ®×«á
-                    // ¥²¶·­«·s©w¸q³o­Ó¤èªk
+                    // å¦‚æœè¦é™„åŠ ç‰©ä»¶è‡³æª”æ¡ˆå¾Œ
+                    // å¿…é ˆé‡æ–°å®šç¾©é€™å€‹æ–¹æ³•
                     protected void writeStreamHeader() 
                                      throws IOException {} 
                };  
  
             for(Object obj : objs) {
-                // ±Nª«¥ó¼g¤JÀÉ®×
+                // å°‡ç‰©ä»¶å¯«å…¥æª”æ¡ˆ
                 objOutputStream.writeObject(obj); 
             }
             objOutputStream.close(); 

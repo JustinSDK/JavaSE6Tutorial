@@ -7,15 +7,15 @@ public class InvokeMethodDemo {
     public static void main(String[] args) {
         try {
             Class c = Class.forName(args[0]);
-            // ¨Ï¥ÎµL°Ñ¼Æ«Øºc¤èªk«Ø¥ßª«¥ó
+            // ä½¿ç”¨ç„¡åƒæ•¸å»ºæ§‹æ–¹æ³•å»ºç«‹ç‰©ä»¶
             Object targetObj = c.newInstance();
-            // ³]©w°Ñ¼Æ«¬ºA
+            // è¨­å®šåƒæ•¸å‹æ…‹
             Class[] param1 = {String.class};
-            // ®Ú¾Ú°Ñ¼Æ«¬ºA¨ú¦^¤èªkª«¥ó
+            // æ ¹æ“šåƒæ•¸å‹æ…‹å–å›æ–¹æ³•ç‰©ä»¶
             Method setNameMethod = c.getMethod("setName", param1);
-            // ³]©w¤Ş¼Æ­È 
+            // è¨­å®šå¼•æ•¸å€¼ 
             Object[] argObjs1 = {"caterpillar"};
-            // µ¹©w¤Ş¼Æ©I¥s«ü©wª«¥ó¤§¤èªk
+            // çµ¦å®šå¼•æ•¸å‘¼å«æŒ‡å®šç‰©ä»¶ä¹‹æ–¹æ³•
             setNameMethod.invoke(targetObj, argObjs1);
             
             
@@ -25,15 +25,15 @@ public class InvokeMethodDemo {
             
             Object[] argObjs2 = {new Integer(90)};
             setScoreMethod.invoke(targetObj, argObjs2);
-            // Åã¥Üª«¥ó´y­z
+            // é¡¯ç¤ºç‰©ä»¶æè¿°
             System.out.println(targetObj);
             
         } catch (ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ìÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°é¡åˆ¥");
         } catch (SecurityException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {
-            System.out.println("¨S¦³³o­Ó¤èªk");
+            System.out.println("æ²’æœ‰é€™å€‹æ–¹æ³•");
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {

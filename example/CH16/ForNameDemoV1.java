@@ -3,17 +3,17 @@ package onlyfun.caterpillar;
 public class ForNameDemoV1 {
     public static void main(String[] args) { 
         try {
-            System.out.println("¸ü¤JTestClass2");
+            System.out.println("è¼‰å…¥TestClass2");
             Class c = Class.forName("onlyfun.caterpillar.TestClass2");
 
-            System.out.println("¨Ï¥ÎTestClass2«Å§i°Ñ¦Ò¦WºÙ");
+            System.out.println("ä½¿ç”¨TestClass2å®£å‘Šåƒè€ƒåç¨±");
             TestClass2 test = null;
 
-            System.out.println("¨Ï¥ÎTestClass2«Ø¥ßª«¥ó");                        
+            System.out.println("ä½¿ç”¨TestClass2å»ºç«‹ç‰©ä»¶");                        
             test = new TestClass2();
         }
         catch(ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wªºÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„é¡åˆ¥");
         }
     }
 }

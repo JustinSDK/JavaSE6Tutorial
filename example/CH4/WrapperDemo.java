@@ -3,17 +3,17 @@ public class WrapperDemo {
         int data1 = 10;
         int data2 = 20;
         
-        // ¨Ï¥ÎInteger¨Ó¥]ùØint¸ê®Æ
+        // ä½¿ç”¨Integerä¾†åŒ…è£intè³‡æ–™
         Integer data1Wrapper = new Integer(data1);
         Integer data2Wrapper = new Integer(data2);
         
-        // ª½±µ°£¥H3
+        // ç›´æ¥é™¤ä»¥3
         System.out.println(data1 / 3);
         
-        // Âà¬°double­È¦A°£¥H3
+        // è½‰ç‚ºdoubleå€¼å†é™¤ä»¥3
         System.out.println(data1Wrapper.doubleValue() / 3);
 
-        // ¶i¦æ¨â­Ó­Èªº¤ñ¸û
+        // é€²è¡Œå…©å€‹å€¼çš„æ¯”è¼ƒ
         System.out.println(data1Wrapper.compareTo(data2Wrapper));
     }
 }

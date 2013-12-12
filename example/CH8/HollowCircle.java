@@ -6,6 +6,6 @@ public class HollowCircle extends AbstractCircle {
     }
 
     public void render() {
-        System.out.printf("µe¤@­Ó¥b®| %f ªºªÅ¤ß¶ê\n", getRadius());
+        System.out.printf("ç•«ä¸€å€‹åŠå¾‘ %f çš„ç©ºå¿ƒåœ“\n", getRadius());
     }
 }

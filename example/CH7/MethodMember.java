@@ -2,10 +2,10 @@ public class MethodMember {
     public static void main(String[] args) {
         MethodDemo methodDemo = new MethodDemo();
         
-        methodDemo.scopeDemo(); // ¹ïdata field¤£·|¦³¼vÅT
+        methodDemo.scopeDemo(); // å°data fieldä¸æœƒæœ‰å½±éŸ¿
         System.out.println(methodDemo.getData());
 
-        methodDemo.setData(100); // ¹ïdata field¤£·|¦³¼vÅT
+        methodDemo.setData(100); // å°data fieldä¸æœƒæœ‰å½±éŸ¿
         System.out.println(methodDemo.getData());
     }
 }
@@ -22,8 +22,8 @@ class MethodDemo {
     }
 
     public void setData(int data) {
-        data = data; // ³o¼Ë¼g¬O¨S¥Îªº
-        // ¼g¤U­±³o­Ó¤~¦³¥Î
+        data = data; // é€™æ¨£å¯«æ˜¯æ²’ç”¨çš„
+        // å¯«ä¸‹é¢é€™å€‹æ‰æœ‰ç”¨
         // this.data = data;
     }
 }

@@ -1,13 +1,13 @@
 public class ExtendDemo { 
     public static void main(String[] args) {
-        Chicken chicken1 = new Chicken("¤p§J", "¬õ¦â¤pÂû«a");
+        Chicken chicken1 = new Chicken("å°å…‹", "ç´…è‰²å°é›å† ");
         Chicken chicken2 = new Chicken();
  
-        System.out.printf("¤pÂû1 - ¦WºÙ %s, Âû«a¬O %s¡C \n", 
+        System.out.printf("å°é›1 - åç¨± %s, é›å† æ˜¯ %sã€‚ \n", 
             chicken1.getName(), chicken1.getCrest());
         chicken1.wu();
 
-        System.out.printf("¤pÂû2 - ¦WºÙ %s, Âû«a¬O %s¡C \n", 
+        System.out.printf("å°é›2 - åç¨± %s, é›å† æ˜¯ %sã€‚ \n", 
             chicken2.getName(), chicken2.getCrest());
         chicken2.wu();
     } 

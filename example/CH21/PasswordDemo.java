@@ -3,20 +3,20 @@ package onlyfun.caterpillar;
 public class PasswordDemo {
     public static void main(String[] args) {
         while(true) {
-            System.out.print("¿é¤J¦WºÙ¡G");
+            System.out.print("è¼¸å…¥åç¨±ï¼š");
             String name = System.console().readLine();
 
-            System.out.print("¿é¤J±K½X¡G ");
+            System.out.print("è¼¸å…¥å¯†ç¢¼ï¼š ");
             char[] passwd = System.console().readPassword();
             String password = new String(passwd);
 
             if("caterpillar".equals(name) &&
                "123456".equals(password)) {
-                System.out.println("Åwªï caterpillar ");
+                System.out.println("æ­¡è¿ caterpillar ");
                 break;
             }
             else {
-                System.out.printf("%s¡A¦WºÙ©Î±K½X¿ù»~¡A½Ğ­«·s¿é¤J¡I%n", name);
+                System.out.printf("%sï¼Œåç¨±æˆ–å¯†ç¢¼éŒ¯èª¤ï¼Œè«‹é‡æ–°è¼¸å…¥ï¼%n", name);
             }
         }
         

@@ -13,10 +13,10 @@ public class FutureDemo {
         t.start();
 		
         try {
-            // °²³]²{¦b°µ¨ä¥¦¨Æ±¡
+            // å‡è¨­ç¾åœ¨åšå…¶å®ƒäº‹æƒ…
             Thread.sleep(5000);
 			
-            // ¦^¨Ó¬İ¬İ½è¼Æ§ä¦n¤F¶Ü
+            // å›ä¾†çœ‹çœ‹è³ªæ•¸æ‰¾å¥½äº†å—
             if(primeTask.isDone()) {
                 int[] primes = primeTask.get();
                 for(int prime : primes) {

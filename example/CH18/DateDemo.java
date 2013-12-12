@@ -6,9 +6,9 @@ public class DateDemo {
     public static void main(String[] args) {
         Date date = new Date();
         
-        System.out.println("²{¦b®É¶¡ " 
+        System.out.println("ç¾åœ¨æ™‚é–“ " 
                       + date.toString());
-        System.out.println("¦Û1970/1/1¦Ü¤µªº²@¬í¼Æ " 
+        System.out.println("è‡ª1970/1/1è‡³ä»Šçš„æ¯«ç§’æ•¸ " 
                       + date.getTime());
     }
 }

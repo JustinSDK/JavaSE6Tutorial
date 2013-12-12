@@ -6,14 +6,14 @@ public class CalendarDemo {
     public static void main(String[] args) {
         Calendar rightNow = Calendar.getInstance();
         
-        System.out.println("≤{¶bÆ…∂°¨O°G");
-        System.out.println("¶Ë§∏°G" +
+        System.out.println("ÁèæÂú®ÊôÇÈñìÊòØÔºö");
+        System.out.println("Ë•øÂÖÉÔºö" +
                    rightNow.get(Calendar.YEAR));
-        System.out.println("§Î°G" + 
+        System.out.println("ÊúàÔºö" + 
                    getChineseMonth(rightNow));
-        System.out.println("§È°G" + 
+        System.out.println("Êó•Ôºö" + 
                    rightNow.get(Calendar.DAY_OF_MONTH));
-        System.out.println("¨P¥¡°G" + 
+        System.out.println("ÊòüÊúüÔºö" + 
                    getChineseDayOfWeek(rightNow));
     }
     
@@ -22,40 +22,40 @@ public class CalendarDemo {
         
         switch(rightNow.get(Calendar.MONTH)) {
             case Calendar.JANUARY:
-                chineseMonth = "§@";
+                chineseMonth = "‰∏Ä";
                 break;
             case Calendar.FEBRUARY:
-                chineseMonth = "§G";
+                chineseMonth = "‰∫å";
                 break;
             case Calendar.MARCH:
-                chineseMonth = "§T";
+                chineseMonth = "‰∏â";
                 break;
             case Calendar.APRIL:
-                chineseMonth = "•|";
+                chineseMonth = "Âõõ";
                 break;
             case Calendar.MAY:
-                chineseMonth = "§≠";
+                chineseMonth = "‰∫î";
                 break;
             case Calendar.JUNE:
-                chineseMonth = "§ª";
+                chineseMonth = "ÂÖ≠";
                 break;
             case Calendar.JULY:
-                chineseMonth = "§C";
+                chineseMonth = "‰∏É";
                 break;
             case Calendar.AUGUST:
-                chineseMonth = "§K";
+                chineseMonth = "ÂÖ´";
                 break;
             case Calendar.SEPTEMBER:
-                chineseMonth = "§E";
+                chineseMonth = "‰πù";
                 break;
             case Calendar.OCTOBER:
-                chineseMonth = "§Q";
+                chineseMonth = "ÂçÅ";
                 break;
             case Calendar.NOVEMBER:
-                chineseMonth = "§Q§@";
+                chineseMonth = "ÂçÅ‰∏Ä";
                 break;
             case Calendar.DECEMBER:
-                chineseMonth = "§Q§G";
+                chineseMonth = "ÂçÅ‰∫å";
                 break;                
         }
         
@@ -68,25 +68,25 @@ public class CalendarDemo {
         
         switch(rightNow.get(Calendar.DAY_OF_WEEK)) {
             case Calendar.SUNDAY:
-                chineseDayOfWeek = "§È";
+                chineseDayOfWeek = "Êó•";
                 break;
             case Calendar.MONDAY:
-                chineseDayOfWeek = "§@";
+                chineseDayOfWeek = "‰∏Ä";
                 break;
             case Calendar.TUESDAY:
-                chineseDayOfWeek = "§G";
+                chineseDayOfWeek = "‰∫å";
                 break;
             case Calendar.WEDNESDAY:
-                chineseDayOfWeek = "§T";
+                chineseDayOfWeek = "‰∏â";
                 break;
             case Calendar.THURSDAY:
-                chineseDayOfWeek = "•|";
+                chineseDayOfWeek = "Âõõ";
                 break;
             case Calendar.FRIDAY:
-                chineseDayOfWeek = "§≠";
+                chineseDayOfWeek = "‰∫î";
                 break;
             case Calendar.SATURDAY:
-                chineseDayOfWeek = "§ª";
+                chineseDayOfWeek = "ÂÖ≠";
                 break;           
         }
         

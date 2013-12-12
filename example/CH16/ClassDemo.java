@@ -4,15 +4,15 @@ public class ClassDemo {
     public static void main(String[] args) {
         String name = "caterpillar";
         Class stringClass = name.getClass();
-        System.out.println("Ãş§O¦WºÙ¡G" + 
+        System.out.println("é¡åˆ¥åç¨±ï¼š" + 
                     stringClass.getName()); 
-        System.out.println("¬O§_¬°¤¶­±¡G" + 
+        System.out.println("æ˜¯å¦ç‚ºä»‹é¢ï¼š" + 
                     stringClass.isInterface()); 
-        System.out.println("¬O§_¬°°ò¥»«¬ºA¡G" + 
+        System.out.println("æ˜¯å¦ç‚ºåŸºæœ¬å‹æ…‹ï¼š" + 
                     stringClass.isPrimitive()); 
-        System.out.println("¬O§_¬°°}¦Cª«¥ó¡G" + 
+        System.out.println("æ˜¯å¦ç‚ºé™£åˆ—ç‰©ä»¶ï¼š" + 
                     stringClass.isArray()); 
-        System.out.println("¤÷Ãş§O¦WºÙ¡G" + 
+        System.out.println("çˆ¶é¡åˆ¥åç¨±ï¼š" + 
                     stringClass.getSuperclass().getName());
     }
 }

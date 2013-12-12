@@ -1,6 +1,6 @@
 public class CommandLineArg2 { 
     public static void main(String[] args) { 
-        System.out.print("Åª¤Jªº¤Þ¼Æ: "); 
+        System.out.print("è®€å…¥çš„å¼•æ•¸: "); 
         for(String arg : args)
             System.out.print(arg + " "); 
         System.out.println(); 

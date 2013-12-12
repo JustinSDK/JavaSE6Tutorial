@@ -4,9 +4,9 @@ import java.io.*;
  
 public class PushbackReaderDemo {
     public static void main(String[] args) {
-        char[] symbols = {'¡Õ', '¡Ö', 
-                          '¡Ø', '¡Ù',
-                          '¡Ú', '¡×'}; 
+        char[] symbols = {'ï¼œ', 'ï¼', 
+                          'â‰¦', 'â‰§',
+                          'â‰ ', 'ï¼'}; 
         
         try { 
             PushbackReader pushbackReader = 
@@ -50,7 +50,7 @@ public class PushbackReaderDemo {
               fileWriter.close(); 
           } 
           catch(ArrayIndexOutOfBoundsException e) { 
-              System.out.println("½Ğ«ü©wÀÉ®×");
+              System.out.println("è«‹æŒ‡å®šæª”æ¡ˆ");
           } 
           catch(IOException e) { 
               e.printStackTrace(); 

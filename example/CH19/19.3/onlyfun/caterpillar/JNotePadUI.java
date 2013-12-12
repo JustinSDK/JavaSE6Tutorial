@@ -45,7 +45,7 @@ public class JNotePadUI extends JFrame {
     private JPopupMenu popUpMenu;
     
     public JNotePadUI() {
-        super("·s¼W¤å¦rÀÉ®×");
+        super("æ–°å¢æ–‡å­—æª”æ¡ˆ");
         setUpUIComponent();
         setUpEventListener();
         setVisible(true);
@@ -54,48 +54,48 @@ public class JNotePadUI extends JFrame {
     private void setUpUIComponent() {
         setSize(640, 480);
         
-        // ¿ï³æ¦C
+        // é¸å–®åˆ—
         JMenuBar menuBar = new JMenuBar();
         
-        // ³]¸m¡uÀÉ®×¡v¿ï³æ
-        JMenu fileMenu = new JMenu("ÀÉ®×");
-        menuOpen = new JMenuItem("¶}±ÒÂÂÀÉ");
-        // §Ö³tÁä³]¸m
+        // è¨­ç½®ã€Œæª”æ¡ˆã€é¸å–®
+        JMenu fileMenu = new JMenu("æª”æ¡ˆ");
+        menuOpen = new JMenuItem("é–‹å•ŸèˆŠæª”");
+        // å¿«é€Ÿéµè¨­ç½®
         menuOpen.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_O, 
                             InputEvent.CTRL_MASK));
-        menuSave = new JMenuItem("Àx¦sÀÉ®×");
+        menuSave = new JMenuItem("å„²å­˜æª”æ¡ˆ");
         menuSave.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_S, 
                             InputEvent.CTRL_MASK));
-        menuSaveAs = new JMenuItem("¥t¦s·sÀÉ");
+        menuSaveAs = new JMenuItem("å¦å­˜æ–°æª”");
 
-        menuClose = new JMenuItem("Ãö³¬");
+        menuClose = new JMenuItem("é—œé–‰");
         menuClose.setAccelerator(
                     KeyStroke.getKeyStroke(
                             KeyEvent.VK_Q, 
                             InputEvent.CTRL_MASK));
         
         fileMenu.add(menuOpen);
-        fileMenu.addSeparator(); // ¤À¹j½u
+        fileMenu.addSeparator(); // åˆ†éš”ç·š
         fileMenu.add(menuSave);
         fileMenu.add(menuSaveAs);        
-        fileMenu.addSeparator(); // ¤À¹j½u
+        fileMenu.addSeparator(); // åˆ†éš”ç·š
         fileMenu.add(menuClose);
         
-        // ³]¸m¡u½s¿è¡v¿ï³æ        
-        editMenu = new JMenu("½s¿è");
-        menuCut = new JMenuItem("°Å¤U");
+        // è¨­ç½®ã€Œç·¨è¼¯ã€é¸å–®        
+        editMenu = new JMenu("ç·¨è¼¯");
+        menuCut = new JMenuItem("å‰ªä¸‹");
         menuCut.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_X, 
                             InputEvent.CTRL_MASK));
-        menuCopy = new JMenuItem("½Æ»s");
+        menuCopy = new JMenuItem("è¤‡è£½");
         menuCopy.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_C, 
                             InputEvent.CTRL_MASK));
-        menuPaste = new JMenuItem("¶K¤W");
+        menuPaste = new JMenuItem("è²¼ä¸Š");
         menuPaste.setAccelerator(
                     KeyStroke.getKeyStroke(KeyEvent.VK_V, 
                             InputEvent.CTRL_MASK));
@@ -103,9 +103,9 @@ public class JNotePadUI extends JFrame {
         editMenu.add(menuCopy);
         editMenu.add(menuPaste);
         
-        // ³]¸m¡uÃö©ó¡v¿ï³æ        
-        JMenu aboutMenu = new JMenu("Ãö©ó");
-        menuAbout = new JMenuItem("Ãö©óJNotePad");
+        // è¨­ç½®ã€Œé—œæ–¼ã€é¸å–®        
+        JMenu aboutMenu = new JMenu("é—œæ–¼");
+        menuAbout = new JMenuItem("é—œæ–¼JNotePad");
         aboutMenu.add(menuAbout);
         
         menuBar.add(fileMenu);
@@ -114,9 +114,9 @@ public class JNotePadUI extends JFrame {
         
         setJMenuBar(menuBar);
         
-        // ¤å¦r½s¿è°Ï°ì
+        // æ–‡å­—ç·¨è¼¯å€åŸŸ
         textArea = new JTextArea();
-        textArea.setFont(new Font("²Ó©úÅé", Font.PLAIN, 16));
+        textArea.setFont(new Font("ç´°æ˜é«”", Font.PLAIN, 16));
         textArea.setLineWrap(true);
         JScrollPane panel = new JScrollPane(textArea,
           ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
@@ -125,8 +125,8 @@ public class JNotePadUI extends JFrame {
         Container contentPane = getContentPane();
         contentPane.add(panel, BorderLayout.CENTER);  
         
-        // ª¬ºA¦C
-        JLabel stateBar = new JLabel("¥¼­×§ï");
+        // ç‹€æ…‹åˆ—
+        JLabel stateBar = new JLabel("æœªä¿®æ”¹");
         stateBar.setHorizontalAlignment(SwingConstants.LEFT); 
         stateBar.setBorder(
                 BorderFactory.createEtchedBorder());
@@ -136,7 +136,7 @@ public class JNotePadUI extends JFrame {
     }
     
     private void setUpEventListener() {
-        // «ö¤Uµøµ¡Ãö³¬¶s¨Æ¥ó³B²z
+        // æŒ‰ä¸‹è¦–çª—é—œé–‰éˆ•äº‹ä»¶è™•ç†
         addWindowListener(
             new WindowAdapter() {
                 public void windowClosing(WindowEvent e) { 
@@ -145,7 +145,7 @@ public class JNotePadUI extends JFrame {
             }
         );
         
-        // ¿ï³æ - ¶}±ÒÂÂÀÉ
+        // é¸å–® - é–‹å•ŸèˆŠæª”
         menuOpen.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -154,7 +154,7 @@ public class JNotePadUI extends JFrame {
             }
         );
 
-        // ¿ï³æ - Àx¦sÀÉ®×
+        // é¸å–® - å„²å­˜æª”æ¡ˆ
         menuSave.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -163,7 +163,7 @@ public class JNotePadUI extends JFrame {
             }
         );
 
-        // ¿ï³æ - ¥t¦s·sÀÉ
+        // é¸å–® - å¦å­˜æ–°æª”
         menuSaveAs.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -173,7 +173,7 @@ public class JNotePadUI extends JFrame {
         );
 
 
-        // ¿ï³æ - Ãö³¬ÀÉ®×
+        // é¸å–® - é—œé–‰æª”æ¡ˆ
         menuClose.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -182,7 +182,7 @@ public class JNotePadUI extends JFrame {
             }
         );
 
-        // ¿ï³æ - °Å¤U
+        // é¸å–® - å‰ªä¸‹
         menuCut.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -191,7 +191,7 @@ public class JNotePadUI extends JFrame {
             }
         );
 
-        // ¿ï³æ - ½Æ»s
+        // é¸å–® - è¤‡è£½
         menuCopy.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -200,7 +200,7 @@ public class JNotePadUI extends JFrame {
             }
         );
 
-        // ¿ï³æ - ¶K¤W
+        // é¸å–® - è²¼ä¸Š
         menuPaste.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -209,19 +209,19 @@ public class JNotePadUI extends JFrame {
             }
         );
         
-        // ¿ï³æ - Ãö©ó
+        // é¸å–® - é—œæ–¼
         menuAbout.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    // Åã¥Ü¹ï¸Ü¤è¶ô
+                    // é¡¯ç¤ºå°è©±æ–¹å¡Š
                     JOptionPane.showOptionDialog(null, 
-                        "µ{¦¡¦WºÙ:\n    JNotePad \n" + 
-                        "µ{¦¡³]­p:\n    ¨}¸¯®æ\n" + 
-                        "Â²¤¶:\n    ¤@­ÓÂ²³æªº¤å¦r½s¿è¾¹\n" + 
-                        "    ¥i§@¬°Åç¦¬Javaªº¹ê§@¹ï¶H\n" +
-                        "    Åwªïºô¤Í¤U¸ü¬ã¨s¥æ¬y\n\n" +
+                        "ç¨‹å¼åç¨±:\n    JNotePad \n" + 
+                        "ç¨‹å¼è¨­è¨ˆ:\n    è‰¯è‘›æ ¼\n" + 
+                        "ç°¡ä»‹:\n    ä¸€å€‹ç°¡å–®çš„æ–‡å­—ç·¨è¼¯å™¨\n" + 
+                        "    å¯ä½œç‚ºé©—æ”¶Javaçš„å¯¦ä½œå°è±¡\n" +
+                        "    æ­¡è¿ç¶²å‹ä¸‹è¼‰ç ”ç©¶äº¤æµ\n\n" +
                         "http://caterpillar.onlyfun.net/",
-                        "Ãö©óJNotePad",
+                        "é—œæ–¼JNotePad",
                         JOptionPane.DEFAULT_OPTION,
                         JOptionPane.INFORMATION_MESSAGE,
                         null, null, null);
@@ -229,7 +229,7 @@ public class JNotePadUI extends JFrame {
             }
         );      
         
-        // ½s¿è°ÏÁä½L¨Æ¥ó
+        // ç·¨è¼¯å€éµç›¤äº‹ä»¶
         textArea.addKeyListener(
             new KeyAdapter() {
                 public void keyTyped(KeyEvent e) {
@@ -238,7 +238,7 @@ public class JNotePadUI extends JFrame {
             }
         );
 
-        // ½s¿è°Ï·Æ¹«¨Æ¥ó
+        // ç·¨è¼¯å€æ»‘é¼ äº‹ä»¶
         textArea.addMouseListener(
             new MouseAdapter() {
                 public void mouseReleased(MouseEvent e) {

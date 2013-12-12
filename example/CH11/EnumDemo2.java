@@ -8,13 +8,13 @@ public class EnumDemo2 {
     public static void doAction(InnerAction action) {
         switch(action) { 
             case TURN_LEFT: 
-                System.out.println("¦V¥ªÂà"); 
+                System.out.println("å‘å·¦è½‰"); 
                 break; 
             case TURN_RIGHT: 
-                System.out.println("¦V¥kÂà"); 
+                System.out.println("å‘å³è½‰"); 
                 break; 
             case SHOOT: 
-                System.out.println("®gÀ»"); 
+                System.out.println("å°„æ“Š"); 
                 break; 
         } 
     }

@@ -1,6 +1,6 @@
 public class StaticDemo {
     public static void sayHello() {
-        System.out.println("«¢Åo¡I");
+        System.out.println("å“ˆå›‰ï¼");
     }
 
     public static void main(String[] args) {

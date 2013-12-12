@@ -6,6 +6,6 @@ public class Foo1 {
     }
 
     public void showName() { 
-        System.out.println("foo1 �W�١G" + name); 
+        System.out.println("foo1 名稱：" + name); 
     } 
 }

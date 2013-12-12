@@ -8,30 +8,30 @@ public class AnalysisApp {
                                throws NoSuchMethodException {
         Class<SomeClass3> c = SomeClass3.class;
 
-        // ¦]¬°SomeAnnotation¼Ğ¥Ü©ódoSomething()¤èªk¤W
-        // ©Ò¥H­n¨ú±odoSomething()¤èªkªºMethod¹ê¨Ò
+        // å› ç‚ºSomeAnnotationæ¨™ç¤ºæ–¼doSomething()æ–¹æ³•ä¸Š
+        // æ‰€ä»¥è¦å–å¾—doSomething()æ–¹æ³•çš„Methodå¯¦ä¾‹
         Method method = c.getMethod("doSomething");
 
-        // ¦pªGSomeAnnotation¦s¦bªº¸Ü
+        // å¦‚æœSomeAnnotationå­˜åœ¨çš„è©±
         if(method.isAnnotationPresent(SomeAnnotation.class)) {
-            System.out.println("§ä¨ì @SomeAnnotation");
-            // ¨ú±oSomeAnnotation
+            System.out.println("æ‰¾åˆ° @SomeAnnotation");
+            // å–å¾—SomeAnnotation
             SomeAnnotation annotation = 
                  method.getAnnotation(SomeAnnotation.class);
-            // ¨ú±ovalue¦¨­û­È
+            // å–å¾—valueæˆå“¡å€¼
             System.out.println("\tvalue = " + annotation.value());
-            // ¨ú±oname¦¨­û­È
+            // å–å¾—nameæˆå“¡å€¼
             System.out.println("\tname = " + annotation.name());
         }
         else {
-            System.out.println("§ä¤£¨ì @SomeAnnotation");
+            System.out.println("æ‰¾ä¸åˆ° @SomeAnnotation");
         }
 
-        // ¨ú±odoSomething()¤èªk¤W©Ò¦³ªºAnnotation
+        // å–å¾—doSomething()æ–¹æ³•ä¸Šæ‰€æœ‰çš„Annotation
         Annotation[] annotations = method.getAnnotations();
-        // Åã¥ÜAnnotation¦WºÙ
+        // é¡¯ç¤ºAnnotationåç¨±
         for(Annotation annotation : annotations) {
-            System.out.println("Annotation¦WºÙ¡G" +
+            System.out.println("Annotationåç¨±ï¼š" +
                     annotation.annotationType().getName());
         }
     }

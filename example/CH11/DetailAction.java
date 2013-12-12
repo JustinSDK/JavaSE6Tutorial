@@ -4,11 +4,11 @@ public enum DetailAction {
     public String getDescription() {
         switch(this.ordinal()) {
             case 0:
-                return "¦V¥ªÂà";
+                return "å‘å·¦è½‰";
             case 1:
-                return "¦V¥kÂà";
+                return "å‘å³è½‰";
             case 2:
-                return "®gÀ»";
+                return "å°„æ“Š";
             default:
                 return null;
         }

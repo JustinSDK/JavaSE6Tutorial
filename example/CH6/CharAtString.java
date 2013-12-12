@@ -3,17 +3,17 @@ public class CharAtString {
         String text = "One's left brain has nothing right.\n" 
                  + "One's right brain has nothing left.\n"; 
  
-        System.out.println("¦r¦ê¤º®e: "); 
+        System.out.println("å­—ä¸²å…§å®¹: "); 
         for(int i = 0; i < text.length(); i++) 
             System.out.print(text.charAt(i)); 
 
-        System.out.println("\n²Ä¤@­Óleft: " + 
+        System.out.println("\nç¬¬ä¸€å€‹left: " + 
                               text.indexOf("left")); 
-        System.out.println("³Ì«á¤@­Óleft: " + 
+        System.out.println("æœ€å¾Œä¸€å€‹left: " + 
                               text.lastIndexOf("left")); 
  
         char[] charArr = text.toCharArray(); 
-        System.out.println("\n¦r¤¸Array¤º®e: "); 
+        System.out.println("\nå­—å…ƒArrayå…§å®¹: "); 
         for(int i = 0; i < charArr.length; i++) 
             System.out.print(charArr[i]); 
     } 

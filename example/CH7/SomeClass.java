@@ -1,5 +1,5 @@
 public class SomeClass {
     static {
-        System.out.println("Ãþ§O³Q¸ü¤J");
+        System.out.println("é¡žåˆ¥è¢«è¼‰å…¥");
     }
 }

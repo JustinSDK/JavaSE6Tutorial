@@ -4,12 +4,12 @@ public class AdvancedArray2 {
         int[] arr2 = {5, 6, 7}; 
         int[] tmp = arr1;
  
-        System.out.print("¨Ï¥Îtmp¨ú¥Xarr1¤¤ªº¤¸¯À¡G");
+        System.out.print("ä½¿ç”¨tmpå–å‡ºarr1ä¸­çš„å…ƒç´ ï¼š");
         for(int i = 0; i < tmp.length; i++) 
             System.out.print(tmp[i] + " "); 
  
         tmp = arr2; 
-        System.out.print("\n¨Ï¥Îtmp¨ú¥Xarr2¤¤ªº¤¸¯À¡G");
+        System.out.print("\nä½¿ç”¨tmpå–å‡ºarr2ä¸­çš„å…ƒç´ ï¼š");
         for(int i = 0; i < tmp.length; i++) 
             System.out.print(tmp[i] + " "); 
         System.out.println();

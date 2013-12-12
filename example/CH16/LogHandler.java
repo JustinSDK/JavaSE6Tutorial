@@ -8,18 +8,18 @@ public class LogHandler implements InvocationHandler {
                Logger.getLogger(this.getClass().getName()); 
     private Object delegate; 
 
-    // ¸j©w­n¥N²zªºª«¥ó
+    // ç¶å®šè¦ä»£ç†çš„ç‰©ä»¶
     public Object bind(Object delegate) { 
         this.delegate = delegate;
-        // «Ø¥ß¨Ã¶Ç¦^¥N²zª«¥ó
+        // å»ºç«‹ä¸¦å‚³å›ä»£ç†ç‰©ä»¶
         return Proxy.newProxyInstance(
                  delegate.getClass().getClassLoader(),
-                 // ­n³Q¥N²zªº¤¶­±
+                 // è¦è¢«ä»£ç†çš„ä»‹é¢
                  delegate.getClass().getInterfaces(), 
                  this); 
     }
 
-    // ¥N²z­n©I¥sªº¤èªk¡A¨Ã¦b¨ä«e«á¼W¥[¦æ¬°
+    // ä»£ç†è¦å‘¼å«çš„æ–¹æ³•ï¼Œä¸¦åœ¨å…¶å‰å¾Œå¢åŠ è¡Œç‚º
     public Object invoke(Object proxy, 
                          Method method, 
                          Object[] args) throws Throwable {

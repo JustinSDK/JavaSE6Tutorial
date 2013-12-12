@@ -1,14 +1,14 @@
 package onlyfun.caterpillar;
  
 public class Clerk {
-    // -1 ªí¥Ü¥Ø«e¨S¦³²£«~
+    // -1 è¡¨ç¤ºç›®å‰æ²’æœ‰ç”¢å“
     private int product = -1; 
  
-    // ³o­Ó¤èªk¥Ñ¥Í²£ªÌ©I¥s
+    // é€™å€‹æ–¹æ³•ç”±ç”Ÿç”¢è€…å‘¼å«
     public synchronized void setProduct(int product) { 
         if(this.product != -1) { 
             try { 
-                // ¥Ø«e©±­û¨S¦³ªÅ¶¡¦¬²£«~¡A½Ğµy­Ô¡I
+                // ç›®å‰åº—å“¡æ²’æœ‰ç©ºé–“æ”¶ç”¢å“ï¼Œè«‹ç¨å€™ï¼
                 wait(); 
             } 
             catch(InterruptedException e) { 
@@ -17,17 +17,17 @@ public class Clerk {
         } 
  
         this.product = product; 
-        System.out.printf("¥Í²£ªÌ³]©w (%d)%n", this.product); 
+        System.out.printf("ç”Ÿç”¢è€…è¨­å®š (%d)%n", this.product); 
 
-        // ³qª¾µ¥«İ°Ï¤¤ªº¤@­Ó®ø¶OªÌ¥i¥HÄ~Äò¤u§@¤F
+        // é€šçŸ¥ç­‰å¾…å€ä¸­çš„ä¸€å€‹æ¶ˆè²»è€…å¯ä»¥ç¹¼çºŒå·¥ä½œäº†
         notify(); 
     } 
     
-    // ³o­Ó¤èªk¥Ñ®ø¶OªÌ©I¥s
+    // é€™å€‹æ–¹æ³•ç”±æ¶ˆè²»è€…å‘¼å«
     public synchronized int getProduct() { 
         if(this.product == -1) { 
             try { 
-                // ¯Ê³f¤F¡A½Ğµy­Ô¡I
+                // ç¼ºè²¨äº†ï¼Œè«‹ç¨å€™ï¼
                 wait(); 
             } 
             catch(InterruptedException e) { 
@@ -37,10 +37,10 @@ public class Clerk {
  
         int p = this.product; 
         System.out.printf(
-                  "®ø¶OªÌ¨ú¨« (%d)%n", this.product); 
+                  "æ¶ˆè²»è€…å–èµ° (%d)%n", this.product); 
         this.product = -1; 
  
-        // ³qª¾µ¥«İ°Ï¤¤ªº¤@­Ó¥Í²£ªÌ¥i¥HÄ~Äò¤u§@¤F
+        // é€šçŸ¥ç­‰å¾…å€ä¸­çš„ä¸€å€‹ç”Ÿç”¢è€…å¯ä»¥ç¹¼çºŒå·¥ä½œäº†
         notify(); 
        
         return p; 

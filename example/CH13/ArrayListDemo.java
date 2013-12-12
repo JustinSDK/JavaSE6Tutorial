@@ -8,7 +8,7 @@ public class ArrayListDemo {
          
         List<String> list = new ArrayList<String>();
         
-        System.out.println("¿é¤J¦WºÙ(¨Ï¥Îquitµ²§ô)"); 
+        System.out.println("è¼¸å…¥åç¨±(ä½¿ç”¨quitçµæŸ)"); 
 
         while(true) { 
             System.out.print("# "); 
@@ -19,7 +19,7 @@ public class ArrayListDemo {
             list.add(input); 
         }
         
-        System.out.print("Åã¥Ü¿é¤J: "); 
+        System.out.print("é¡¯ç¤ºè¼¸å…¥: "); 
         for(int i = 0; i < list.size(); i++) 
             System.out.print(list.get(i) + " "); 
         System.out.println(); 

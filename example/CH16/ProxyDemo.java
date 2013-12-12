@@ -5,7 +5,7 @@ public class ProxyDemo {
         LogHandler handler  = new LogHandler(); 
         IHello speaker = new HelloSpeaker();
 
-        // ¥N²zspeakerªºª«¥ó
+        // ä»£ç†speakerçš„ç‰©ä»¶
         IHello speakerProxy = 
                  (IHello) handler.bind(speaker);
 

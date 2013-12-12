@@ -1,5 +1,5 @@
 public class MathTool {
-    public static int sum(int... nums) { // ¨Ï¥Î...«Å§i°Ñ¼Æ
+    public static int sum(int... nums) { // ä½¿ç”¨...å®£å‘Šåƒæ•¸
         int sum = 0;
         for(int num : nums) {
             sum += num;

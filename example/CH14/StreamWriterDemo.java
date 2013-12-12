@@ -5,19 +5,19 @@
  public class StreamWriterDemo {
     public static void main(String[] args) {
         try {
-            // ¡uÂ²Åé¤¤¤å¡v¥|­Ó¦rªº GB2312 ½s½X
+            // ã€Œç°¡é«”ä¸­æ–‡ã€å››å€‹å­—çš„ GB2312 ç·¨ç¢¼
             byte[] sim = {(byte)0xbc, (byte)0xf2, 
                           (byte)0xcc, (byte)0xe5,
                           (byte)0xd6, (byte)0xd0,
                           (byte)0xce, (byte)0xc4};
-            // °}¦C§@¬°¦ê¬y¨Ó·½
+            // é™£åˆ—ä½œç‚ºä¸²æµä¾†æº
             ByteArrayInputStream byteArrayInputStream = 
                             new ByteArrayInputStream(sim);
             InputStreamReader inputStreamReader = 
                 new InputStreamReader( 
                   byteArrayInputStream, "GB2312"); 
 
-            // PrintWriterÁÙ±µ¨üWriter¹ê¨Ò§@¬°¤Ş¼Æ
+            // PrintWriteré‚„æ¥å—Writerå¯¦ä¾‹ä½œç‚ºå¼•æ•¸
             PrintWriter printWriter = 
                new PrintWriter(
                  new OutputStreamWriter(
@@ -26,7 +26,7 @@
             int in = 0; 
 
             printWriter.print("PrintWriter: ");
-            // ¼g¤J°}¦C¤º®e
+            // å¯«å…¥é™£åˆ—å…§å®¹
             while((in = inputStreamReader.read()) != -1)  { 
                 printWriter.print((char)in); 
             }
@@ -35,13 +35,13 @@
             printWriter.close();
             byteArrayInputStream.reset();
 
-            // PrintStream ±µ¨üOutputStream¹ê¨Ò§@¬°¤Ş¼Æ
+            // PrintStream æ¥å—OutputStreamå¯¦ä¾‹ä½œç‚ºå¼•æ•¸
             PrintStream printStream = 
                 new PrintStream(new FileOutputStream(args[0], true), 
                                 true, "GB2312");
  
             printStream.print("PrintStream: ");
-            // ¼g¤J°}¦C¤º®e
+            // å¯«å…¥é™£åˆ—å…§å®¹
             while((in = inputStreamReader.read()) != -1)  { 
                 printStream.print((char)in); 
             }
@@ -51,7 +51,7 @@
             printStream.close();
         } 
         catch(ArrayIndexOutOfBoundsException e) { 
-            System.out.println("¨S¦³«ü©wÀÉ®×");
+            System.out.println("æ²’æœ‰æŒ‡å®šæª”æ¡ˆ");
         } 
         catch(IOException e) { 
             e.printStackTrace(); 

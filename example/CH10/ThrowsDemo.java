@@ -4,14 +4,14 @@ public class ThrowsDemo {
             throwsTest(); 
         } 
         catch(ArithmeticException e) { 
-            System.out.println("®·®»¨Ò¥~"); 
+            System.out.println("æ•æ‰ä¾‹å¤–"); 
         } 
     }
 
     private static void throwsTest() 
                            throws ArithmeticException { 
-        System.out.println("³o¥u¬O¤@­Ó´ú¸Õ"); 
-        // µ{¦¡³B²z¹Lµ{°²³]µo¥Í¨Ò¥~ 
+        System.out.println("é€™åªæ˜¯ä¸€å€‹æ¸¬è©¦"); 
+        // ç¨‹å¼è™•ç†éç¨‹å‡è¨­ç™¼ç”Ÿä¾‹å¤– 
         throw new ArithmeticException(); 
     } 
 }

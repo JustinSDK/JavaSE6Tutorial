@@ -1,9 +1,9 @@
 public enum DetailAction2 {
-    TURN_LEFT("¦V¥ªÂà"), TURN_RIGHT("¦V¥kÂà"), SHOOT("®gÀ»");
+    TURN_LEFT("å‘å·¦è½‰"), TURN_RIGHT("å‘å³è½‰"), SHOOT("å°„æ“Š");
  
     private String description;
  
-    // ¤£¤½¶}ªº«Øºc¤èªk
+    // ä¸å…¬é–‹çš„å»ºæ§‹æ–¹æ³•
     private DetailAction2(String description) {
         this.description = description;
     }

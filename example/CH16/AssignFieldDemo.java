@@ -16,13 +16,13 @@ public class AssignFieldDemo {
             
             System.out.println(targetObj);
         } catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("¨S¦³«ü©wÃş§O");
+            System.out.println("æ²’æœ‰æŒ‡å®šé¡åˆ¥");
         } catch (ClassNotFoundException e) {
-            System.out.println("§ä¤£¨ì«ü©wªºÃş§O");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„é¡åˆ¥");
         } catch (SecurityException e) {
             e.printStackTrace();
         } catch (NoSuchFieldException e) {
-            System.out.println("§ä¤£¨ì«ü©wªº¸ê®Æ¦¨­û");
+            System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„è³‡æ–™æˆå“¡");
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {

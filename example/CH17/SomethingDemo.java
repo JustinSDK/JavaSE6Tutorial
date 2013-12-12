@@ -3,7 +3,7 @@ package onlyfun.caterpillar;
 public class SomethingDemo {
     public static void main(String[] args) {
         Something some = new Something();
-        // ©I¥s³Q@Deprecated¼Ğ¥Üªº¤èªk
+        // å‘¼å«è¢«@Deprecatedæ¨™ç¤ºçš„æ–¹æ³•
         some.getSomething();
     }
 }

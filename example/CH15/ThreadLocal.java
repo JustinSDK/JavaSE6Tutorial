@@ -3,18 +3,18 @@ package onlyfun.caterpillar;
 import java.util.*;
 
 public class ThreadLocal<T> {
-    // ¨ú±o¤@­Ó¦P¨B¤ÆªºMapª«¥ó
+    // å–å¾—ä¸€å€‹åŒæ­¥åŒ–çš„Mapç‰©ä»¶
     private Map<Thread, T> storage = 
              Collections.synchronizedMap(new HashMap<Thread, T>());
 
     public T get() {
-        // ¨ú±o¥Ø«e°õ¦æget()¤èªkªº°õ¦æºü
+        // å–å¾—ç›®å‰åŸ·è¡Œget()æ–¹æ³•çš„åŸ·è¡Œç·’
         Thread current = Thread.currentThread();
-        // ®Ú¾Ú°õ¦æºü¨ú±o°õ¦æºü¦Û¦³ªº¸ê·½
+        // æ ¹æ“šåŸ·è¡Œç·’å–å¾—åŸ·è¡Œç·’è‡ªæœ‰çš„è³‡æº
         T t = storage.get(current);
 
-        // ¦pªGÁÙ¨S¦³°õ¦æºü±M¥Îªº¸ê·½ªÅ¶¡
-        // «h«Ø¥ß¤@­Ó·sªºªÅ¶¡
+        // å¦‚æœé‚„æ²’æœ‰åŸ·è¡Œç·’å°ˆç”¨çš„è³‡æºç©ºé–“
+        // å‰‡å»ºç«‹ä¸€å€‹æ–°çš„ç©ºé–“
         if(t == null && 
            !storage.containsKey(current)) {
             t = initialValue();

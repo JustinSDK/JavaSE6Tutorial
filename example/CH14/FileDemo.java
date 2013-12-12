@@ -7,34 +7,34 @@ public class FileDemo {
     public static void main(String[] args) {
         try { 
             File file = new File(args[0]);
-            if(file.isFile()) { // ¬O§_¬°ÀÉ®×
-                System.out.println(args[0] + " ÀÉ®×"); 
+            if(file.isFile()) { // æ˜¯å¦ç‚ºæª”æ¡ˆ
+                System.out.println(args[0] + " æª”æ¡ˆ"); 
                 System.out.print(
-                      file.canRead() ? "¥iÅª " : "¤£¥iÅª "); 
+                      file.canRead() ? "å¯è®€ " : "ä¸å¯è®€ "); 
                 System.out.print(
-                      file.canWrite() ? "¥i¼g " : "¤£¥i¼g "); 
+                      file.canWrite() ? "å¯å¯« " : "ä¸å¯å¯« "); 
                 System.out.println(
-                      file.length() + "¦ì¤¸²Õ"); 
+                      file.length() + "ä½å…ƒçµ„"); 
             } 
             else { 
-                // ¦C¥X©Ò¦³ªºÀÉ®×¤Î¥Ø¿ı
+                // åˆ—å‡ºæ‰€æœ‰çš„æª”æ¡ˆåŠç›®éŒ„
                 File[] files = file.listFiles(); 
                 ArrayList<File> fileList = 
                                     new ArrayList<File>(); 
                 for(int i = 0; i < files.length; i++) { 
-                    // ¥ı¦C¥X¥Ø¿ı 
-                    if(files[i].isDirectory()) { //¬O§_¬°¥Ø¿ı
-                        // ¨ú±o¸ô®|¦W
+                    // å…ˆåˆ—å‡ºç›®éŒ„ 
+                    if(files[i].isDirectory()) { //æ˜¯å¦ç‚ºç›®éŒ„
+                        // å–å¾—è·¯å¾‘å
                         System.out.println("[" + 
                                 files[i].getPath() + "]"); 
                     }
                     else {
-                        // ÀÉ®×¥ı¦s¤JfileList¡A«İ·|¦A¦C¥X
+                        // æª”æ¡ˆå…ˆå­˜å…¥fileListï¼Œå¾…æœƒå†åˆ—å‡º
                         fileList.add(files[i]); 
                     }
                 } 
  
-                // ¦C¥XÀÉ®× 
+                // åˆ—å‡ºæª”æ¡ˆ 
                 for(File f: fileList) {
                     System.out.println(f.toString());
                 }
