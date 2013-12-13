@@ -9,7 +9,11 @@ Java SE 6 技術手冊
 
 在將《Java SE 6 技術手冊》重新使用 Markdown 排版的過程中，我盡量保留內容原貌，努力忍住不去修改內容，目的很簡單，如果你覺得有任何覺得過時或不妥的地方，就去修改它 ...
 
-每章的〈網路資源〉被我拿掉了，因為不少鏈結年代久遠已經失效，我懶得一個一個去檢查還有哪些鏈結活著 ... XD
+每章的〈網路資源〉被我拿掉了，因為不少鏈結年代久遠已經失效，我懶得一個一個去檢查還有哪些鏈結活著 ... 附錄內容也因較舊而拿掉了，你可以分別參考以下資訊：
+
+- [認識 Gradle](http://www.codedata.com.tw/java/understanding-gradle-1-ant/)
+- [JUnit](http://openhome.cc/Gossip/JUnit/)
+- [MySQL 超新手入門](http://www.codedata.com.tw/database/mysql-tutorial-getting-started/)
 
 為什麼選擇用 Markdown？只是單純把文件重新排版太無聊了，不如趁這個機會學些新東西，所以我就藉這個機會來學著用 Markdown，並看看它有什麼好處與壞處 ... 如果你需要其他的格式，我相信你可以找到工具從 Markdown 格式轉換過去 :)
 
