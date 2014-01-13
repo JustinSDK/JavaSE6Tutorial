@@ -15,7 +15,7 @@ Java SE 6 技術手冊
 - [JUnit](http://openhome.cc/Gossip/JUnit/)
 - [MySQL 超新手入門](http://www.codedata.com.tw/database/mysql-tutorial-getting-started/)
 
-為什麼選擇用 Markdown？只是單純把文件重新排版太無聊了，不如趁這個機會學些新東西，所以我就藉這個機會來學著用 Markdown，並看看它有什麼好處與壞處 ... 如果你需要其他的格式，我相信你可以找到工具從 Markdown 格式轉換過去 :)
+為什麼選擇用 Markdown？只是單純把文件重新排版太無聊了，不如趁這個機會學些新東西，所以我就藉這個機會來學著用 Markdown，並看看它有什麼好處與壞處 ... 如果你需要其他的格式，我相信你可以找到工具從 Markdown 格式轉換過去，如果你有點懶，那麼可以考慮 [贊助點便當錢](https://play.google.com/store/books/details/%E6%9E%97%E4%BF%A1%E8%89%AF_Java_SE_6_%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A?id=IYqPAgAAQBAJ) ... :)
 
 原始碼範例都改為 UTF-8 編碼了，因此使用 `javac` 編譯時，記得加上 `-encoding UTF-8`。
 
