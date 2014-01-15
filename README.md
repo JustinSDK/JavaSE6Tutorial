@@ -3,7 +3,7 @@ Java SE 6 技術手冊
 
 為什麼選擇用 Markdown？只是單純把文件重新排版太無聊了，不如趁這個機會學些新東西，所以我就藉這個機會來學著用 Markdown，並看看它有什麼好處與壞處 ... 如果你需要其他的格式，我相信你可以找到工具從 Markdown 格式轉換過去 ... 
 
-如果你需要 PDF 格式又有點懶自己轉換，那麼可以考慮 [在 Google Play 上向便當價致敬](https://play.google.com/store/books/details/%E6%9E%97%E4%BF%A1%E8%89%AF_Java_SE_6_%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A?id=IYqPAgAAQBAJ)，如果你同時需要 PDF 與 epub 格式（參考用），那可以考慮 [在 Pubu 上向便當價致敬](http://www.pubu.com.tw/ebook/Java-SE-6-%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A-28587) ... :)
+如果你需要 PDF 格式又有點懶自己轉換，那麼可以考慮 [在 Google Play 上向便當價致敬](https://play.google.com/store/books/details/%E6%9E%97%E4%BF%A1%E8%89%AF_Java_SE_6_%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A?id=IYqPAgAAQBAJ)，如果你同時需要 PDF 與 epub 格式（參考用），那可以考慮 [在 Pubu 上向便當價致敬](http://www.pubu.com.tw/ebook/Java-SE-6-%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A-28587) ，如果你需要 mobi 格式，可以使用 [calibre](http://calibre-ebook.com/)  把 epub 轉為 mobi ... :)
 
 
 
