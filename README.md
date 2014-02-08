@@ -1,7 +1,7 @@
 Java SE 6 技術手冊
 ==================
 
-為什麼選擇用 Markdown？只是單純把文件重新排版太無聊了，不如趁這個機會學些新東西，所以我就藉這個機會來學著用 Markdown，並看看它有什麼好處與壞處 ... 如果你需要 PDF 與 epub 格式，而又有點懶自己轉換，那麼可以考慮在 [Google Play](https://play.google.com/store/books/details/%E6%9E%97%E4%BF%A1%E8%89%AF_Java_SE_6_%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A?id=IYqPAgAAQBAJ) 或 [Pubu](http://www.pubu.com.tw/ebook/Java-SE-6-%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A-28587)  上向便當價致敬，如果你需要 mobi 格式，可以使用 [calibre](http://calibre-ebook.com/)  把 epub 轉為 mobi ... :)
+為什麼選擇用 Markdown？只是單純把文件重新排版太無聊了，不如趁這個機會學些新東西，所以我就藉這個機會來學著用 Markdown，並看看它有什麼好處與壞處 ... 如果你需要 PDF 與 epub 格式，而又有點懶自己轉換，那麼可以考慮在 [Google Play](https://play.google.com/store/books/details?id=IYqPAgAAQBAJ) 或 [Pubu](http://www.pubu.com.tw/ebook/Java-SE-6-%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A-28587)  上向便當價致敬，如果你需要 mobi 格式，可以使用 [calibre](http://calibre-ebook.com/)  把 epub 轉為 mobi ... :)
 
 
 《Java SE 6 技術手冊》（以及它先前的版本）是以 [我的網站](http://openhome.cc) 中早期學習 Java 的筆記 [JavaGossip1](http://openhome.cc/Gossip/JavaGossip-V1/) 與 [JavaGossip2](http://openhome.cc/Gossip/JavaGossip-V2/) 為基礎，記錄著我學習 Java 的一些心得。
