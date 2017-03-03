@@ -5,7 +5,7 @@ Java SE 6 技術手冊
 
 我在 GitBook 上用這本書前半本 [試排了一個版本](http://caterpillar.gitbooks.io/javase6tutorial/)，如果你需要在 GitBook 上取得完整版本，請跟我聯絡！
 
-《Java SE 6 技術手冊》（以及它先前的版本）是以 [我的網站](http://openhome.cc) 中早期學習 Java 的筆記 [JavaGossip1](http://openhome.cc/Gossip/JavaGossip-V1/) 與 [JavaGossip2](http://openhome.cc/Gossip/JavaGossip-V2/) 為基礎，記錄著我學習 Java 的一些心得。
+《Java SE 6 技術手冊》（以及它先前的版本）是以 [我的網站](https://openhome.cc) 中早期學習 Java 的筆記 [JavaGossip1](https://openhome.cc/Gossip/JavaGossip-V1/) 與 [JavaGossip2](https://openhome.cc/Gossip/JavaGossip-V2/) 為基礎，記錄著我學習 Java 的一些心得。
 
 在 JDK7 問世之後，由於累積不少 Java 教學經驗與想法，為了有一本可以符合我教學所需的教材，因而在為 JDK7 撰寫 Java 書籍時，並不是改版《Java SE 6 技術手冊》，而是重新撰寫了一本 [《Java SE 7 技術手冊》](http://books.gotop.com.tw/bookdetails.aspx?bn=ACL034000)。
 
@@ -16,12 +16,12 @@ Java SE 6 技術手冊
 每章的〈網路資源〉被我拿掉了，因為不少鏈結年代久遠已經失效，我懶得一個一個去檢查還有哪些鏈結活著 ... 附錄內容也因較舊而拿掉了，你可以分別參考以下資訊：
 
 - [認識 Gradle](http://www.codedata.com.tw/java/understanding-gradle-1-ant/)
-- [JUnit](http://openhome.cc/Gossip/JUnit/)
+- [JUnit](https://openhome.cc/Gossip/JUnit/)
 - [MySQL 超新手入門](http://www.codedata.com.tw/database/mysql-tutorial-getting-started/)
 
 原始碼範例都改為 UTF-8 編碼了，因此使用 `javac` 編譯時，記得加上 `-encoding UTF-8`。
 
-新的 Java 文件基於 JDK8 而撰寫，你可以在 [我的網站](http://openhome.cc) 上的 [Java Gossip](http://openhome.cc/Gossip/Java/) 進行閱讀。
+新的 Java 文件基於 JDK8 而撰寫，你可以在 [我的網站](https://openhome.cc) 上的 [Java Gossip](https://openhome.cc/Gossip/Java/) 進行閱讀。
 
 ----------
 
