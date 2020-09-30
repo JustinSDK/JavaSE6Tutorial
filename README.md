@@ -44,6 +44,9 @@ Java SE 6 技術手冊
   - [3.3 資料、運算](docs/CH03.md#33-%E8%B3%87%E6%96%99%E9%81%8B%E7%AE%97)
   - [3.4 流程控制](docs/CH03.md#34-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6)
   - [3.5 接下來的主題](docs/CH03.md#35-%E6%8E%A5%E4%B8%8B%E4%BE%86%E7%9A%84%E4%B8%BB%E9%A1%8C)
+  
+  this is completely chinese language but i can help you to improve you code
+  lots of love from India
  
 - [第 4 章 從 autoboxing、unboxing 認識物件](docs/CH04.md#%E7%AC%AC-4-%E7%AB%A0-%E5%BE%9E-autoboxingunboxing-%E8%AA%8D%E8%AD%98%E7%89%A9%E4%BB%B6)
   - [4.1 關於物件](docs/CH04.md#41-%E9%97%9C%E6%96%BC%E7%89%A9%E4%BB%B6)
