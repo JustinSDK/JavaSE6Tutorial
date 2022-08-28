@@ -21,7 +21,7 @@ Java SE 6 技術手冊
 
 原始碼範例都改為 UTF-8 編碼了，因此使用 `javac` 編譯時，記得加上 `-encoding UTF-8`。
 
-新的 Java 文件基於 JDK9 而撰寫，你可以在 [我的網站](https://openhome.cc) 上的 [Java Gossip](https://openhome.cc/Gossip/Java/) 進行閱讀。
+新的 Java 文件基於 JDK17 而撰寫，你可以在 [我的網站](https://openhome.cc) 上的 [Java Gossip](https://openhome.cc/zh-tw/java/) 進行閱讀。
 
 ----------
 
