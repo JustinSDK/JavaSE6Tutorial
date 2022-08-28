@@ -7,7 +7,7 @@ Java SE 6 技術手冊
 
 《Java SE 6 技術手冊》（以及它先前的版本）是以 [我的網站](https://openhome.cc) 中早期學習 Java 的筆記 JavaGossip1 與 JavaGossip2 為基礎，記錄著我學習 Java 的一些心得。
 
-在 JDK7 問世之後，由於累積不少 Java 教學經驗與想法，為了有一本可以符合我教學所需的教材，因而在為 JDK7 撰寫 Java 書籍時，並不是改版《Java SE 6 技術手冊》，而是重新撰寫了一本 [《Java SE 7 技術手冊》](http://books.gotop.com.tw/bookdetails.aspx?bn=ACL034000)。
+在 JDK7 問世之後，由於累積不少 Java 教學經驗與想法，為了有一本可以符合我教學所需的教材，因而在為 JDK7 撰寫 Java 書籍時，並不是改版《Java SE 6 技術手冊》，而是重新撰寫了一本 [《Java SE 7 技術手冊》](https://play.google.com/store/books/details/%E6%9E%97%E4%BF%A1%E8%89%AF_Java_SE_7%E6%8A%80%E8%A1%93%E6%89%8B%E5%86%8A_%E9%9B%BB%E5%AD%90%E6%9B%B8?id=qscCBAAAQBAJ)。
 
 《Java SE 6 技術手冊》呢？就我目前來看它，真的就像是筆記，然而就因為是筆記，想法、口吻、脈絡甚至範例上，都比較適合新手，在靜靜地留在我硬碟近兩年，我有一天看到它，想說放著也是沒用，不如開放它 ... 
 
